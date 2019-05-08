@@ -1,8 +1,10 @@
 
 # ifndef TORTUINO_h
 #	define TORTUINO_h
-	
+
 	void initialiser();
+	void initialiser(float braquage);
+	void initialiser(char color);
 	void attendreBouton();
 	void stopper();
 	void vitesse(int v);
