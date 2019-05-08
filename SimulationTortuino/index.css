@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+}
+
+html, body, #container, #all {
+	width: 100%;
+	height: 100%;
+}
+
+#code {
+	height: 100%;
+}
+
+#all {
+	display: flex;
+}
+
+
+#editor {
+	width: 500px;
+	height: calc(100% - 27px);
+}
+
+#canvas, #draw {
+	display: block;
+}
+
+#draw {
+	width: 100%;
+	font-size: large;
+}

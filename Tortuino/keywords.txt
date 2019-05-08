@@ -1,0 +1,41 @@
+#######################################
+# Syntax Coloring Map For Tortuino
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+# Tortuino.h
+initialiser			KEYWORD2
+attendreBouton		KEYWORD2
+stopper				KEYWORD2
+avancer				KEYWORD2
+reculer				KEYWORD2
+vitesse				KEYWORD2
+tournerGauche		KEYWORD2
+tournerDroite		KEYWORD2
+monterFeutre		KEYWORD2
+descendreFeutre		KEYWORD2
+
+# TortuinoDessins.h
+triangle			KEYWORD2
+carre				KEYWORD2
+polygoneRegulier	KEYWORD2
+cercle				KEYWORD2
+arbre				KEYWORD2
+arbreSymetrique		KEYWORD2
+arbreAsymetrique	KEYWORD2
+sapin				KEYWORD2
+courbeVonKoch		KEYWORD2
+flocon				KEYWORD2
+triangleSierpinski	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
