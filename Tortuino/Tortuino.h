@@ -4,7 +4,7 @@
 
 	void initialiser();
 	void initialiser(float braquage);
-	void initialiser(char color);
+	void initialiser(char couleur);
 	void attendreBouton();
 	void stopper();
 	void vitesse(int v);

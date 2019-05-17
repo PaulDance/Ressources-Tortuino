@@ -40,23 +40,23 @@ void initialiser() {
 	attendreBouton();
 }
 
-void initialiser(char color) {
-	if(color == "w") {
-		BRAQUAGE = 11.3 / 2;	// Rayon pour le robot blanc OK
-	}
-	else if(color == "j") {
+void initialiser(char couleur) {
+	if (color == "w") {
 		BRAQUAGE = 11.3 / 2;
 	}
-	else if(color == "b") {
-		BRAQUAGE = 11 / 2;		// Rayon pour le robot bleu OK
+	else if (color == "j") {
+		BRAQUAGE = 11.3 / 2;
 	}
-	else if(color == "v") {
+	else if (color == "b") {
+		BRAQUAGE = 11 / 2;
+	}
+	else if (color == "v") {
 		BRAQUAGE = 10.5 / 2;
 	}
-	else if(color == "r") {
+	else if (color == "r") {
 		BRAQUAGE = 11.3 / 2;
 	}
-	else if(color == "n") {
+	else if (color == "n") {
 		BRAQUAGE = 11.3 / 2;
 	}
 	initialiser();
