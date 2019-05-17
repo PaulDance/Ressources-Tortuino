@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tortuino:  Fichier source de Tortuino/TortuinoDessins.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-tortuino-small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tortuino
+   </div>
+   <div id="projectbrief">Une animation interactive initiant à la programmation grâce à une carte Arduino contrôlant un robot tortue qui dessine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('TortuinoDessins_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">TortuinoDessins.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="TortuinoDessins_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"># ifndef TORTUINO_DESSINS_h</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#   define TORTUINO_DESSINS_h</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    </div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="TortuinoDessins_8h.html#afa3484b3831c738502a4c381600397ea">triangle</a>(<span class="keywordtype">float</span> tailleCote);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="TortuinoDessins_8h.html#a8fd6d1d3aad9c0c10525e5c8244a6ce1">carre</a>(<span class="keywordtype">float</span> tailleCote);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="TortuinoDessins_8h.html#ada93849cc1680d0d43bf6f9c1de954b2">polygoneRegulier</a>(<span class="keywordtype">int</span> nbCotes, <span class="keywordtype">float</span> tailleCote);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="TortuinoDessins_8h.html#a57189e3fe807009b1595778589a16be9">cercle</a>(<span class="keywordtype">float</span> rayon);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="TortuinoDessins_8h.html#a39c1c8ca3b979edec7d841f1a71e50f1">arbre</a>(<span class="keywordtype">int</span> nbNiveaux, <span class="keywordtype">float</span> tailleTronc);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="TortuinoDessins_8h.html#ac8968b78a962de5017b660c5e8e37513">arbreSymetrique</a>(<span class="keywordtype">int</span> nbNiveaux, <span class="keywordtype">float</span> tailleTronc, <span class="keywordtype">float</span> angleSeparation);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="TortuinoDessins_8h.html#a29fa4a540a63b4e05fe0aee6d5b522c0">arbreAsymetrique</a>(<span class="keywordtype">int</span> nbNiveaux, <span class="keywordtype">float</span> tailleTronc, <span class="keywordtype">float</span> angleSeparation, <span class="keywordtype">float</span> angleInclinaison);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="TortuinoDessins_8h.html#a170bac7a60b14659e63b81c8eefac3dd">sapin</a>(<span class="keywordtype">int</span> nbNiveaux, <span class="keywordtype">float</span> tailleTronc);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="TortuinoDessins_8h.html#af86cf0f8acc522368a052c765047a3a1">courbeVonKoch</a>(<span class="keywordtype">int</span> nbNiveaux, <span class="keywordtype">float</span> taille);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="TortuinoDessins_8h.html#afa05db28401a10aa6c4625a2de482484">flocon</a>(<span class="keywordtype">int</span> nbNiveaux, <span class="keywordtype">float</span> taille);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    </div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="TortuinoDessins_8h.html#a0c851f0f43370a65c2da38436be9a764">triangleSierpinski</a>(<span class="keywordtype">int</span> nbNiveaux, <span class="keywordtype">float</span> taille);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    </div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"># endif</span></div><div class="ttc" id="TortuinoDessins_8h_html_a8fd6d1d3aad9c0c10525e5c8244a6ce1"><div class="ttname"><a href="TortuinoDessins_8h.html#a8fd6d1d3aad9c0c10525e5c8244a6ce1">carre</a></div><div class="ttdeci">void carre(float tailleCote)</div><div class="ttdoc">Trace un carré d&amp;#39;une certaine taille. </div><div class="ttdef"><b>Definition:</b> <a href="TortuinoDessins_8cpp_source.html#l00055">TortuinoDessins.cpp:55</a></div></div>
+<div class="ttc" id="TortuinoDessins_8h_html_a29fa4a540a63b4e05fe0aee6d5b522c0"><div class="ttname"><a href="TortuinoDessins_8h.html#a29fa4a540a63b4e05fe0aee6d5b522c0">arbreAsymetrique</a></div><div class="ttdeci">void arbreAsymetrique(int nbNiveaux, float tailleTronc, float angleSeparation, float angleInclinaison)</div><div class="ttdoc">Trace un arbre récursivement dont l&amp;#39;angle entre les branches et l&amp;#39;angle entre la branche de gauche et...</div><div class="ttdef"><b>Definition:</b> <a href="TortuinoDessins_8cpp_source.html#l00120">TortuinoDessins.cpp:120</a></div></div>
+<div class="ttc" id="TortuinoDessins_8h_html_ac8968b78a962de5017b660c5e8e37513"><div class="ttname"><a href="TortuinoDessins_8h.html#ac8968b78a962de5017b660c5e8e37513">arbreSymetrique</a></div><div class="ttdeci">void arbreSymetrique(int nbNiveaux, float tailleTronc, float angleSeparation)</div><div class="ttdoc">Trace un arbre récursivement dont l&amp;#39;angle entre les branches peut être précisé et qui est symétrique ...</div><div class="ttdef"><b>Definition:</b> <a href="TortuinoDessins_8cpp_source.html#l00101">TortuinoDessins.cpp:101</a></div></div>
+<div class="ttc" id="TortuinoDessins_8h_html_af86cf0f8acc522368a052c765047a3a1"><div class="ttname"><a href="TortuinoDessins_8h.html#af86cf0f8acc522368a052c765047a3a1">courbeVonKoch</a></div><div class="ttdeci">void courbeVonKoch(int nbNiveaux, float taille)</div><div class="ttdoc">Trace une courbe de Von Koch paramétrée par son niveau et la taille du segment de départ...</div><div class="ttdef"><b>Definition:</b> <a href="TortuinoDessins_8cpp_source.html#l00165">TortuinoDessins.cpp:165</a></div></div>
+<div class="ttc" id="TortuinoDessins_8h_html_a170bac7a60b14659e63b81c8eefac3dd"><div class="ttname"><a href="TortuinoDessins_8h.html#a170bac7a60b14659e63b81c8eefac3dd">sapin</a></div><div class="ttdeci">void sapin(int nbNiveaux, float tailleTronc)</div><div class="ttdoc">Utilise deux arbres asymétriques pour tracer un sapin, c&amp;#39;est-à-dire un arbre où chaque branche se sép...</div><div class="ttdef"><b>Definition:</b> <a href="TortuinoDessins_8cpp_source.html#l00150">TortuinoDessins.cpp:150</a></div></div>
+<div class="ttc" id="TortuinoDessins_8h_html_ada93849cc1680d0d43bf6f9c1de954b2"><div class="ttname"><a href="TortuinoDessins_8h.html#ada93849cc1680d0d43bf6f9c1de954b2">polygoneRegulier</a></div><div class="ttdeci">void polygoneRegulier(int nbCotes, float tailleCote)</div><div class="ttdoc">Fait tracer au robot un polygone régulier en fonction du nombre de côtés souhaités et de la taille de...</div><div class="ttdef"><b>Definition:</b> <a href="TortuinoDessins_8cpp_source.html#l00030">TortuinoDessins.cpp:30</a></div></div>
+<div class="ttc" id="TortuinoDessins_8h_html_afa05db28401a10aa6c4625a2de482484"><div class="ttname"><a href="TortuinoDessins_8h.html#afa05db28401a10aa6c4625a2de482484">flocon</a></div><div class="ttdeci">void flocon(int nbNiveaux, float taille)</div><div class="ttdoc">Trace un flocon de Von Koch paramétré par son niveau et la taille du segment de départ. </div><div class="ttdef"><b>Definition:</b> <a href="TortuinoDessins_8cpp_source.html#l00191">TortuinoDessins.cpp:191</a></div></div>
+<div class="ttc" id="TortuinoDessins_8h_html_a57189e3fe807009b1595778589a16be9"><div class="ttname"><a href="TortuinoDessins_8h.html#a57189e3fe807009b1595778589a16be9">cercle</a></div><div class="ttdeci">void cercle(float rayon)</div><div class="ttdoc">Cette fonction est une tentative de réalisation d&amp;#39;un cercle automatiquement avec juste le rayon souha...</div><div class="ttdef"><b>Definition:</b> <a href="TortuinoDessins_8cpp_source.html#l00068">TortuinoDessins.cpp:68</a></div></div>
+<div class="ttc" id="TortuinoDessins_8h_html_a0c851f0f43370a65c2da38436be9a764"><div class="ttname"><a href="TortuinoDessins_8h.html#a0c851f0f43370a65c2da38436be9a764">triangleSierpinski</a></div><div class="ttdeci">void triangleSierpinski(int nbNiveaux, float taille)</div><div class="ttdoc">Trace un triangle de Sierpiński paramétré par son niveau et la taille globale du triangle. </div><div class="ttdef"><b>Definition:</b> <a href="TortuinoDessins_8cpp_source.html#l00206">TortuinoDessins.cpp:206</a></div></div>
+<div class="ttc" id="TortuinoDessins_8h_html_a39c1c8ca3b979edec7d841f1a71e50f1"><div class="ttname"><a href="TortuinoDessins_8h.html#a39c1c8ca3b979edec7d841f1a71e50f1">arbre</a></div><div class="ttdeci">void arbre(int nbNiveaux, float tailleTronc)</div><div class="ttdoc">Trace un arbre récursivement dont l&amp;#39;angle entre les branches est de 90 degrés et qui est symétrique p...</div><div class="ttdef"><b>Definition:</b> <a href="TortuinoDessins_8cpp_source.html#l00084">TortuinoDessins.cpp:84</a></div></div>
+<div class="ttc" id="TortuinoDessins_8h_html_afa3484b3831c738502a4c381600397ea"><div class="ttname"><a href="TortuinoDessins_8h.html#afa3484b3831c738502a4c381600397ea">triangle</a></div><div class="ttdeci">void triangle(float tailleCote)</div><div class="ttdoc">Trace un triangle equilatéral d&amp;#39;une certaine taille. </div><div class="ttdef"><b>Definition:</b> <a href="TortuinoDessins_8cpp_source.html#l00044">TortuinoDessins.cpp:44</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_accd8a07ce1c795467ced5a6b128bca5.html">Tortuino</a></li><li class="navelem"><a class="el" href="TortuinoDessins_8h.html">TortuinoDessins.h</a></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

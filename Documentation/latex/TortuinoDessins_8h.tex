@@ -1,0 +1,311 @@
+\hypertarget{TortuinoDessins_8h}{}\section{Référence du fichier Tortuino/\+Tortuino\+Dessins.h}
+\label{TortuinoDessins_8h}\index{Tortuino/\+Tortuino\+Dessins.\+h@{Tortuino/\+Tortuino\+Dessins.\+h}}
+
+
+Définition des fonctions implémentées dans \hyperlink{TortuinoDessins_8cpp}{Tortuino\+Dessins.\+cpp}.  
+
+
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{TortuinoDessins_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{TortuinoDessins_8h_afa3484b3831c738502a4c381600397ea}{triangle} (float taille\+Cote)
+\begin{DoxyCompactList}\small\item\em Trace un triangle equilatéral d\textquotesingle{}une certaine taille. \end{DoxyCompactList}\item 
+void \hyperlink{TortuinoDessins_8h_a8fd6d1d3aad9c0c10525e5c8244a6ce1}{carre} (float taille\+Cote)
+\begin{DoxyCompactList}\small\item\em Trace un carré d\textquotesingle{}une certaine taille. \end{DoxyCompactList}\item 
+void \hyperlink{TortuinoDessins_8h_ada93849cc1680d0d43bf6f9c1de954b2}{polygone\+Regulier} (int nb\+Cotes, float taille\+Cote)
+\begin{DoxyCompactList}\small\item\em Fait tracer au robot un polygone régulier en fonction du nombre de côtés souhaités et de la taille de chacun de ces côtés. \end{DoxyCompactList}\item 
+void \hyperlink{TortuinoDessins_8h_a57189e3fe807009b1595778589a16be9}{cercle} (float rayon)
+\begin{DoxyCompactList}\small\item\em Cette fonction est une tentative de réalisation d\textquotesingle{}un cercle automatiquement avec juste le rayon souhaité en entrée. \end{DoxyCompactList}\item 
+void \hyperlink{TortuinoDessins_8h_a39c1c8ca3b979edec7d841f1a71e50f1}{arbre} (int nb\+Niveaux, float taille\+Tronc)
+\begin{DoxyCompactList}\small\item\em Trace un arbre récursivement dont l\textquotesingle{}angle entre les branches est de 90 degrés et qui est symétrique par rapport à l\textquotesingle{}axe formé par son tronc. \end{DoxyCompactList}\item 
+void \hyperlink{TortuinoDessins_8h_ac8968b78a962de5017b660c5e8e37513}{arbre\+Symetrique} (int nb\+Niveaux, float taille\+Tronc, float angle\+Separation)
+\begin{DoxyCompactList}\small\item\em Trace un arbre récursivement dont l\textquotesingle{}angle entre les branches peut être précisé et qui est symétrique par rapport à l\textquotesingle{}axe formé par son tronc. \end{DoxyCompactList}\item 
+void \hyperlink{TortuinoDessins_8h_a29fa4a540a63b4e05fe0aee6d5b522c0}{arbre\+Asymetrique} (int nb\+Niveaux, float taille\+Tronc, float angle\+Separation, float angle\+Inclinaison)
+\begin{DoxyCompactList}\small\item\em Trace un arbre récursivement dont l\textquotesingle{}angle entre les branches et l\textquotesingle{}angle entre la branche de gauche et la branche mère moins 45 degrés peuvent être précisés \+: il est asymétrique par rapport à l\textquotesingle{}axe formé par son tronc. \end{DoxyCompactList}\item 
+void \hyperlink{TortuinoDessins_8h_a170bac7a60b14659e63b81c8eefac3dd}{sapin} (int nb\+Niveaux, float taille\+Tronc)
+\begin{DoxyCompactList}\small\item\em Utilise deux arbres asymétriques pour tracer un sapin, c\textquotesingle{}est-\/à-\/dire un arbre où chaque branche se sépare en trois autres \+: une continuant vers le haut (le tronc donc) et deux horizontales sur le côté (les branches donc). \end{DoxyCompactList}\item 
+void \hyperlink{TortuinoDessins_8h_af86cf0f8acc522368a052c765047a3a1}{courbe\+Von\+Koch} (int nb\+Niveaux, float taille)
+\begin{DoxyCompactList}\small\item\em Trace une \href{https://fr.wikipedia.org/wiki/Flocon_de_Koch#Courbe_de_Koch}{\tt courbe de Von Koch} paramétrée par son niveau et la taille du segment de départ. \end{DoxyCompactList}\item 
+void \hyperlink{TortuinoDessins_8h_afa05db28401a10aa6c4625a2de482484}{flocon} (int nb\+Niveaux, float taille)
+\begin{DoxyCompactList}\small\item\em Trace un \href{https://fr.wikipedia.org/wiki/Flocon_de_Koch#Flocon_de_Koch}{\tt flocon de Von Koch} paramétré par son niveau et la taille du segment de départ. \end{DoxyCompactList}\item 
+void \hyperlink{TortuinoDessins_8h_a0c851f0f43370a65c2da38436be9a764}{triangle\+Sierpinski} (int nb\+Niveaux, float taille)
+\begin{DoxyCompactList}\small\item\em Trace un \href{https://fr.wikipedia.org/wiki/Triangle_de_Sierpi%C5%84ski}{\tt triangle de Sierpiński} paramétré par son niveau et la taille globale du triangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Définition des fonctions implémentées dans \hyperlink{TortuinoDessins_8cpp}{Tortuino\+Dessins.\+cpp}. 
+
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Auteur}
+Paul Mabileau \href{mailto:paulmabileau@hotmail.fr}{\tt paulmabileau@hotmail.\+fr}
+\end{DoxyAuthor}
+Ce fichier constitue l\textquotesingle{}en-\/tête de \hyperlink{TortuinoDessins_8cpp}{Tortuino\+Dessins.\+cpp}. Il permet de préciser ce qui sera rendu accessible à d\textquotesingle{}autres programmes. Ici, ce sont des fonctions. 
+
+\subsection{Documentation des fonctions}
+\mbox{\Hypertarget{TortuinoDessins_8h_a39c1c8ca3b979edec7d841f1a71e50f1}\label{TortuinoDessins_8h_a39c1c8ca3b979edec7d841f1a71e50f1}} 
+\index{Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}!arbre@{arbre}}
+\index{arbre@{arbre}!Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}}
+\subsubsection{\texorpdfstring{arbre()}{arbre()}}
+{\footnotesize\ttfamily void arbre (\begin{DoxyParamCaption}\item[{int}]{nb\+Niveaux,  }\item[{float}]{taille\+Tronc }\end{DoxyParamCaption})}
+
+
+
+Trace un arbre récursivement dont l\textquotesingle{}angle entre les branches est de 90 degrés et qui est symétrique par rapport à l\textquotesingle{}axe formé par son tronc. 
+
+C\textquotesingle{}est donc un cas particulier de \hyperlink{TortuinoDessins_8cpp_ac8968b78a962de5017b660c5e8e37513}{arbre\+Symetrique(int nb\+Niveaux, float taille\+Tronc, float angle\+Separation)}.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nb\+Niveaux} & Le nombre de niveaux que l\textquotesingle{}arbre comprendra, c\textquotesingle{}est-\/à-\/dire le nombre de fois moins un que l\textquotesingle{}arbre va se séparer ou autrement dit la distance en nombre de branches entre la racine et chaque feuille. \\
+\hline
+{\em taille\+Tronc} & La taille du tronc de départ. Les branches qui en partiront auront leurs tailles d\textquotesingle{}un tier plus petites. \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 84 du fichier Tortuino\+Dessins.\+cpp.
+
+\mbox{\Hypertarget{TortuinoDessins_8h_a29fa4a540a63b4e05fe0aee6d5b522c0}\label{TortuinoDessins_8h_a29fa4a540a63b4e05fe0aee6d5b522c0}} 
+\index{Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}!arbre\+Asymetrique@{arbre\+Asymetrique}}
+\index{arbre\+Asymetrique@{arbre\+Asymetrique}!Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}}
+\subsubsection{\texorpdfstring{arbre\+Asymetrique()}{arbreAsymetrique()}}
+{\footnotesize\ttfamily void arbre\+Asymetrique (\begin{DoxyParamCaption}\item[{int}]{nb\+Niveaux,  }\item[{float}]{taille\+Tronc,  }\item[{float}]{angle\+Separation,  }\item[{float}]{angle\+Inclinaison }\end{DoxyParamCaption})}
+
+
+
+Trace un arbre récursivement dont l\textquotesingle{}angle entre les branches et l\textquotesingle{}angle entre la branche de gauche et la branche mère moins 45 degrés peuvent être précisés \+: il est asymétrique par rapport à l\textquotesingle{}axe formé par son tronc. 
+
+Il généralise donc un arbre.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nb\+Niveaux} & Le nombre de niveaux que l\textquotesingle{}arbre comprendra, c\textquotesingle{}est-\/à-\/dire le nombre de fois moins un que l\textquotesingle{}arbre va se séparer ou autrement dit la distance en nombre de branches entre la racine et chaque feuille. \\
+\hline
+{\em taille\+Tronc} & La taille du tronc de départ. Les branches qui en partiront auront leurs tailles d\textquotesingle{}un tier plus petites. \\
+\hline
+{\em angle\+Separation} & L\textquotesingle{}angle séparant les branches provenant d\textquotesingle{}une même branche mère. \\
+\hline
+{\em angle\+Inclinaison} & L\textquotesingle{}angle entre la branche de gauche et la branche mère moins 45 degrés. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{TortuinoDessins_8cpp_a39c1c8ca3b979edec7d841f1a71e50f1}{arbre(int nb\+Niveaux, float taille\+Tronc)} 
+
+\hyperlink{TortuinoDessins_8cpp_ac8968b78a962de5017b660c5e8e37513}{arbre\+Symetrique(int nb\+Niveaux, float taille\+Tronc, float angle\+Separation)} 
+\end{DoxySeeAlso}
+
+
+Définition à la ligne 120 du fichier Tortuino\+Dessins.\+cpp.
+
+\mbox{\Hypertarget{TortuinoDessins_8h_ac8968b78a962de5017b660c5e8e37513}\label{TortuinoDessins_8h_ac8968b78a962de5017b660c5e8e37513}} 
+\index{Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}!arbre\+Symetrique@{arbre\+Symetrique}}
+\index{arbre\+Symetrique@{arbre\+Symetrique}!Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}}
+\subsubsection{\texorpdfstring{arbre\+Symetrique()}{arbreSymetrique()}}
+{\footnotesize\ttfamily void arbre\+Symetrique (\begin{DoxyParamCaption}\item[{int}]{nb\+Niveaux,  }\item[{float}]{taille\+Tronc,  }\item[{float}]{angle\+Separation }\end{DoxyParamCaption})}
+
+
+
+Trace un arbre récursivement dont l\textquotesingle{}angle entre les branches peut être précisé et qui est symétrique par rapport à l\textquotesingle{}axe formé par son tronc. 
+
+C\textquotesingle{}est donc un cas particulier de \hyperlink{TortuinoDessins_8cpp_a29fa4a540a63b4e05fe0aee6d5b522c0}{arbre\+Asymetrique(int nb\+Niveaux, float taille\+Tronc, float angle\+Separation, float angle\+Inclinaison)}.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nb\+Niveaux} & Le nombre de niveaux que l\textquotesingle{}arbre comprendra, c\textquotesingle{}est-\/à-\/dire le nombre de fois moins un que l\textquotesingle{}arbre va se séparer ou autrement dit la distance en nombre de branches entre la racine et chaque feuille. \\
+\hline
+{\em taille\+Tronc} & La taille du tronc de départ. Les branches qui en partiront auront leurs tailles d\textquotesingle{}un tier plus petites. \\
+\hline
+{\em angle\+Separation} & L\textquotesingle{}angle séparant les branches provenant d\textquotesingle{}une même branche mère. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{TortuinoDessins_8cpp_a39c1c8ca3b979edec7d841f1a71e50f1}{arbre(int nb\+Niveaux, float taille\+Tronc)} 
+\end{DoxySeeAlso}
+
+
+Définition à la ligne 101 du fichier Tortuino\+Dessins.\+cpp.
+
+\mbox{\Hypertarget{TortuinoDessins_8h_a8fd6d1d3aad9c0c10525e5c8244a6ce1}\label{TortuinoDessins_8h_a8fd6d1d3aad9c0c10525e5c8244a6ce1}} 
+\index{Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}!carre@{carre}}
+\index{carre@{carre}!Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}}
+\subsubsection{\texorpdfstring{carre()}{carre()}}
+{\footnotesize\ttfamily void carre (\begin{DoxyParamCaption}\item[{float}]{taille\+Cote }\end{DoxyParamCaption})}
+
+
+
+Trace un carré d\textquotesingle{}une certaine taille. 
+
+En réalité, ce n\textquotesingle{}est qu\textquotesingle{}une adaptation de \hyperlink{TortuinoDessins_8cpp_ada93849cc1680d0d43bf6f9c1de954b2}{polygone\+Regulier(int nb\+Cotes, float taille\+Cote)} au cas particulier du carré.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em taille\+Cote} & La taille des côtés du carré. \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 55 du fichier Tortuino\+Dessins.\+cpp.
+
+\mbox{\Hypertarget{TortuinoDessins_8h_a57189e3fe807009b1595778589a16be9}\label{TortuinoDessins_8h_a57189e3fe807009b1595778589a16be9}} 
+\index{Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}!cercle@{cercle}}
+\index{cercle@{cercle}!Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}}
+\subsubsection{\texorpdfstring{cercle()}{cercle()}}
+{\footnotesize\ttfamily void cercle (\begin{DoxyParamCaption}\item[{float}]{rayon }\end{DoxyParamCaption})}
+
+
+
+Cette fonction est une tentative de réalisation d\textquotesingle{}un cercle automatiquement avec juste le rayon souhaité en entrée. 
+
+Seulement, cela ne fonctionne pas trop car il est difficile de décoréler les paramètres du robot pour pouvoir calculer les valeurs nécessaires à une approximation relativement correcte d\textquotesingle{}un cercle par un polygone régulier à un grand nombre de côtés.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em rayon} & Le rayon du cercle. \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 68 du fichier Tortuino\+Dessins.\+cpp.
+
+\mbox{\Hypertarget{TortuinoDessins_8h_af86cf0f8acc522368a052c765047a3a1}\label{TortuinoDessins_8h_af86cf0f8acc522368a052c765047a3a1}} 
+\index{Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}!courbe\+Von\+Koch@{courbe\+Von\+Koch}}
+\index{courbe\+Von\+Koch@{courbe\+Von\+Koch}!Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}}
+\subsubsection{\texorpdfstring{courbe\+Von\+Koch()}{courbeVonKoch()}}
+{\footnotesize\ttfamily void courbe\+Von\+Koch (\begin{DoxyParamCaption}\item[{int}]{nb\+Niveaux,  }\item[{float}]{taille }\end{DoxyParamCaption})}
+
+
+
+Trace une \href{https://fr.wikipedia.org/wiki/Flocon_de_Koch#Courbe_de_Koch}{\tt courbe de Von Koch} paramétrée par son niveau et la taille du segment de départ. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nb\+Niveaux} & Le nombre de niveaux de la courbe de Von Koch, par convention 1 donne un trait seulement. \\
+\hline
+{\em taille} & La taille du segment à partir de laquelle l\textquotesingle{}opération récursive est itérée, c\textquotesingle{}est-\/à-\/dire que contrairement à un arbre ou un polygone tels qu\textquotesingle{}implémentés ici, ajouter plus de niveaux ou de côtés n\textquotesingle{}augmente pas la taille globale de la courbe ; autrement dit, le segment de départ sert d\textquotesingle{}étalon pour en déduire à l\textquotesingle{}avance la taille des côtés engendrés. \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 165 du fichier Tortuino\+Dessins.\+cpp.
+
+\mbox{\Hypertarget{TortuinoDessins_8h_afa05db28401a10aa6c4625a2de482484}\label{TortuinoDessins_8h_afa05db28401a10aa6c4625a2de482484}} 
+\index{Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}!flocon@{flocon}}
+\index{flocon@{flocon}!Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}}
+\subsubsection{\texorpdfstring{flocon()}{flocon()}}
+{\footnotesize\ttfamily void flocon (\begin{DoxyParamCaption}\item[{int}]{nb\+Niveaux,  }\item[{float}]{taille }\end{DoxyParamCaption})}
+
+
+
+Trace un \href{https://fr.wikipedia.org/wiki/Flocon_de_Koch#Flocon_de_Koch}{\tt flocon de Von Koch} paramétré par son niveau et la taille du segment de départ. 
+
+C\textquotesingle{}est en fait une répétition de la \hyperlink{TortuinoDessins_8cpp_af86cf0f8acc522368a052c765047a3a1}{courbe\+Von\+Koch(int nb\+Niveaux, float taille)} \+: trois fois séparées par un angle intérieur de 120 degrés.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nb\+Niveaux} & Le nombre de niveaux du flocon de Von Koch, par convention 1 donne un triangle seulement. \\
+\hline
+{\em taille} & La taille du segment à partir de laquelle l\textquotesingle{}opération récursive est itérée, c\textquotesingle{}est-\/à-\/dire que contrairement à un arbre ou un polygone tels qu\textquotesingle{}implémentés ici, ajouter plus de niveaux ou de côtés n\textquotesingle{}augmente pas la taille globale du floncon ; autrement dit, le segment de départ sert d\textquotesingle{}étalon pour en déduire à l\textquotesingle{}avance la taille des côtés engendrés. \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 191 du fichier Tortuino\+Dessins.\+cpp.
+
+\mbox{\Hypertarget{TortuinoDessins_8h_ada93849cc1680d0d43bf6f9c1de954b2}\label{TortuinoDessins_8h_ada93849cc1680d0d43bf6f9c1de954b2}} 
+\index{Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}!polygone\+Regulier@{polygone\+Regulier}}
+\index{polygone\+Regulier@{polygone\+Regulier}!Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}}
+\subsubsection{\texorpdfstring{polygone\+Regulier()}{polygoneRegulier()}}
+{\footnotesize\ttfamily void polygone\+Regulier (\begin{DoxyParamCaption}\item[{int}]{nb\+Cotes,  }\item[{float}]{taille\+Cote }\end{DoxyParamCaption})}
+
+
+
+Fait tracer au robot un polygone régulier en fonction du nombre de côtés souhaités et de la taille de chacun de ces côtés. 
+
+Voir l\textquotesingle{}\href{https://fr.wikipedia.org/wiki/Polygone_r%C3%A9gulier}{\tt article Wikipédia} suivant pour plus de détails sur cette figure géométrique.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nb\+Cotes} & Le nombre de côtés du polygone à tracer. \\
+\hline
+{\em taille\+Cote} & La taille de chacun des côtés. \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 30 du fichier Tortuino\+Dessins.\+cpp.
+
+\mbox{\Hypertarget{TortuinoDessins_8h_a170bac7a60b14659e63b81c8eefac3dd}\label{TortuinoDessins_8h_a170bac7a60b14659e63b81c8eefac3dd}} 
+\index{Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}!sapin@{sapin}}
+\index{sapin@{sapin}!Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}}
+\subsubsection{\texorpdfstring{sapin()}{sapin()}}
+{\footnotesize\ttfamily void sapin (\begin{DoxyParamCaption}\item[{int}]{nb\+Niveaux,  }\item[{float}]{taille\+Tronc }\end{DoxyParamCaption})}
+
+
+
+Utilise deux arbres asymétriques pour tracer un sapin, c\textquotesingle{}est-\/à-\/dire un arbre où chaque branche se sépare en trois autres \+: une continuant vers le haut (le tronc donc) et deux horizontales sur le côté (les branches donc). 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nb\+Niveaux} & Le nombre de niveaux que l\textquotesingle{}arbre comprendra, c\textquotesingle{}est-\/à-\/dire le nombre de fois moins un que l\textquotesingle{}arbre va se séparer ou autrement dit la distance en nombre de branches entre la racine et chaque feuille. \\
+\hline
+{\em taille\+Tronc} & La taille du tronc de départ. Les branches qui en partiront auront leurs tailles d\textquotesingle{}un tier plus petites. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{TortuinoDessins_8cpp_a39c1c8ca3b979edec7d841f1a71e50f1}{arbre(int nb\+Niveaux, float taille\+Tronc)} 
+\end{DoxySeeAlso}
+
+
+Définition à la ligne 150 du fichier Tortuino\+Dessins.\+cpp.
+
+\mbox{\Hypertarget{TortuinoDessins_8h_afa3484b3831c738502a4c381600397ea}\label{TortuinoDessins_8h_afa3484b3831c738502a4c381600397ea}} 
+\index{Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}!triangle@{triangle}}
+\index{triangle@{triangle}!Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}}
+\subsubsection{\texorpdfstring{triangle()}{triangle()}}
+{\footnotesize\ttfamily void triangle (\begin{DoxyParamCaption}\item[{float}]{taille\+Cote }\end{DoxyParamCaption})}
+
+
+
+Trace un triangle equilatéral d\textquotesingle{}une certaine taille. 
+
+En réalité, ce n\textquotesingle{}est qu\textquotesingle{}une adaptation de \hyperlink{TortuinoDessins_8cpp_ada93849cc1680d0d43bf6f9c1de954b2}{polygone\+Regulier(int nb\+Cotes, float taille\+Cote)} au cas particulier du triangle equilatéral.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em taille\+Cote} & La taille des côtés du triangle. \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 44 du fichier Tortuino\+Dessins.\+cpp.
+
+\mbox{\Hypertarget{TortuinoDessins_8h_a0c851f0f43370a65c2da38436be9a764}\label{TortuinoDessins_8h_a0c851f0f43370a65c2da38436be9a764}} 
+\index{Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}!triangle\+Sierpinski@{triangle\+Sierpinski}}
+\index{triangle\+Sierpinski@{triangle\+Sierpinski}!Tortuino\+Dessins.\+h@{Tortuino\+Dessins.\+h}}
+\subsubsection{\texorpdfstring{triangle\+Sierpinski()}{triangleSierpinski()}}
+{\footnotesize\ttfamily void triangle\+Sierpinski (\begin{DoxyParamCaption}\item[{int}]{nb\+Niveaux,  }\item[{float}]{taille }\end{DoxyParamCaption})}
+
+
+
+Trace un \href{https://fr.wikipedia.org/wiki/Triangle_de_Sierpi%C5%84ski}{\tt triangle de Sierpiński} paramétré par son niveau et la taille globale du triangle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nb\+Niveaux} & Le nombre de niveaux du triangle de Sierpiński. \\
+\hline
+{\em taille} & La taille du segment de départ qui sera conservée au fur et à mesure des itérations de l\textquotesingle{}algorithme de Sierpiński ; idem à ce que fait \hyperlink{TortuinoDessins_8cpp_afa05db28401a10aa6c4625a2de482484}{flocon(int nb\+Niveaux, float taille)} \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 206 du fichier Tortuino\+Dessins.\+cpp.
+

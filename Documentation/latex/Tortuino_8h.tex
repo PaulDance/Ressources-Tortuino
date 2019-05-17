@@ -1,0 +1,288 @@
+\hypertarget{Tortuino_8h}{}\section{Référence du fichier Tortuino/\+Tortuino.h}
+\label{Tortuino_8h}\index{Tortuino/\+Tortuino.\+h@{Tortuino/\+Tortuino.\+h}}
+
+
+Définition des fonctions implémentées dans \hyperlink{Tortuino_8cpp}{Tortuino.\+cpp}.  
+
+
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Tortuino_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{Tortuino_8h_a2af89837a61b0af5c06394e5956c81d0}{initialiser} ()
+\begin{DoxyCompactList}\small\item\em Initialise la configuration du robot pour qu\textquotesingle{}il puisse correctement communiquer avec ses différents composants qui le constituent \+: le servomoteur, les moteurs pas à pas et le bouton de démarrage différé. \end{DoxyCompactList}\item 
+void \hyperlink{Tortuino_8h_ace2f9a05f9c51fcf5151c1e1c5ef107c}{initialiser} (float braquage)
+\begin{DoxyCompactList}\small\item\em Cette version de l\textquotesingle{}opération d\textquotesingle{}initialisation est utile à la calibration d\textquotesingle{}un robot car affecte directement au rayon de braquage la valeur fournie en entrée. \end{DoxyCompactList}\item 
+void \hyperlink{Tortuino_8h_a48aa40d2f100ef290066c45fd4348553}{initialiser} (char couleur)
+\begin{DoxyCompactList}\small\item\em Cette version de l\textquotesingle{}opération d\textquotesingle{}initialisation met en place une méthode pour calibrer chaque robot à souhait pour que les erreurs systématiques au moment de la rotation puissent être compensées. \end{DoxyCompactList}\item 
+void \hyperlink{Tortuino_8h_ac3d131be17dee64b89b0806bd4ee37b2}{attendre\+Bouton} ()
+\begin{DoxyCompactList}\small\item\em Réalise l\textquotesingle{}attente nécessaire à la fonctionnalité du démarrage différé. \end{DoxyCompactList}\item 
+void \hyperlink{Tortuino_8h_ad4869b51496adaf96ca447f5c7398197}{stopper} ()
+\begin{DoxyCompactList}\small\item\em Permet de mettre à l\textquotesingle{}arrêt l\textquotesingle{}exécution en cours que réalise l\textquotesingle{}Arduino. \end{DoxyCompactList}\item 
+void \hyperlink{Tortuino_8h_ab7928bf519ac707766463d32330ae02c}{vitesse} (int v)
+\begin{DoxyCompactList}\small\item\em Règle la vitesse de rotation des moteurs pas à pas. \end{DoxyCompactList}\item 
+void \hyperlink{Tortuino_8h_a64bb28327d74796c2c81845523b7425f}{avancer} (float distance)
+\begin{DoxyCompactList}\small\item\em Fait avancer le robot Tortuino d\textquotesingle{}une distance donnée. \end{DoxyCompactList}\item 
+void \hyperlink{Tortuino_8h_adb4b90c2b3dd8a5aba981068df36bba0}{reculer} (float distance)
+\begin{DoxyCompactList}\small\item\em Fait reculer le robot Tortuino d\textquotesingle{}une distance donnée. \end{DoxyCompactList}\item 
+void \hyperlink{Tortuino_8h_a68c284f58ca18c57a5937859031ec16b}{tourner\+Gauche} (float angle)
+\begin{DoxyCompactList}\small\item\em Fait tourner sur place le robot Tortuino d\textquotesingle{}un angle fourni vers sa gauche. \end{DoxyCompactList}\item 
+void \hyperlink{Tortuino_8h_aa9d442166cb63de9ad4e85e6540a276f}{tourner\+Droite} (float angle)
+\begin{DoxyCompactList}\small\item\em Fait tourner sur place le robot Tortuino d\textquotesingle{}un angle fourni vers sa droite. \end{DoxyCompactList}\item 
+void \hyperlink{Tortuino_8h_af6c422d84f31684d84208dd0a3828449}{monter\+Feutre} ()
+\begin{DoxyCompactList}\small\item\em Place le feutre en position haute de telle manière qu\textquotesingle{}il ne touche pas la feuille en-\/dessous du robot, en supposant que le collier le tenant et permettant ce déplacement soit correctement ajusté. \end{DoxyCompactList}\item 
+void \hyperlink{Tortuino_8h_a38b27067ab836a2120ab4946d4fccf63}{descendre\+Feutre} ()
+\begin{DoxyCompactList}\small\item\em Place le feutre en position basse de telle manière qu\textquotesingle{}il touche la feuille en-\/dessous du robot, en supposant que le collier le tenant et permettant ce déplacement soit correctement ajusté. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Définition des fonctions implémentées dans \hyperlink{Tortuino_8cpp}{Tortuino.\+cpp}. 
+
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Auteur}
+Paul Mabileau \href{mailto:paulmabileau@hotmail.fr}{\tt paulmabileau@hotmail.\+fr}
+\end{DoxyAuthor}
+Ce fichier constitue l\textquotesingle{}en-\/tête de \hyperlink{Tortuino_8cpp}{Tortuino.\+cpp}. Il permet de préciser ce qui sera rendu accessible à d\textquotesingle{}autres programmes. Ici, ce sont des fonctions. 
+
+\subsection{Documentation des fonctions}
+\mbox{\Hypertarget{Tortuino_8h_ac3d131be17dee64b89b0806bd4ee37b2}\label{Tortuino_8h_ac3d131be17dee64b89b0806bd4ee37b2}} 
+\index{Tortuino.\+h@{Tortuino.\+h}!attendre\+Bouton@{attendre\+Bouton}}
+\index{attendre\+Bouton@{attendre\+Bouton}!Tortuino.\+h@{Tortuino.\+h}}
+\subsubsection{\texorpdfstring{attendre\+Bouton()}{attendreBouton()}}
+{\footnotesize\ttfamily void attendre\+Bouton (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Réalise l\textquotesingle{}attente nécessaire à la fonctionnalité du démarrage différé. 
+
+L\textquotesingle{}exécution de cette fonction bloquera tant que le bouton en question n\textquotesingle{}a pas été appuyé. 
+
+Définition à la ligne 127 du fichier Tortuino.\+cpp.
+
+\mbox{\Hypertarget{Tortuino_8h_a64bb28327d74796c2c81845523b7425f}\label{Tortuino_8h_a64bb28327d74796c2c81845523b7425f}} 
+\index{Tortuino.\+h@{Tortuino.\+h}!avancer@{avancer}}
+\index{avancer@{avancer}!Tortuino.\+h@{Tortuino.\+h}}
+\subsubsection{\texorpdfstring{avancer()}{avancer()}}
+{\footnotesize\ttfamily void avancer (\begin{DoxyParamCaption}\item[{float}]{distance }\end{DoxyParamCaption})}
+
+
+
+Fait avancer le robot Tortuino d\textquotesingle{}une distance donnée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em distance} & La distance en centimètres à parcourir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{Tortuino_8cpp_adb4b90c2b3dd8a5aba981068df36bba0}{reculer(float distance)} 
+\end{DoxySeeAlso}
+
+
+Définition à la ligne 167 du fichier Tortuino.\+cpp.
+
+\mbox{\Hypertarget{Tortuino_8h_a38b27067ab836a2120ab4946d4fccf63}\label{Tortuino_8h_a38b27067ab836a2120ab4946d4fccf63}} 
+\index{Tortuino.\+h@{Tortuino.\+h}!descendre\+Feutre@{descendre\+Feutre}}
+\index{descendre\+Feutre@{descendre\+Feutre}!Tortuino.\+h@{Tortuino.\+h}}
+\subsubsection{\texorpdfstring{descendre\+Feutre()}{descendreFeutre()}}
+{\footnotesize\ttfamily void descendre\+Feutre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Place le feutre en position basse de telle manière qu\textquotesingle{}il touche la feuille en-\/dessous du robot, en supposant que le collier le tenant et permettant ce déplacement soit correctement ajusté. 
+
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{Tortuino_8cpp_af6c422d84f31684d84208dd0a3828449}{monter\+Feutre()} 
+\end{DoxySeeAlso}
+
+
+Définition à la ligne 243 du fichier Tortuino.\+cpp.
+
+\mbox{\Hypertarget{Tortuino_8h_a2af89837a61b0af5c06394e5956c81d0}\label{Tortuino_8h_a2af89837a61b0af5c06394e5956c81d0}} 
+\index{Tortuino.\+h@{Tortuino.\+h}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!Tortuino.\+h@{Tortuino.\+h}}
+\subsubsection{\texorpdfstring{initialiser()}{initialiser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void initialiser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialise la configuration du robot pour qu\textquotesingle{}il puisse correctement communiquer avec ses différents composants qui le constituent \+: le servomoteur, les moteurs pas à pas et le bouton de démarrage différé. 
+
+Au cours de cette configuration, elle met le robot dans un état standard qui sera ainsi toujours le même au début de l\textquotesingle{}exécution de chaque essai \+: la vitesse de rotation des moteurs pas à pas est par défaut de 10 et le feutre est en position basse. Cette fonction à sa fin fait appel à \hyperlink{Tortuino_8cpp_ac3d131be17dee64b89b0806bd4ee37b2}{attendre\+Bouton()} qui bloquera tant que le bouton de démarrage différé n\textquotesingle{}est pas appuyé. 
+
+Définition à la ligne 67 du fichier Tortuino.\+cpp.
+
+\mbox{\Hypertarget{Tortuino_8h_ace2f9a05f9c51fcf5151c1e1c5ef107c}\label{Tortuino_8h_ace2f9a05f9c51fcf5151c1e1c5ef107c}} 
+\index{Tortuino.\+h@{Tortuino.\+h}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!Tortuino.\+h@{Tortuino.\+h}}
+\subsubsection{\texorpdfstring{initialiser()}{initialiser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void initialiser (\begin{DoxyParamCaption}\item[{float}]{braquage }\end{DoxyParamCaption})}
+
+
+
+Cette version de l\textquotesingle{}opération d\textquotesingle{}initialisation est utile à la calibration d\textquotesingle{}un robot car affecte directement au rayon de braquage la valeur fournie en entrée. 
+
+Le reste de l\textquotesingle{}initialisation est bien entendu aussi réalisé.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em braquage} & La valeur du rayon de braquage à utiliser. \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 118 du fichier Tortuino.\+cpp.
+
+\mbox{\Hypertarget{Tortuino_8h_a48aa40d2f100ef290066c45fd4348553}\label{Tortuino_8h_a48aa40d2f100ef290066c45fd4348553}} 
+\index{Tortuino.\+h@{Tortuino.\+h}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!Tortuino.\+h@{Tortuino.\+h}}
+\subsubsection{\texorpdfstring{initialiser()}{initialiser()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void initialiser (\begin{DoxyParamCaption}\item[{char}]{couleur }\end{DoxyParamCaption})}
+
+
+
+Cette version de l\textquotesingle{}opération d\textquotesingle{}initialisation met en place une méthode pour calibrer chaque robot à souhait pour que les erreurs systématiques au moment de la rotation puissent être compensées. 
+
+Le choix qui a été fait ici est de donner à chaque robot une couleur (par exemple de la plaquette d\textquotesingle{}expérimentation électrique) représentée par la première lettre de son écriture et qui l\textquotesingle{}identifie de manière unique. Ensuite, grâce à une correspondance établie au préalable, la valeur du rayon de braquage est affectée par cette fonction, retrouvant ainsi le calibrage effectué. ~\newline
+ Le reste de l\textquotesingle{}initialisation est bien entendu aussi réalisé.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em couleur} & La première lettre de la couleur identifiant le robot utilisé. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{Tortuino_8cpp_a2af89837a61b0af5c06394e5956c81d0}{initialiser()} 
+\end{DoxySeeAlso}
+
+
+Définition à la ligne 89 du fichier Tortuino.\+cpp.
+
+\mbox{\Hypertarget{Tortuino_8h_af6c422d84f31684d84208dd0a3828449}\label{Tortuino_8h_af6c422d84f31684d84208dd0a3828449}} 
+\index{Tortuino.\+h@{Tortuino.\+h}!monter\+Feutre@{monter\+Feutre}}
+\index{monter\+Feutre@{monter\+Feutre}!Tortuino.\+h@{Tortuino.\+h}}
+\subsubsection{\texorpdfstring{monter\+Feutre()}{monterFeutre()}}
+{\footnotesize\ttfamily void monter\+Feutre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Place le feutre en position haute de telle manière qu\textquotesingle{}il ne touche pas la feuille en-\/dessous du robot, en supposant que le collier le tenant et permettant ce déplacement soit correctement ajusté. 
+
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{Tortuino_8cpp_a38b27067ab836a2120ab4946d4fccf63}{descendre\+Feutre()} 
+\end{DoxySeeAlso}
+
+
+Définition à la ligne 231 du fichier Tortuino.\+cpp.
+
+\mbox{\Hypertarget{Tortuino_8h_adb4b90c2b3dd8a5aba981068df36bba0}\label{Tortuino_8h_adb4b90c2b3dd8a5aba981068df36bba0}} 
+\index{Tortuino.\+h@{Tortuino.\+h}!reculer@{reculer}}
+\index{reculer@{reculer}!Tortuino.\+h@{Tortuino.\+h}}
+\subsubsection{\texorpdfstring{reculer()}{reculer()}}
+{\footnotesize\ttfamily void reculer (\begin{DoxyParamCaption}\item[{float}]{distance }\end{DoxyParamCaption})}
+
+
+
+Fait reculer le robot Tortuino d\textquotesingle{}une distance donnée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em distance} & La distance en centimètres à parcourir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{Tortuino_8cpp_a64bb28327d74796c2c81845523b7425f}{avancer(float distance)} 
+\end{DoxySeeAlso}
+
+
+Définition à la ligne 185 du fichier Tortuino.\+cpp.
+
+\mbox{\Hypertarget{Tortuino_8h_ad4869b51496adaf96ca447f5c7398197}\label{Tortuino_8h_ad4869b51496adaf96ca447f5c7398197}} 
+\index{Tortuino.\+h@{Tortuino.\+h}!stopper@{stopper}}
+\index{stopper@{stopper}!Tortuino.\+h@{Tortuino.\+h}}
+\subsubsection{\texorpdfstring{stopper()}{stopper()}}
+{\footnotesize\ttfamily void stopper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Permet de mettre à l\textquotesingle{}arrêt l\textquotesingle{}exécution en cours que réalise l\textquotesingle{}Arduino. 
+
+Cette fonction peut se révéler utile si le croquis Arduino utilise la fonction loop() mais souhaite à un moment donné stopper le robot. 
+
+Définition à la ligne 147 du fichier Tortuino.\+cpp.
+
+\mbox{\Hypertarget{Tortuino_8h_aa9d442166cb63de9ad4e85e6540a276f}\label{Tortuino_8h_aa9d442166cb63de9ad4e85e6540a276f}} 
+\index{Tortuino.\+h@{Tortuino.\+h}!tourner\+Droite@{tourner\+Droite}}
+\index{tourner\+Droite@{tourner\+Droite}!Tortuino.\+h@{Tortuino.\+h}}
+\subsubsection{\texorpdfstring{tourner\+Droite()}{tournerDroite()}}
+{\footnotesize\ttfamily void tourner\+Droite (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+Fait tourner sur place le robot Tortuino d\textquotesingle{}un angle fourni vers sa droite. 
+
+La rotation s\textquotesingle{}effectue autour de l\textquotesingle{}axe de décrit le feutre positionné dans l\textquotesingle{}emplacement prévu à cet effet, de sorte que s\textquotesingle{}il reste baisser lors de l\textquotesingle{}opération, cela ne laisse pas de cercle de tracé derrière le robot.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em angle} & L\textquotesingle{}angle en degrés de rotation vers la gauche à effectuer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{Tortuino_8cpp_a68c284f58ca18c57a5937859031ec16b}{tourner\+Gauche(float angle)} 
+\end{DoxySeeAlso}
+
+
+Définition à la ligne 220 du fichier Tortuino.\+cpp.
+
+\mbox{\Hypertarget{Tortuino_8h_a68c284f58ca18c57a5937859031ec16b}\label{Tortuino_8h_a68c284f58ca18c57a5937859031ec16b}} 
+\index{Tortuino.\+h@{Tortuino.\+h}!tourner\+Gauche@{tourner\+Gauche}}
+\index{tourner\+Gauche@{tourner\+Gauche}!Tortuino.\+h@{Tortuino.\+h}}
+\subsubsection{\texorpdfstring{tourner\+Gauche()}{tournerGauche()}}
+{\footnotesize\ttfamily void tourner\+Gauche (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+Fait tourner sur place le robot Tortuino d\textquotesingle{}un angle fourni vers sa gauche. 
+
+La rotation s\textquotesingle{}effectue autour de l\textquotesingle{}axe de décrit le feutre positionné dans l\textquotesingle{}emplacement prévu à cet effet, de sorte que s\textquotesingle{}il reste baisser lors de l\textquotesingle{}opération, cela ne laisse pas de cercle de tracé derrière le robot.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em angle} & L\textquotesingle{}angle en degrés de rotation vers la gauche à effectuer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{Tortuino_8cpp_aa9d442166cb63de9ad4e85e6540a276f}{tourner\+Droite(float angle)} 
+\end{DoxySeeAlso}
+
+
+Définition à la ligne 198 du fichier Tortuino.\+cpp.
+
+\mbox{\Hypertarget{Tortuino_8h_ab7928bf519ac707766463d32330ae02c}\label{Tortuino_8h_ab7928bf519ac707766463d32330ae02c}} 
+\index{Tortuino.\+h@{Tortuino.\+h}!vitesse@{vitesse}}
+\index{vitesse@{vitesse}!Tortuino.\+h@{Tortuino.\+h}}
+\subsubsection{\texorpdfstring{vitesse()}{vitesse()}}
+{\footnotesize\ttfamily void vitesse (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+Règle la vitesse de rotation des moteurs pas à pas. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em v} & La valeur entière de la vitesse à affecter aux moteurs pas à pas. \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 157 du fichier Tortuino.\+cpp.
+

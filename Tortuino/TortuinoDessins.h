@@ -1,4 +1,15 @@
 
+/**
+ * @file TortuinoDessins.h
+ * @brief Définition des fonctions implémentées dans TortuinoDessins.cpp
+ * @version 1.1
+ * @author Paul Mabileau <paulmabileau@hotmail.fr>
+ *
+ * Ce fichier constitue l'en-tête de TortuinoDessins.cpp. Il permet de préciser ce
+ * qui sera rendu accessible à d'autres programmes. Ici, ce sont des fonctions.
+ */
+
+
 # ifndef TORTUINO_DESSINS_h
 #	define TORTUINO_DESSINS_h
 	

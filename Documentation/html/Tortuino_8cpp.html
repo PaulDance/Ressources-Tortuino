@@ -1,0 +1,789 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tortuino: Référence du fichier Tortuino/Tortuino.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo-tortuino-small.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tortuino
+   </div>
+   <div id="projectbrief">Une animation interactive initiant à la programmation grâce à une carte Arduino contrôlant un robot tortue qui dessine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Tortuino_8cpp.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier Tortuino.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ce fichier décrit les instructions de base pour contrôler le robot.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;SD.h&gt;</code><br />
+<code>#include &lt;SPI.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="Tortuino_8h_source.html">Tortuino.h</a>&gt;</code><br />
+<code>#include &lt;Stepper.h&gt;</code><br />
+<code>#include &lt;Servo.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Graphe des dépendances par inclusion de Tortuino.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="Tortuino_8cpp__incl.png" border="0" usemap="#Tortuino_2Tortuino_8cpp" alt=""/></div>
+<map name="Tortuino_2Tortuino_8cpp" id="Tortuino_2Tortuino_8cpp">
+<area shape="rect" id="node4" href="Tortuino_8h.html" title="Définition des fonctions implémentées dans Tortuino.cpp. " alt="" coords="161,80,241,107"/>
+</map>
+</div>
+</div>
+<p><a href="Tortuino_8cpp_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:aafd65bcf38b0045f1e0ee681061a9e7c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#aafd65bcf38b0045f1e0ee681061a9e7c">distanceToStep</a> (float distance)</td></tr>
+<tr class="memdesc:aafd65bcf38b0045f1e0ee681061a9e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Réalise la conversion d'une distance que le robot peut parcourir en un certain nombre de pas que chacun des deux moteurs pas à pas doit effectuer pour que le robot puisse avancer de la distance donnée.  <a href="#aafd65bcf38b0045f1e0ee681061a9e7c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aafd65bcf38b0045f1e0ee681061a9e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af89837a61b0af5c06394e5956c81d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a2af89837a61b0af5c06394e5956c81d0">initialiser</a> ()</td></tr>
+<tr class="memdesc:a2af89837a61b0af5c06394e5956c81d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise la configuration du robot pour qu'il puisse correctement communiquer avec ses différents composants qui le constituent : le servomoteur, les moteurs pas à pas et le bouton de démarrage différé.  <a href="#a2af89837a61b0af5c06394e5956c81d0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2af89837a61b0af5c06394e5956c81d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48aa40d2f100ef290066c45fd4348553"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a48aa40d2f100ef290066c45fd4348553">initialiser</a> (char couleur)</td></tr>
+<tr class="memdesc:a48aa40d2f100ef290066c45fd4348553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette version de l'opération d'initialisation met en place une méthode pour calibrer chaque robot à souhait pour que les erreurs systématiques au moment de la rotation puissent être compensées.  <a href="#a48aa40d2f100ef290066c45fd4348553">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a48aa40d2f100ef290066c45fd4348553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2f9a05f9c51fcf5151c1e1c5ef107c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#ace2f9a05f9c51fcf5151c1e1c5ef107c">initialiser</a> (float braquage)</td></tr>
+<tr class="memdesc:ace2f9a05f9c51fcf5151c1e1c5ef107c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette version de l'opération d'initialisation est utile à la calibration d'un robot car affecte directement au rayon de braquage la valeur fournie en entrée.  <a href="#ace2f9a05f9c51fcf5151c1e1c5ef107c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ace2f9a05f9c51fcf5151c1e1c5ef107c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d131be17dee64b89b0806bd4ee37b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#ac3d131be17dee64b89b0806bd4ee37b2">attendreBouton</a> ()</td></tr>
+<tr class="memdesc:ac3d131be17dee64b89b0806bd4ee37b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Réalise l'attente nécessaire à la fonctionnalité du démarrage différé.  <a href="#ac3d131be17dee64b89b0806bd4ee37b2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac3d131be17dee64b89b0806bd4ee37b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4869b51496adaf96ca447f5c7398197"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#ad4869b51496adaf96ca447f5c7398197">stopper</a> ()</td></tr>
+<tr class="memdesc:ad4869b51496adaf96ca447f5c7398197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de mettre à l'arrêt l'exécution en cours que réalise l'Arduino.  <a href="#ad4869b51496adaf96ca447f5c7398197">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad4869b51496adaf96ca447f5c7398197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7928bf519ac707766463d32330ae02c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#ab7928bf519ac707766463d32330ae02c">vitesse</a> (int v)</td></tr>
+<tr class="memdesc:ab7928bf519ac707766463d32330ae02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Règle la vitesse de rotation des moteurs pas à pas.  <a href="#ab7928bf519ac707766463d32330ae02c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab7928bf519ac707766463d32330ae02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64bb28327d74796c2c81845523b7425f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a64bb28327d74796c2c81845523b7425f">avancer</a> (float distance)</td></tr>
+<tr class="memdesc:a64bb28327d74796c2c81845523b7425f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fait avancer le robot Tortuino d'une distance donnée.  <a href="#a64bb28327d74796c2c81845523b7425f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a64bb28327d74796c2c81845523b7425f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4b90c2b3dd8a5aba981068df36bba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#adb4b90c2b3dd8a5aba981068df36bba0">reculer</a> (float distance)</td></tr>
+<tr class="memdesc:adb4b90c2b3dd8a5aba981068df36bba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fait reculer le robot Tortuino d'une distance donnée.  <a href="#adb4b90c2b3dd8a5aba981068df36bba0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:adb4b90c2b3dd8a5aba981068df36bba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c284f58ca18c57a5937859031ec16b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a68c284f58ca18c57a5937859031ec16b">tournerGauche</a> (float angle)</td></tr>
+<tr class="memdesc:a68c284f58ca18c57a5937859031ec16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fait tourner sur place le robot Tortuino d'un angle fourni vers sa gauche.  <a href="#a68c284f58ca18c57a5937859031ec16b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a68c284f58ca18c57a5937859031ec16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9d442166cb63de9ad4e85e6540a276f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#aa9d442166cb63de9ad4e85e6540a276f">tournerDroite</a> (float angle)</td></tr>
+<tr class="memdesc:aa9d442166cb63de9ad4e85e6540a276f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fait tourner sur place le robot Tortuino d'un angle fourni vers sa droite.  <a href="#aa9d442166cb63de9ad4e85e6540a276f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa9d442166cb63de9ad4e85e6540a276f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c422d84f31684d84208dd0a3828449"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#af6c422d84f31684d84208dd0a3828449">monterFeutre</a> ()</td></tr>
+<tr class="memdesc:af6c422d84f31684d84208dd0a3828449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place le feutre en position haute de telle manière qu'il ne touche pas la feuille en-dessous du robot, en supposant que le collier le tenant et permettant ce déplacement soit correctement ajusté.  <a href="#af6c422d84f31684d84208dd0a3828449">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af6c422d84f31684d84208dd0a3828449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b27067ab836a2120ab4946d4fccf63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a38b27067ab836a2120ab4946d4fccf63">descendreFeutre</a> ()</td></tr>
+<tr class="memdesc:a38b27067ab836a2120ab4946d4fccf63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place le feutre en position basse de telle manière qu'il touche la feuille en-dessous du robot, en supposant que le collier le tenant et permettant ce déplacement soit correctement ajusté.  <a href="#a38b27067ab836a2120ab4946d4fccf63">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a38b27067ab836a2120ab4946d4fccf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a0dffab4a0297ba1dfc85381688a235bb"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a0dffab4a0297ba1dfc85381688a235bb">stepsPerRevolution</a> = 64 * 64 / 2</td></tr>
+<tr class="memdesc:a0dffab4a0297ba1dfc85381688a235bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nombre de pas par tour que réalise un moteur pas à pas ; c'est une donnée constructeur.  <a href="#a0dffab4a0297ba1dfc85381688a235bb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0dffab4a0297ba1dfc85381688a235bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac294c99f76085cbe8d1b91ae882532b6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#ac294c99f76085cbe8d1b91ae882532b6">PERIMETER</a> = M_PI * 9.2</td></tr>
+<tr class="memdesc:ac294c99f76085cbe8d1b91ae882532b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le périmètre des roues du robot tel que mesuré avec le pneu.  <a href="#ac294c99f76085cbe8d1b91ae882532b6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac294c99f76085cbe8d1b91ae882532b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2090d1bfbb42f24c35995f26bce5d88d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a2090d1bfbb42f24c35995f26bce5d88d">BRAQUAGE</a> = 11.3 / 2</td></tr>
+<tr class="memdesc:a2090d1bfbb42f24c35995f26bce5d88d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le rayon de braquage du robot.  <a href="#a2090d1bfbb42f24c35995f26bce5d88d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2090d1bfbb42f24c35995f26bce5d88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb58d9f9a2f6fc5feee08a6b8608923b"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#acb58d9f9a2f6fc5feee08a6b8608923b">FEUTRE_HAUT</a> = 50</td></tr>
+<tr class="memdesc:acb58d9f9a2f6fc5feee08a6b8608923b"><td class="mdescLeft">&#160;</td><td class="mdescRight">L'angle de la position haute du servomoteur.  <a href="#acb58d9f9a2f6fc5feee08a6b8608923b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acb58d9f9a2f6fc5feee08a6b8608923b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f3d019fd98fa45800ff50e070168428"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a2f3d019fd98fa45800ff50e070168428">FEUTRE_BAS</a> = 10</td></tr>
+<tr class="memdesc:a2f3d019fd98fa45800ff50e070168428"><td class="mdescLeft">&#160;</td><td class="mdescRight">L'angle de la position basse du servomoteur.  <a href="#a2f3d019fd98fa45800ff50e070168428">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2f3d019fd98fa45800ff50e070168428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58fc84b520fc48bc331849155ce88f5d"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a58fc84b520fc48bc331849155ce88f5d">portBouton</a> = 7</td></tr>
+<tr class="memdesc:a58fc84b520fc48bc331849155ce88f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le numéro de la broche qui sert de port pour le bouton permettant le démarrage différé : 7.  <a href="#a58fc84b520fc48bc331849155ce88f5d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a58fc84b520fc48bc331849155ce88f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb30e18355c39519e306b7aff1cf8d7e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#acb30e18355c39519e306b7aff1cf8d7e">portServo</a> = 9</td></tr>
+<tr class="memdesc:acb30e18355c39519e306b7aff1cf8d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le numéro de la broche pour le port du servomoteur : 9.  <a href="#acb30e18355c39519e306b7aff1cf8d7e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acb30e18355c39519e306b7aff1cf8d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a639b5a8ddf6d8835ceb24ef9ceb53795"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a639b5a8ddf6d8835ceb24ef9ceb53795">delaiBouton</a> = 10</td></tr>
+<tr class="memdesc:a639b5a8ddf6d8835ceb24ef9ceb53795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le délai en ms entre chaque test du bouton.  <a href="#a639b5a8ddf6d8835ceb24ef9ceb53795">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a639b5a8ddf6d8835ceb24ef9ceb53795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fbf55c6d4908a32d7594ce830c0da7e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a0fbf55c6d4908a32d7594ce830c0da7e">delaiMonterDescendre</a> = 200</td></tr>
+<tr class="memdesc:a0fbf55c6d4908a32d7594ce830c0da7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le délai en ms d'attente après l'envoi d'une commande au feutre.  <a href="#a0fbf55c6d4908a32d7594ce830c0da7e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0fbf55c6d4908a32d7594ce830c0da7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42114b3d3de9e085781f2eecb975fe30"><td class="memItemLeft" align="right" valign="top">Stepper&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a42114b3d3de9e085781f2eecb975fe30">stepperLeft</a></td></tr>
+<tr class="memdesc:a42114b3d3de9e085781f2eecb975fe30"><td class="mdescLeft">&#160;</td><td class="mdescRight">L'objet qui sert à contrôler le moteur pas à pas de gauche et qui est relié aux ports 10 à 13.  <a href="#a42114b3d3de9e085781f2eecb975fe30">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a42114b3d3de9e085781f2eecb975fe30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aacc3ab5a103b7b2287ea1569df491a"><td class="memItemLeft" align="right" valign="top">Stepper&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a9aacc3ab5a103b7b2287ea1569df491a">stepperRight</a></td></tr>
+<tr class="memdesc:a9aacc3ab5a103b7b2287ea1569df491a"><td class="mdescLeft">&#160;</td><td class="mdescRight">L'objet qui sert à contrôler le moteur pas à pas de droite et qui est relié aux ports 2 à 5.  <a href="#a9aacc3ab5a103b7b2287ea1569df491a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9aacc3ab5a103b7b2287ea1569df491a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79efceea669fb85a732c30f47cf7e59c"><td class="memItemLeft" align="right" valign="top">Servo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a79efceea669fb85a732c30f47cf7e59c">servo</a></td></tr>
+<tr class="memdesc:a79efceea669fb85a732c30f47cf7e59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">L'objet qui sert à contrôler le servomoteur soulevant et abaissant le feutre du robot.  <a href="#a79efceea669fb85a732c30f47cf7e59c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a79efceea669fb85a732c30f47cf7e59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Ce fichier décrit les instructions de base pour contrôler le robot. </p>
+<p>Ce fichier met à disposition quelques dessins qu'il peut être intéressant d'essayer.</p>
+<dl class="section author"><dt>Auteur</dt><dd>Alexandre Comte </dd>
+<dd>
+Paul Mabileau <a href="#" onclick="location.href='mai'+'lto:'+'pau'+'lm'+'abi'+'le'+'au@'+'ho'+'tma'+'il'+'.fr'; return false;">paulm<span style="display: none;">.nosp@m.</span>abil<span style="display: none;">.nosp@m.</span>eau@h<span style="display: none;">.nosp@m.</span>otma<span style="display: none;">.nosp@m.</span>il.fr</a> </dd>
+<dd>
+Florian Bescher </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.2</dd></dl>
+<p>Le fichier <a class="el" href="Tortuino_8cpp.html" title="Ce fichier décrit les instructions de base pour contrôler le robot. ">Tortuino.cpp</a> rassemble les fonctionnalités essentielles au bon fonctionnement de la communication avec un robot Tortuino. Ces fonctionnalités sont principalement réalisées et mises à disposition au travers de fonctions qui les implémentent. Il y a aussi des paramètres en début de fichiers qui peuvent être modifiés à souhait pour adapter au mieux les programmes au robot qui sera manipulé au final : le calibrer.</p>
+<dl class="section author"><dt>Auteur</dt><dd>Paul Mabileau <a href="#" onclick="location.href='mai'+'lto:'+'pau'+'lm'+'abi'+'le'+'au@'+'ho'+'tma'+'il'+'.fr'; return false;">paulm<span style="display: none;">.nosp@m.</span>abil<span style="display: none;">.nosp@m.</span>eau@h<span style="display: none;">.nosp@m.</span>otma<span style="display: none;">.nosp@m.</span>il.fr</a> </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.2</dd></dl>
+<p>Le fichier <a class="el" href="TortuinoDessins_8cpp.html">TortuinoDessins.cpp</a> implémente un ensemble de fonctions réalisant quelques dessins plus ou moins complexes. Les dessins les plus simples sont par exemple des polygones réguliers tels qu'un triangle, un carré, un hexagone, ... les plus compliqués utilise des motifs récursifs, ce qui est moins simple à programmer, mais tout à fait agréable à contempler, comme par exemple un arbre avec différentes variantes, un flocon ou encore le triangle de Sierpiński. </p>
+
+<p class="definition">Définition dans le fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ac3d131be17dee64b89b0806bd4ee37b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3d131be17dee64b89b0806bd4ee37b2">&#9670;&nbsp;</a></span>attendreBouton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void attendreBouton </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réalise l'attente nécessaire à la fonctionnalité du démarrage différé. </p>
+<p>L'exécution de cette fonction bloquera tant que le bouton en question n'a pas été appuyé. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00127">127</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a64bb28327d74796c2c81845523b7425f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64bb28327d74796c2c81845523b7425f">&#9670;&nbsp;</a></span>avancer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void avancer </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>distance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fait avancer le robot Tortuino d'une distance donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distance</td><td>La distance en centimètres à parcourir. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#adb4b90c2b3dd8a5aba981068df36bba0" title="Fait reculer le robot Tortuino d&#39;une distance donnée. ">reculer(float distance)</a> </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00167">167</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a38b27067ab836a2120ab4946d4fccf63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38b27067ab836a2120ab4946d4fccf63">&#9670;&nbsp;</a></span>descendreFeutre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void descendreFeutre </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Place le feutre en position basse de telle manière qu'il touche la feuille en-dessous du robot, en supposant que le collier le tenant et permettant ce déplacement soit correctement ajusté. </p>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#af6c422d84f31684d84208dd0a3828449" title="Place le feutre en position haute de telle manière qu&#39;il ne touche pas la feuille en-dessous du robot...">monterFeutre()</a> </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00243">243</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aafd65bcf38b0045f1e0ee681061a9e7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafd65bcf38b0045f1e0ee681061a9e7c">&#9670;&nbsp;</a></span>distanceToStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int distanceToStep </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>distance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réalise la conversion d'une distance que le robot peut parcourir en un certain nombre de pas que chacun des deux moteurs pas à pas doit effectuer pour que le robot puisse avancer de la distance donnée. </p>
+<p>Cette conversion prend en compte les paramètres décrivant la géométrie du robot.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distance</td><td>La distance linéaire en centimètres correspondant à un déplacement. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nombre de pas permettant de réaliser le déplacement de la distance donnée. </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00055">55</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2af89837a61b0af5c06394e5956c81d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af89837a61b0af5c06394e5956c81d0">&#9670;&nbsp;</a></span>initialiser() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initialiser </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise la configuration du robot pour qu'il puisse correctement communiquer avec ses différents composants qui le constituent : le servomoteur, les moteurs pas à pas et le bouton de démarrage différé. </p>
+<p>Au cours de cette configuration, elle met le robot dans un état standard qui sera ainsi toujours le même au début de l'exécution de chaque essai : la vitesse de rotation des moteurs pas à pas est par défaut de 10 et le feutre est en position basse. Cette fonction à sa fin fait appel à <a class="el" href="Tortuino_8cpp.html#ac3d131be17dee64b89b0806bd4ee37b2" title="Réalise l&#39;attente nécessaire à la fonctionnalité du démarrage différé. ">attendreBouton()</a> qui bloquera tant que le bouton de démarrage différé n'est pas appuyé. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00067">67</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a48aa40d2f100ef290066c45fd4348553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48aa40d2f100ef290066c45fd4348553">&#9670;&nbsp;</a></span>initialiser() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initialiser </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>couleur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cette version de l'opération d'initialisation met en place une méthode pour calibrer chaque robot à souhait pour que les erreurs systématiques au moment de la rotation puissent être compensées. </p>
+<p>Le choix qui a été fait ici est de donner à chaque robot une couleur (par exemple de la plaquette d'expérimentation électrique) représentée par la première lettre de son écriture et qui l'identifie de manière unique. Ensuite, grâce à une correspondance établie au préalable, la valeur du rayon de braquage est affectée par cette fonction, retrouvant ainsi le calibrage effectué. <br />
+ Le reste de l'initialisation est bien entendu aussi réalisé.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">couleur</td><td>La première lettre de la couleur identifiant le robot utilisé. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#a2af89837a61b0af5c06394e5956c81d0" title="Initialise la configuration du robot pour qu&#39;il puisse correctement communiquer avec ses différents c...">initialiser()</a> </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00089">89</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ace2f9a05f9c51fcf5151c1e1c5ef107c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace2f9a05f9c51fcf5151c1e1c5ef107c">&#9670;&nbsp;</a></span>initialiser() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initialiser </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>braquage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cette version de l'opération d'initialisation est utile à la calibration d'un robot car affecte directement au rayon de braquage la valeur fournie en entrée. </p>
+<p>Le reste de l'initialisation est bien entendu aussi réalisé.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">braquage</td><td>La valeur du rayon de braquage à utiliser. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00118">118</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af6c422d84f31684d84208dd0a3828449"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c422d84f31684d84208dd0a3828449">&#9670;&nbsp;</a></span>monterFeutre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void monterFeutre </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Place le feutre en position haute de telle manière qu'il ne touche pas la feuille en-dessous du robot, en supposant que le collier le tenant et permettant ce déplacement soit correctement ajusté. </p>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#a38b27067ab836a2120ab4946d4fccf63" title="Place le feutre en position basse de telle manière qu&#39;il touche la feuille en-dessous du robot...">descendreFeutre()</a> </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00231">231</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adb4b90c2b3dd8a5aba981068df36bba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb4b90c2b3dd8a5aba981068df36bba0">&#9670;&nbsp;</a></span>reculer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reculer </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>distance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fait reculer le robot Tortuino d'une distance donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distance</td><td>La distance en centimètres à parcourir. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#a64bb28327d74796c2c81845523b7425f" title="Fait avancer le robot Tortuino d&#39;une distance donnée. ">avancer(float distance)</a> </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00185">185</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad4869b51496adaf96ca447f5c7398197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4869b51496adaf96ca447f5c7398197">&#9670;&nbsp;</a></span>stopper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stopper </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de mettre à l'arrêt l'exécution en cours que réalise l'Arduino. </p>
+<p>Cette fonction peut se révéler utile si le croquis Arduino utilise la fonction loop() mais souhaite à un moment donné stopper le robot. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00147">147</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa9d442166cb63de9ad4e85e6540a276f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9d442166cb63de9ad4e85e6540a276f">&#9670;&nbsp;</a></span>tournerDroite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tournerDroite </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fait tourner sur place le robot Tortuino d'un angle fourni vers sa droite. </p>
+<p>La rotation s'effectue autour de l'axe de décrit le feutre positionné dans l'emplacement prévu à cet effet, de sorte que s'il reste baisser lors de l'opération, cela ne laisse pas de cercle de tracé derrière le robot.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>L'angle en degrés de rotation vers la gauche à effectuer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#a68c284f58ca18c57a5937859031ec16b" title="Fait tourner sur place le robot Tortuino d&#39;un angle fourni vers sa gauche. ">tournerGauche(float angle)</a> </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00220">220</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a68c284f58ca18c57a5937859031ec16b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c284f58ca18c57a5937859031ec16b">&#9670;&nbsp;</a></span>tournerGauche()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tournerGauche </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fait tourner sur place le robot Tortuino d'un angle fourni vers sa gauche. </p>
+<p>La rotation s'effectue autour de l'axe de décrit le feutre positionné dans l'emplacement prévu à cet effet, de sorte que s'il reste baisser lors de l'opération, cela ne laisse pas de cercle de tracé derrière le robot.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>L'angle en degrés de rotation vers la gauche à effectuer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#aa9d442166cb63de9ad4e85e6540a276f" title="Fait tourner sur place le robot Tortuino d&#39;un angle fourni vers sa droite. ">tournerDroite(float angle)</a> </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00198">198</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab7928bf519ac707766463d32330ae02c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7928bf519ac707766463d32330ae02c">&#9670;&nbsp;</a></span>vitesse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vitesse </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Règle la vitesse de rotation des moteurs pas à pas. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>La valeur entière de la vitesse à affecter aux moteurs pas à pas. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00157">157</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="a2090d1bfbb42f24c35995f26bce5d88d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2090d1bfbb42f24c35995f26bce5d88d">&#9670;&nbsp;</a></span>BRAQUAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BRAQUAGE = 11.3 / 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le rayon de braquage du robot. </p>
+<p>C'est une valeur qui peut être amenée à être calibrée. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00029">29</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a639b5a8ddf6d8835ceb24ef9ceb53795"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a639b5a8ddf6d8835ceb24ef9ceb53795">&#9670;&nbsp;</a></span>delaiBouton</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int delaiBouton = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le délai en ms entre chaque test du bouton. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00037">37</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0fbf55c6d4908a32d7594ce830c0da7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fbf55c6d4908a32d7594ce830c0da7e">&#9670;&nbsp;</a></span>delaiMonterDescendre</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int delaiMonterDescendre = 200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le délai en ms d'attente après l'envoi d'une commande au feutre. </p>
+<p>Paramétré empiriquement. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00039">39</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2f3d019fd98fa45800ff50e070168428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f3d019fd98fa45800ff50e070168428">&#9670;&nbsp;</a></span>FEUTRE_BAS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int FEUTRE_BAS = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>L'angle de la position basse du servomoteur. </p>
+<p>Il a été ajusté empiriquement. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00032">32</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acb58d9f9a2f6fc5feee08a6b8608923b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb58d9f9a2f6fc5feee08a6b8608923b">&#9670;&nbsp;</a></span>FEUTRE_HAUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int FEUTRE_HAUT = 50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>L'angle de la position haute du servomoteur. </p>
+<p>Il a été ajusté empiriquement. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00031">31</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac294c99f76085cbe8d1b91ae882532b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac294c99f76085cbe8d1b91ae882532b6">&#9670;&nbsp;</a></span>PERIMETER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PERIMETER = M_PI * 9.2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le périmètre des roues du robot tel que mesuré avec le pneu. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00028">28</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a58fc84b520fc48bc331849155ce88f5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58fc84b520fc48bc331849155ce88f5d">&#9670;&nbsp;</a></span>portBouton</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int portBouton = 7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le numéro de la broche qui sert de port pour le bouton permettant le démarrage différé : 7. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00034">34</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acb30e18355c39519e306b7aff1cf8d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb30e18355c39519e306b7aff1cf8d7e">&#9670;&nbsp;</a></span>portServo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int portServo = 9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le numéro de la broche pour le port du servomoteur : 9. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00035">35</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a79efceea669fb85a732c30f47cf7e59c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79efceea669fb85a732c30f47cf7e59c">&#9670;&nbsp;</a></span>servo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Servo servo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>L'objet qui sert à contrôler le servomoteur soulevant et abaissant le feutre du robot. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00044">44</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a42114b3d3de9e085781f2eecb975fe30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42114b3d3de9e085781f2eecb975fe30">&#9670;&nbsp;</a></span>stepperLeft</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Stepper stepperLeft</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>L'objet qui sert à contrôler le moteur pas à pas de gauche et qui est relié aux ports 10 à 13. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00041">41</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9aacc3ab5a103b7b2287ea1569df491a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aacc3ab5a103b7b2287ea1569df491a">&#9670;&nbsp;</a></span>stepperRight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Stepper stepperRight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>L'objet qui sert à contrôler le moteur pas à pas de droite et qui est relié aux ports 2 à 5. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00042">42</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0dffab4a0297ba1dfc85381688a235bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dffab4a0297ba1dfc85381688a235bb">&#9670;&nbsp;</a></span>stepsPerRevolution</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int stepsPerRevolution = 64 * 64 / 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le nombre de pas par tour que réalise un moteur pas à pas ; c'est une donnée constructeur. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00027">27</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_accd8a07ce1c795467ced5a6b128bca5.html">Tortuino</a></li><li class="navelem"><a class="el" href="Tortuino_8cpp.html">Tortuino.cpp</a></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>
