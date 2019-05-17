@@ -5,8 +5,8 @@
 
 
 /**
- * @file Tortuino.cpp
- * @brief Ce fichier met à disposition quelques dessins qu'il peut être intéressant d'essayer.
+ * @file TortuinoDessins.cpp
+ * @brief Ce fichier met à disposition quelques dessins qui peuvent être intéressants d'essayer.
  * @author Paul Mabileau <paulmabileau@hotmail.fr>
  * @version 1.2
  * 
@@ -28,9 +28,9 @@
  * @param tailleCote La taille de chacun des côtés.
  */
 void polygoneRegulier(int nbCotes, float tailleCote) {
-	for (int i = 0; i < nbCotes; i++) {
-		avancer(tailleCote);
-		tournerGauche(360 / nbCotes);
+	for (int i = 0; i < nbCotes; i++) {									// Pour chacun des côtés,
+		avancer(tailleCote);											// on avance de la taille donnée
+		tournerGauche(360 / nbCotes);									// et on tourne de l'angle 360° / nbCôtés.
 	}
 }
 
@@ -42,7 +42,7 @@ void polygoneRegulier(int nbCotes, float tailleCote) {
  * @param tailleCote La taille des côtés du triangle.
  */
 void triangle(float tailleCote) {
-	polygoneRegulier(3, tailleCote);
+	polygoneRegulier(3, tailleCote);									// Un triangle est un cas particulier de polygone régulier.
 }
 
 /**
@@ -53,7 +53,7 @@ void triangle(float tailleCote) {
  * @param tailleCote La taille des côtés du carré.
  */
 void carre(float tailleCote) {
-	polygoneRegulier(4, tailleCote);
+	polygoneRegulier(4, tailleCote);									// Un carré est un cas particulier de polygone régulier.
 }
 
 /**
@@ -61,13 +61,13 @@ void carre(float tailleCote) {
  * le rayon souhaité en entrée.
  * Seulement, cela ne fonctionne pas trop car il est difficile de décoréler les paramètres
  * du robot pour pouvoir calculer les valeurs nécessaires à une approximation relativement
- * correcte d'un cercle par un polygone régulier à un grand nombre de côtés.
+ * correcte d'un cercle par un polygone régulier au grand nombre de côtés.
  * 
  * @param rayon Le rayon du cercle.
  */
-void cercle(float rayon) {				// W.I.P.
-	float nbCotes = 20.0 * rayon;
-	polygoneRegulier(floor(nbCotes), 2.0 * M_PI * rayon / nbCotes);
+void cercle(float rayon) {												// W.I.P.
+	float nbCotes = 20.0 * rayon;										// On décide d'essayer avec 20 côtés "seulement" et on peut en déduire
+	polygoneRegulier(floor(nbCotes), 2.0 * M_PI * rayon / nbCotes);		// la taille du polygone régulier approchant suffisamment le cercle souhaité
 }
 
 /**
@@ -82,7 +82,7 @@ void cercle(float rayon) {				// W.I.P.
  * 						leurs tailles d'un tier plus petites.
  */
 void arbre(int nbNiveaux, float tailleTronc) {
-	arbreSymetrique(nbNiveaux, tailleTronc, 90);
+	arbreSymetrique(nbNiveaux, tailleTronc, 90);						// Utilisation de la généralisation de l'arbre symétrique.
 }
 
 /**
@@ -99,7 +99,7 @@ void arbre(int nbNiveaux, float tailleTronc) {
  * @see arbre(int nbNiveaux, float tailleTronc)
  */
 void arbreSymetrique(int nbNiveaux, float tailleTronc, float angleSeparation) {
-	arbreAsymetrique(nbNiveaux, tailleTronc, angleSeparation, 0);
+	arbreAsymetrique(nbNiveaux, tailleTronc, angleSeparation, 0);		// Utilisation de la généralisation de l'arbre asymétrique.
 }
 
 /**
@@ -118,20 +118,20 @@ void arbreSymetrique(int nbNiveaux, float tailleTronc, float angleSeparation) {
  * @see arbreSymetrique(int nbNiveaux, float tailleTronc, float angleSeparation)
  */
 void arbreAsymetrique(int nbNiveaux, float tailleTronc, float angleSeparation, float angleInclinaison) {
-	if (nbNiveaux == 1) {
-		avancer(tailleTronc);
-		monterFeutre();
-		reculer(tailleTronc);
+	if (nbNiveaux == 1) {												// Si le nombre de niveaux est de 1,
+		avancer(tailleTronc);											// on trace juste un trait
+		monterFeutre();													// et sans laisser de trace derrière soi,
+		reculer(tailleTronc);											// on revient en arrière.
 	}
-	else {
-		avancer(tailleTronc);
-		tournerGauche(angleInclinaison + angleSeparation / 2);
-		arbreAsymetrique(nbNiveaux - 1, 2 * tailleTronc / 3, angleSeparation, angleInclinaison);
-		tournerDroite(angleSeparation);
-		descendreFeutre();
-		arbreAsymetrique(nbNiveaux - 1, 2 * tailleTronc / 3, angleSeparation, angleInclinaison);
-		tournerGauche(angleSeparation / 2 - angleInclinaison);
-		reculer(tailleTronc);
+	else {																// Sinon,
+		avancer(tailleTronc);											// on trace le tronc de l'arbre
+		tournerGauche(angleInclinaison + angleSeparation / 2);			// on tourne à gauche de l'angle paramétré
+		arbreAsymetrique(nbNiveaux - 1, 2 * tailleTronc / 3, angleSeparation, angleInclinaison);	// et on refait un arbre, plus petit cette fois-ci;
+		tournerDroite(angleSeparation);									// Après cet arbre, on tourne pour aller vers l'autre branche,
+		descendreFeutre();												// on se met en position de dessin,
+		arbreAsymetrique(nbNiveaux - 1, 2 * tailleTronc / 3, angleSeparation, angleInclinaison);	// et on refait un arbre plus petit;
+		tournerGauche(angleSeparation / 2 - angleInclinaison);			// enfin, on se remet dans l'axe du tronc
+		reculer(tailleTronc);											// et on revient à la position de départ.
 	}
 }
 
@@ -148,8 +148,8 @@ void arbreAsymetrique(int nbNiveaux, float tailleTronc, float angleSeparation, f
  * @see arbre(int nbNiveaux, float tailleTronc)
  */
 void sapin(int nbNiveaux, float tailleTronc) {
-	arbreAsymetrique(nbNiveaux, tailleTronc, 90, 45);
-	arbreAsymetrique(nbNiveaux, tailleTronc, 90, -45);
+	arbreAsymetrique(nbNiveaux, tailleTronc, 90, 45);					// On fait un arbre asymétrique complètement penché vers la gauche
+	arbreAsymetrique(nbNiveaux, tailleTronc, 90, -45);					// et un autre vers la droite.
 }
 
 /**
@@ -163,17 +163,17 @@ void sapin(int nbNiveaux, float tailleTronc) {
  * 					segment de départ sert d'étalon pour en déduire à l'avance la taille des côtés engendrés.
  */
 void courbeVonKoch(int nbNiveaux, float taille) {
-	if (nbNiveaux == 1) {
-		avancer(taille);
+	if (nbNiveaux == 1) {												// Si le nombre de niveaux est de 1,
+		avancer(taille);												// on ne fait qu'un trait sans revenir en arrière.
 	}
-	else {
-		courbeVonKoch(nbNiveaux - 1, taille / 3);
-		tournerGauche(60);
-		courbeVonKoch(nbNiveaux - 1, taille / 3);
-		tournerDroite(120);
-		courbeVonKoch(nbNiveaux - 1, taille / 3);
-		tournerGauche(60);
-		courbeVonKoch(nbNiveaux - 1, taille / 3);
+	else {																// Sinon,
+		courbeVonKoch(nbNiveaux - 1, taille / 3);						// on commence par faire une courbe de Von Koch plus petite pour le premier tiers du segment;
+		tournerGauche(60);												// puis on se place pour faire la première moitié du deuxième tiers,
+		courbeVonKoch(nbNiveaux - 1, taille / 3);						// et on la trace;
+		tournerDroite(120);												// ensuite on se place pour faire la seconde moitié du deuxième tiers,
+		courbeVonKoch(nbNiveaux - 1, taille / 3);						// et on la trace;
+		tournerGauche(60);												// enfin on se place pour faire le troisième et dernier tiers,
+		courbeVonKoch(nbNiveaux - 1, taille / 3);						// et on la trace.
 	}
 }
 
@@ -189,9 +189,9 @@ void courbeVonKoch(int nbNiveaux, float taille) {
  * 					segment de départ sert d'étalon pour en déduire à l'avance la taille des côtés engendrés.
  */
 void flocon(int nbNiveaux, float taille) {
-	for (int i = 0; i < 3; i ++) {
-		courbeVonKoch(nbNiveaux, taille);
-		tournerGauche(60);
+	for (int i = 0; i < 3; i++) {										// Un flocon de Von Koch est la répétition de trois
+		courbeVonKoch(nbNiveaux, taille);								// de ses courbes
+		tournerGauche(60);												// séparées par un angle externe de 60°, soit un angle interne de 120°.
 	}
 }
 
@@ -204,25 +204,25 @@ void flocon(int nbNiveaux, float taille) {
  * 					de l'algorithme de Sierpiński ; idem à ce que fait flocon(int nbNiveaux, float taille)
  */
 void triangleSierpinski(int nbNiveaux, float taille) {
-	if (nbNiveaux == 1) {
-		triangle(taille);
+	if (nbNiveaux == 1) {												// Si le nombre de niveaux est de 1,
+		triangle(taille);												// on fait juste un triangle de la taille donnée.
 	}
-	else {
-		triangleSierpinski(nbNiveaux - 1, taille / 2);
+	else {																// Sinon,
+		triangleSierpinski(nbNiveaux - 1, taille / 2);					// on commence par faire le triangle d'en bas à gauche,
 		monterFeutre();
-		avancer(taille / 2);
+		avancer(taille / 2);											// puis on se place pour faire celui d'en bas à droite,
 		descendreFeutre();
-		triangleSierpinski(nbNiveaux - 1, taille / 2);
+		triangleSierpinski(nbNiveaux - 1, taille / 2);					// et on le trace;
 		monterFeutre();
-		tournerGauche(120);
+		tournerGauche(120);												// ensuite on se déplace pour faire le troisième et dernier,
 		avancer(taille / 2);
 		tournerDroite(120);
 		descendreFeutre();
-		triangleSierpinski(nbNiveaux - 1, taille / 2);
+		triangleSierpinski(nbNiveaux - 1, taille / 2);					// et on le trace;
 		monterFeutre();
 		tournerDroite(120);
 		avancer(taille / 2);
-		tournerGauche(120);
+		tournerGauche(120);												// enfin, on revient à la position de départ.
 		descendreFeutre();
 	}
 }

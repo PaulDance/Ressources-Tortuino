@@ -18,7 +18,7 @@ Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier
 void \hyperlink{Tortuino_8h_a2af89837a61b0af5c06394e5956c81d0}{initialiser} ()
 \begin{DoxyCompactList}\small\item\em Initialise la configuration du robot pour qu\textquotesingle{}il puisse correctement communiquer avec ses différents composants qui le constituent \+: le servomoteur, les moteurs pas à pas et le bouton de démarrage différé. \end{DoxyCompactList}\item 
 void \hyperlink{Tortuino_8h_ace2f9a05f9c51fcf5151c1e1c5ef107c}{initialiser} (float braquage)
-\begin{DoxyCompactList}\small\item\em Cette version de l\textquotesingle{}opération d\textquotesingle{}initialisation est utile à la calibration d\textquotesingle{}un robot car affecte directement au rayon de braquage la valeur fournie en entrée. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Cette version de l\textquotesingle{}opération d\textquotesingle{}initialisation est utile à la calibration d\textquotesingle{}un robot car affecte directement au rayon de braquage la moitié de la valeur fournie en entrée. \end{DoxyCompactList}\item 
 void \hyperlink{Tortuino_8h_a48aa40d2f100ef290066c45fd4348553}{initialiser} (char couleur)
 \begin{DoxyCompactList}\small\item\em Cette version de l\textquotesingle{}opération d\textquotesingle{}initialisation met en place une méthode pour calibrer chaque robot à souhait pour que les erreurs systématiques au moment de la rotation puissent être compensées. \end{DoxyCompactList}\item 
 void \hyperlink{Tortuino_8h_ac3d131be17dee64b89b0806bd4ee37b2}{attendre\+Bouton} ()
@@ -128,13 +128,13 @@ Définition à la ligne 67 du fichier Tortuino.\+cpp.
 
 
 
-Cette version de l\textquotesingle{}opération d\textquotesingle{}initialisation est utile à la calibration d\textquotesingle{}un robot car affecte directement au rayon de braquage la valeur fournie en entrée. 
+Cette version de l\textquotesingle{}opération d\textquotesingle{}initialisation est utile à la calibration d\textquotesingle{}un robot car affecte directement au rayon de braquage la moitié de la valeur fournie en entrée. 
 
 Le reste de l\textquotesingle{}initialisation est bien entendu aussi réalisé.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em braquage} & La valeur du rayon de braquage à utiliser. \\
+{\em braquage} & La valeur du diamètre de braquage à utiliser. \\
 \hline
 \end{DoxyParams}
 

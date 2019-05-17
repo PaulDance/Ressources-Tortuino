@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('Tortuino_8h.html','');});
 <div class="center"><img src="Tortuino_8h__dep__incl.png" border="0" usemap="#Tortuino_2Tortuino_8hdep" alt=""/></div>
 <map name="Tortuino_2Tortuino_8hdep" id="Tortuino_2Tortuino_8hdep">
 <area shape="rect" id="node2" href="Tortuino_8cpp.html" title="Ce fichier décrit les instructions de base pour contrôler le robot. " alt="" coords="5,80,151,107"/>
-<area shape="rect" id="node3" href="TortuinoDessins_8cpp.html" title="Tortuino/TortuinoDessins.cpp" alt="" coords="175,80,368,107"/>
+<area shape="rect" id="node3" href="TortuinoDessins_8cpp.html" title="Ce fichier met à disposition quelques dessins qui peuvent être intéressants d&#39;essayer. " alt="" coords="175,80,368,107"/>
 </map>
 </div>
 </div>
@@ -110,7 +110,7 @@ Fonctions</h2></td></tr>
 <tr class="memdesc:a2af89837a61b0af5c06394e5956c81d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise la configuration du robot pour qu'il puisse correctement communiquer avec ses différents composants qui le constituent : le servomoteur, les moteurs pas à pas et le bouton de démarrage différé.  <a href="#a2af89837a61b0af5c06394e5956c81d0">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a2af89837a61b0af5c06394e5956c81d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace2f9a05f9c51fcf5151c1e1c5ef107c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8h.html#ace2f9a05f9c51fcf5151c1e1c5ef107c">initialiser</a> (float braquage)</td></tr>
-<tr class="memdesc:ace2f9a05f9c51fcf5151c1e1c5ef107c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette version de l'opération d'initialisation est utile à la calibration d'un robot car affecte directement au rayon de braquage la valeur fournie en entrée.  <a href="#ace2f9a05f9c51fcf5151c1e1c5ef107c">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:ace2f9a05f9c51fcf5151c1e1c5ef107c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette version de l'opération d'initialisation est utile à la calibration d'un robot car affecte directement au rayon de braquage la moitié de la valeur fournie en entrée.  <a href="#ace2f9a05f9c51fcf5151c1e1c5ef107c">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ace2f9a05f9c51fcf5151c1e1c5ef107c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48aa40d2f100ef290066c45fd4348553"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8h.html#a48aa40d2f100ef290066c45fd4348553">initialiser</a> (char couleur)</td></tr>
 <tr class="memdesc:a48aa40d2f100ef290066c45fd4348553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette version de l'opération d'initialisation met en place une méthode pour calibrer chaque robot à souhait pour que les erreurs systématiques au moment de la rotation puissent être compensées.  <a href="#a48aa40d2f100ef290066c45fd4348553">Plus de détails...</a><br /></td></tr>
@@ -262,11 +262,11 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cette version de l'opération d'initialisation est utile à la calibration d'un robot car affecte directement au rayon de braquage la valeur fournie en entrée. </p>
+<p>Cette version de l'opération d'initialisation est utile à la calibration d'un robot car affecte directement au rayon de braquage la moitié de la valeur fournie en entrée. </p>
 <p>Le reste de l'initialisation est bien entendu aussi réalisé.</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">braquage</td><td>La valeur du rayon de braquage à utiliser. </td></tr>
+    <tr><td class="paramname">braquage</td><td>La valeur du diamètre de braquage à utiliser. </td></tr>
   </table>
   </dd>
 </dl>

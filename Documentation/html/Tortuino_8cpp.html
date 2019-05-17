@@ -122,7 +122,7 @@ Fonctions</h2></td></tr>
 <tr class="memdesc:a48aa40d2f100ef290066c45fd4348553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette version de l'opération d'initialisation met en place une méthode pour calibrer chaque robot à souhait pour que les erreurs systématiques au moment de la rotation puissent être compensées.  <a href="#a48aa40d2f100ef290066c45fd4348553">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a48aa40d2f100ef290066c45fd4348553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace2f9a05f9c51fcf5151c1e1c5ef107c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#ace2f9a05f9c51fcf5151c1e1c5ef107c">initialiser</a> (float braquage)</td></tr>
-<tr class="memdesc:ace2f9a05f9c51fcf5151c1e1c5ef107c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette version de l'opération d'initialisation est utile à la calibration d'un robot car affecte directement au rayon de braquage la valeur fournie en entrée.  <a href="#ace2f9a05f9c51fcf5151c1e1c5ef107c">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:ace2f9a05f9c51fcf5151c1e1c5ef107c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette version de l'opération d'initialisation est utile à la calibration d'un robot car affecte directement au rayon de braquage la moitié de la valeur fournie en entrée.  <a href="#ace2f9a05f9c51fcf5151c1e1c5ef107c">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ace2f9a05f9c51fcf5151c1e1c5ef107c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3d131be17dee64b89b0806bd4ee37b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#ac3d131be17dee64b89b0806bd4ee37b2">attendreBouton</a> ()</td></tr>
 <tr class="memdesc:ac3d131be17dee64b89b0806bd4ee37b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Réalise l'attente nécessaire à la fonctionnalité du démarrage différé.  <a href="#ac3d131be17dee64b89b0806bd4ee37b2">Plus de détails...</a><br /></td></tr>
@@ -193,17 +193,13 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Ce fichier décrit les instructions de base pour contrôler le robot. </p>
-<p>Ce fichier met à disposition quelques dessins qu'il peut être intéressant d'essayer.</p>
 <dl class="section author"><dt>Auteur</dt><dd>Alexandre Comte </dd>
 <dd>
 Paul Mabileau <a href="#" onclick="location.href='mai'+'lto:'+'pau'+'lm'+'abi'+'le'+'au@'+'ho'+'tma'+'il'+'.fr'; return false;">paulm<span style="display: none;">.nosp@m.</span>abil<span style="display: none;">.nosp@m.</span>eau@h<span style="display: none;">.nosp@m.</span>otma<span style="display: none;">.nosp@m.</span>il.fr</a> </dd>
 <dd>
 Florian Bescher </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.2</dd></dl>
-<p>Le fichier <a class="el" href="Tortuino_8cpp.html" title="Ce fichier décrit les instructions de base pour contrôler le robot. ">Tortuino.cpp</a> rassemble les fonctionnalités essentielles au bon fonctionnement de la communication avec un robot Tortuino. Ces fonctionnalités sont principalement réalisées et mises à disposition au travers de fonctions qui les implémentent. Il y a aussi des paramètres en début de fichiers qui peuvent être modifiés à souhait pour adapter au mieux les programmes au robot qui sera manipulé au final : le calibrer.</p>
-<dl class="section author"><dt>Auteur</dt><dd>Paul Mabileau <a href="#" onclick="location.href='mai'+'lto:'+'pau'+'lm'+'abi'+'le'+'au@'+'ho'+'tma'+'il'+'.fr'; return false;">paulm<span style="display: none;">.nosp@m.</span>abil<span style="display: none;">.nosp@m.</span>eau@h<span style="display: none;">.nosp@m.</span>otma<span style="display: none;">.nosp@m.</span>il.fr</a> </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.2</dd></dl>
-<p>Le fichier <a class="el" href="TortuinoDessins_8cpp.html">TortuinoDessins.cpp</a> implémente un ensemble de fonctions réalisant quelques dessins plus ou moins complexes. Les dessins les plus simples sont par exemple des polygones réguliers tels qu'un triangle, un carré, un hexagone, ... les plus compliqués utilise des motifs récursifs, ce qui est moins simple à programmer, mais tout à fait agréable à contempler, comme par exemple un arbre avec différentes variantes, un flocon ou encore le triangle de Sierpiński. </p>
+<p>Le fichier <a class="el" href="Tortuino_8cpp.html" title="Ce fichier décrit les instructions de base pour contrôler le robot. ">Tortuino.cpp</a> rassemble les fonctionnalités essentielles au bon fonctionnement de la communication avec un robot Tortuino. Ces fonctionnalités sont principalement réalisées et mises à disposition au travers de fonctions qui les implémentent. Il y a aussi des paramètres en début de fichiers qui peuvent être modifiés à souhait pour adapter au mieux les programmes au robot qui sera manipulé au final : le calibrer. </p>
 
 <p class="definition">Définition dans le fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 </div><h2 class="groupheader">Documentation des fonctions</h2>
@@ -379,11 +375,11 @@ Florian Bescher </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Cette version de l'opération d'initialisation est utile à la calibration d'un robot car affecte directement au rayon de braquage la valeur fournie en entrée. </p>
+<p>Cette version de l'opération d'initialisation est utile à la calibration d'un robot car affecte directement au rayon de braquage la moitié de la valeur fournie en entrée. </p>
 <p>Le reste de l'initialisation est bien entendu aussi réalisé.</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">braquage</td><td>La valeur du rayon de braquage à utiliser. </td></tr>
+    <tr><td class="paramname">braquage</td><td>La valeur du diamètre de braquage à utiliser. </td></tr>
   </table>
   </dd>
 </dl>

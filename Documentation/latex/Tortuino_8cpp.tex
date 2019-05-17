@@ -28,7 +28,7 @@ void \hyperlink{Tortuino_8cpp_a2af89837a61b0af5c06394e5956c81d0}{initialiser} ()
 void \hyperlink{Tortuino_8cpp_a48aa40d2f100ef290066c45fd4348553}{initialiser} (char couleur)
 \begin{DoxyCompactList}\small\item\em Cette version de l\textquotesingle{}opération d\textquotesingle{}initialisation met en place une méthode pour calibrer chaque robot à souhait pour que les erreurs systématiques au moment de la rotation puissent être compensées. \end{DoxyCompactList}\item 
 void \hyperlink{Tortuino_8cpp_ace2f9a05f9c51fcf5151c1e1c5ef107c}{initialiser} (float braquage)
-\begin{DoxyCompactList}\small\item\em Cette version de l\textquotesingle{}opération d\textquotesingle{}initialisation est utile à la calibration d\textquotesingle{}un robot car affecte directement au rayon de braquage la valeur fournie en entrée. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Cette version de l\textquotesingle{}opération d\textquotesingle{}initialisation est utile à la calibration d\textquotesingle{}un robot car affecte directement au rayon de braquage la moitié de la valeur fournie en entrée. \end{DoxyCompactList}\item 
 void \hyperlink{Tortuino_8cpp_ac3d131be17dee64b89b0806bd4ee37b2}{attendre\+Bouton} ()
 \begin{DoxyCompactList}\small\item\em Réalise l\textquotesingle{}attente nécessaire à la fonctionnalité du démarrage différé. \end{DoxyCompactList}\item 
 void \hyperlink{Tortuino_8cpp_ad4869b51496adaf96ca447f5c7398197}{stopper} ()
@@ -79,8 +79,6 @@ Servo \hyperlink{Tortuino_8cpp_a79efceea669fb85a732c30f47cf7e59c}{servo}
 \subsection{Description détaillée}
 Ce fichier décrit les instructions de base pour contrôler le robot. 
 
-Ce fichier met à disposition quelques dessins qu\textquotesingle{}il peut être intéressant d\textquotesingle{}essayer.
-
 \begin{DoxyAuthor}{Auteur}
 Alexandre Comte 
 
@@ -91,15 +89,7 @@ Florian Bescher
 \begin{DoxyVersion}{Version}
 1.\+2
 \end{DoxyVersion}
-Le fichier \hyperlink{Tortuino_8cpp}{Tortuino.\+cpp} rassemble les fonctionnalités essentielles au bon fonctionnement de la communication avec un robot Tortuino. Ces fonctionnalités sont principalement réalisées et mises à disposition au travers de fonctions qui les implémentent. Il y a aussi des paramètres en début de fichiers qui peuvent être modifiés à souhait pour adapter au mieux les programmes au robot qui sera manipulé au final \+: le calibrer.
-
-\begin{DoxyAuthor}{Auteur}
-Paul Mabileau \href{mailto:paulmabileau@hotmail.fr}{\tt paulmabileau@hotmail.\+fr} 
-\end{DoxyAuthor}
-\begin{DoxyVersion}{Version}
-1.\+2
-\end{DoxyVersion}
-Le fichier \hyperlink{TortuinoDessins_8cpp}{Tortuino\+Dessins.\+cpp} implémente un ensemble de fonctions réalisant quelques dessins plus ou moins complexes. Les dessins les plus simples sont par exemple des polygones réguliers tels qu\textquotesingle{}un triangle, un carré, un hexagone, ... les plus compliqués utilise des motifs récursifs, ce qui est moins simple à programmer, mais tout à fait agréable à contempler, comme par exemple un arbre avec différentes variantes, un flocon ou encore le triangle de Sierpiński. 
+Le fichier \hyperlink{Tortuino_8cpp}{Tortuino.\+cpp} rassemble les fonctionnalités essentielles au bon fonctionnement de la communication avec un robot Tortuino. Ces fonctionnalités sont principalement réalisées et mises à disposition au travers de fonctions qui les implémentent. Il y a aussi des paramètres en début de fichiers qui peuvent être modifiés à souhait pour adapter au mieux les programmes au robot qui sera manipulé au final \+: le calibrer. 
 
 \subsection{Documentation des fonctions}
 \mbox{\Hypertarget{Tortuino_8cpp_ac3d131be17dee64b89b0806bd4ee37b2}\label{Tortuino_8cpp_ac3d131be17dee64b89b0806bd4ee37b2}} 
@@ -226,13 +216,13 @@ Définition à la ligne 89 du fichier Tortuino.\+cpp.
 
 
 
-Cette version de l\textquotesingle{}opération d\textquotesingle{}initialisation est utile à la calibration d\textquotesingle{}un robot car affecte directement au rayon de braquage la valeur fournie en entrée. 
+Cette version de l\textquotesingle{}opération d\textquotesingle{}initialisation est utile à la calibration d\textquotesingle{}un robot car affecte directement au rayon de braquage la moitié de la valeur fournie en entrée. 
 
 Le reste de l\textquotesingle{}initialisation est bien entendu aussi réalisé.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em braquage} & La valeur du rayon de braquage à utiliser. \\
+{\em braquage} & La valeur du diamètre de braquage à utiliser. \\
 \hline
 \end{DoxyParams}
 

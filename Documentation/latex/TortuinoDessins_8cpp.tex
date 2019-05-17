@@ -1,5 +1,10 @@
 \hypertarget{TortuinoDessins_8cpp}{}\section{Référence du fichier Tortuino/\+Tortuino\+Dessins.cpp}
 \label{TortuinoDessins_8cpp}\index{Tortuino/\+Tortuino\+Dessins.\+cpp@{Tortuino/\+Tortuino\+Dessins.\+cpp}}
+
+
+Ce fichier met à disposition quelques dessins qui peuvent être intéressants d\textquotesingle{}essayer.  
+
+
 {\ttfamily \#include \char`\"{}Tortuino.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Tortuino\+Dessins.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$math.\+h$>$}\newline
@@ -36,6 +41,17 @@ void \hyperlink{TortuinoDessins_8cpp_afa05db28401a10aa6c4625a2de482484}{flocon} 
 void \hyperlink{TortuinoDessins_8cpp_a0c851f0f43370a65c2da38436be9a764}{triangle\+Sierpinski} (int nb\+Niveaux, float taille)
 \begin{DoxyCompactList}\small\item\em Trace un \href{https://fr.wikipedia.org/wiki/Triangle_de_Sierpi%C5%84ski}{\tt triangle de Sierpiński} paramétré par son niveau et la taille globale du triangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Description détaillée}
+Ce fichier met à disposition quelques dessins qui peuvent être intéressants d\textquotesingle{}essayer. 
+
+\begin{DoxyAuthor}{Auteur}
+Paul Mabileau \href{mailto:paulmabileau@hotmail.fr}{\tt paulmabileau@hotmail.\+fr} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+2
+\end{DoxyVersion}
+Le fichier \hyperlink{TortuinoDessins_8cpp}{Tortuino\+Dessins.\+cpp} implémente un ensemble de fonctions réalisant quelques dessins plus ou moins complexes. Les dessins les plus simples sont par exemple des polygones réguliers tels qu\textquotesingle{}un triangle, un carré, un hexagone, ... les plus compliqués utilise des motifs récursifs, ce qui est moins simple à programmer, mais tout à fait agréable à contempler, comme par exemple un arbre avec différentes variantes, un flocon ou encore le triangle de Sierpiński. 
 
 \subsection{Documentation des fonctions}
 \mbox{\Hypertarget{TortuinoDessins_8cpp_a39c1c8ca3b979edec7d841f1a71e50f1}\label{TortuinoDessins_8cpp_a39c1c8ca3b979edec7d841f1a71e50f1}} 
@@ -152,7 +168,7 @@ Définition à la ligne 55 du fichier Tortuino\+Dessins.\+cpp.
 
 Cette fonction est une tentative de réalisation d\textquotesingle{}un cercle automatiquement avec juste le rayon souhaité en entrée. 
 
-Seulement, cela ne fonctionne pas trop car il est difficile de décoréler les paramètres du robot pour pouvoir calculer les valeurs nécessaires à une approximation relativement correcte d\textquotesingle{}un cercle par un polygone régulier à un grand nombre de côtés.
+Seulement, cela ne fonctionne pas trop car il est difficile de décoréler les paramètres du robot pour pouvoir calculer les valeurs nécessaires à une approximation relativement correcte d\textquotesingle{}un cercle par un polygone régulier au grand nombre de côtés.
 
 
 \begin{DoxyParams}{Paramètres}

@@ -65,13 +65,13 @@ int distanceToStep(float distance) {
  * qui bloquera tant que le bouton de démarrage différé n'est pas appuyé.
  */
 void initialiser() {
-	stepperLeft = Stepper(stepsPerRevolution, 10, 12, 11, 13);
-	stepperRight = Stepper(stepsPerRevolution, 2, 4, 3, 5);
-	servo.attach(portServo);
-	pinMode(portBouton, INPUT_PULLUP);
-	vitesse(10);
-	descendreFeutre();
-	attendreBouton();
+	stepperLeft = Stepper(stepsPerRevolution, 10, 12, 11, 13);			// Affectation des ports pour le moteur pas à pas gauche
+	stepperRight = Stepper(stepsPerRevolution, 2, 4, 3, 5);				// et droit.
+	servo.attach(portServo);											// Affectation du port pour le servomoteur.
+	pinMode(portBouton, INPUT_PULLUP);									// Mode de la broche pour le bouton : entrée.
+	vitesse(10);														// Vitesse de rotation des moteurs pas à pas : 10.
+	descendreFeutre();													// Feutre en position basse.
+	attendreBouton();													// Attente du bouton de démarrage différé.
 }
 
 /**
@@ -87,37 +87,37 @@ void initialiser() {
  * @see initialiser()
  */
 void initialiser(char couleur) {
-	if (color == "w") {
+	if (couleur == "w") {												// On teste simplement quelle valeur a la couleur
 		BRAQUAGE = 11.3 / 2;
 	}
-	else if (color == "j") {
-		BRAQUAGE = 11.3 / 2;
+	else if (couleur == "j") {											// parmi un ensemble donné qui permet surtout de récupérer
+		BRAQUAGE = 11.3 / 2;											// son association à un rayon de braquage donné.
 	}
-	else if (color == "b") {
+	else if (couleur == "b") {
 		BRAQUAGE = 11 / 2;
 	}
-	else if (color == "v") {
+	else if (couleur == "v") {
 		BRAQUAGE = 10.5 / 2;
 	}
-	else if (color == "r") {
+	else if (couleur == "r") {
 		BRAQUAGE = 11.3 / 2;
 	}
-	else if (color == "n") {
+	else if (couleur == "n") {
 		BRAQUAGE = 11.3 / 2;
 	}
-	initialiser();
+	initialiser();														// Quel que soit l'entrée, on fait toujours la partie principale de l'initialisation.
 }
 
 /**
  * Cette version de l'opération d'initialisation est utile à la calibration d'un robot car
- * affecte directement au rayon de braquage la valeur fournie en entrée.
+ * affecte directement au rayon de braquage la moitié de la valeur fournie en entrée.
  * Le reste de l'initialisation est bien entendu aussi réalisé.
  * 
- * @param braquage La valeur du rayon de braquage à utiliser.
+ * @param braquage La valeur du diamètre de braquage à utiliser.
  */
 void initialiser(float braquage) {
-	BRAQUAGE = braquage / 2;
-	initialiser();
+	BRAQUAGE = braquage / 2;											// On transforme le diamètre fourni en le rayon à utiliser.
+	initialiser();														// On continue avec la partie principale de l'initialisation.
 }
 
 /**
@@ -125,17 +125,17 @@ void initialiser(float braquage) {
  * fonction bloquera tant que le bouton en question n'a pas été appuyé.
  */
 void attendreBouton() {
-	int oldState, newState = digitalRead(portBouton);
+	int oldState, newState = digitalRead(portBouton);					// On initialise newState à l'état actuel de la broche du bouton.
 
 	while (true) {
-		oldState = newState;
-		newState = digitalRead(portBouton);
+		oldState = newState;											// On sauvegarde l'état précedant dans oldState,
+		newState = digitalRead(portBouton);								// et on met à jour l'actuel dans newState.
 
-		if (oldState == LOW && newState == HIGH) {
-			return;
+		if (oldState == LOW && newState == HIGH) {						// Si les deux correspondent à un front descendant,
+			return;														// on met fin à l'attente;
 		}
 
-		delay(delaiBouton);
+		delay(delaiBouton);												// sinon, on attend un petit peut et on teste à nouveau.
 	}
 }
 
@@ -145,8 +145,8 @@ void attendreBouton() {
  * stopper le robot.
  */
 void stopper(){
-	while (true){
-		delay(delaiBouton);
+	while (true){														// Tout le temps
+		delay(delaiBouton);												// on attend un petit peu.
 	}
 }
 
@@ -155,8 +155,8 @@ void stopper(){
  * @param v La valeur entière de la vitesse à affecter aux moteurs pas à pas.
  */
 void vitesse(int v) {
-	stepperRight.setSpeed(v);
-	stepperLeft.setSpeed(v);
+	stepperRight.setSpeed(v);											// Les moteurs pas à pas gauche
+	stepperLeft.setSpeed(v);											// et droite prennent la même valeur de vitesse donnée.
 }
 
 /**
@@ -165,15 +165,15 @@ void vitesse(int v) {
  * @see reculer(float distance)
  */
 void avancer(float distance) {
-	int steps = distanceToStep(fabs(distance));
-	int sens = 1;
-	if (distance < 0) {
-		sens = -1;
+	int steps = distanceToStep(fabs(distance));							// On convertit la distance en nombre de pas à faire;
+	int sens = 1;														// et on met le sens par défaut vers l'avant.
+	if (distance < 0) {													// Si la distance est négative,
+		sens = -1;														// on met le sens vers l'arrière.
 	}
 
-	for (int i = 0; i < steps; i++) {
-		stepperRight.step(sens);
-		stepperLeft.step(-sens);
+	for (int i = 0; i < steps; i++) {									// On fait tous les pas à réaliser un par un :
+		stepperRight.step(sens);										// la roue gauche d'abord,
+		stepperLeft.step(-sens);										// la droite ensuite.
 	}
 }
 
@@ -183,7 +183,7 @@ void avancer(float distance) {
  * @see avancer(float distance)
  */
 void reculer(float distance) {
-	avancer(-distance);
+	avancer(-distance);													// On réutilise la généralisation faite dans avancer().
 }
 
 /**
@@ -196,15 +196,15 @@ void reculer(float distance) {
  * @see tournerDroite(float angle)
  */
 void tournerGauche(float angle) {
-	int steps = distanceToStep(M_PI / 180 * fabs(angle) * BRAQUAGE);
-	int sens = 1;
-	if (angle < 0) {
-		sens = -1;
+	int steps = distanceToStep(M_PI / 180 * fabs(angle) * BRAQUAGE);	// On récupère le nombre de pas correspondant à la longueur de l'arc décrit par l'angle donné
+	int sens = 1;														// et on met le sens par défaut vers la gauche.
+	if (angle < 0) {													// Si l'angle est négatif,
+		sens = -1;														// on met le sens vers la droite.
 	}
 
-	for (int i = 0; i < steps; i++) {
-		stepperRight.step(sens);
-		stepperLeft.step(sens);
+	for (int i = 0; i < steps; i++) {									// On fait tous les pas à réaliser un par un :
+		stepperRight.step(sens);										// la roue droite d'abord,
+		stepperLeft.step(sens);											// la gauche ensuite.
 	}
 }
 
@@ -218,7 +218,7 @@ void tournerGauche(float angle) {
  * @see tournerGauche(float angle)
  */
 void tournerDroite(float angle) {
-	tournerGauche(-angle);
+	tournerGauche(-angle);												// On réutilise la généralisation faite dans tournerGauche().
 }
 
 /**
@@ -229,8 +229,8 @@ void tournerDroite(float angle) {
  * @see descendreFeutre()
  */
 void monterFeutre() {
-	servo.write(FEUTRE_HAUT);
-	delay(delaiMonterDescendre);
+	servo.write(FEUTRE_HAUT);											// Mise à la position haute du feutre.
+	delay(delaiMonterDescendre);										// Petit délai pour attendre que le mouvement du servomoteur se termine à coup sûr.
 }
 
 /**
@@ -241,6 +241,6 @@ void monterFeutre() {
  * @see monterFeutre()
  */
 void descendreFeutre() {
-	servo.write(FEUTRE_BAS);
-	delay(delaiMonterDescendre);
+	servo.write(FEUTRE_BAS);											// Mise à la position basse du feutre.
+	delay(delaiMonterDescendre);										// Petit délai pour attendre que le mouvement du servomoteur se termine à coup sûr.
 }
