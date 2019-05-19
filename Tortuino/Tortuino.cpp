@@ -87,22 +87,22 @@ void initialiser() {
  * @see initialiser()
  */
 void initialiser(char couleur) {
-	if (couleur == "w") {												// On teste simplement quelle valeur a la couleur
+	if (couleur == 'w') {												// On teste simplement quelle valeur a la couleur
 		BRAQUAGE = 11.3 / 2;
 	}
-	else if (couleur == "j") {											// parmi un ensemble donné qui permet surtout de récupérer
+	else if (couleur == 'j') {											// parmi un ensemble donné qui permet surtout de récupérer
 		BRAQUAGE = 11.3 / 2;											// son association à un rayon de braquage donné.
 	}
-	else if (couleur == "b") {
+	else if (couleur == 'b') {
 		BRAQUAGE = 11 / 2;
 	}
-	else if (couleur == "v") {
+	else if (couleur == 'v') {
 		BRAQUAGE = 10.5 / 2;
 	}
-	else if (couleur == "r") {
+	else if (couleur == 'r') {
 		BRAQUAGE = 11.3 / 2;
 	}
-	else if (couleur == "n") {
+	else if (couleur == 'n') {
 		BRAQUAGE = 11.3 / 2;
 	}
 	initialiser();														// Quel que soit l'entrée, on fait toujours la partie principale de l'initialisation.
