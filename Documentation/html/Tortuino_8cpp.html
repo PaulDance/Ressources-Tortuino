@@ -181,10 +181,10 @@ Variables</h2></td></tr>
 <tr class="memitem:a0fbf55c6d4908a32d7594ce830c0da7e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a0fbf55c6d4908a32d7594ce830c0da7e">delaiMonterDescendre</a> = 200</td></tr>
 <tr class="memdesc:a0fbf55c6d4908a32d7594ce830c0da7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le délai en ms d'attente après l'envoi d'une commande au feutre.  <a href="#a0fbf55c6d4908a32d7594ce830c0da7e">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a0fbf55c6d4908a32d7594ce830c0da7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42114b3d3de9e085781f2eecb975fe30"><td class="memItemLeft" align="right" valign="top">Stepper&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a42114b3d3de9e085781f2eecb975fe30">stepperLeft</a></td></tr>
+<tr class="memitem:a42114b3d3de9e085781f2eecb975fe30"><td class="memItemLeft" align="right" valign="top">Stepper&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a42114b3d3de9e085781f2eecb975fe30">stepperLeft</a> = Stepper(<a class="el" href="Tortuino_8cpp.html#a0dffab4a0297ba1dfc85381688a235bb">stepsPerRevolution</a>, 10, 12, 11, 13)</td></tr>
 <tr class="memdesc:a42114b3d3de9e085781f2eecb975fe30"><td class="mdescLeft">&#160;</td><td class="mdescRight">L'objet qui sert à contrôler le moteur pas à pas de gauche et qui est relié aux ports 10 à 13.  <a href="#a42114b3d3de9e085781f2eecb975fe30">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a42114b3d3de9e085781f2eecb975fe30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aacc3ab5a103b7b2287ea1569df491a"><td class="memItemLeft" align="right" valign="top">Stepper&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a9aacc3ab5a103b7b2287ea1569df491a">stepperRight</a></td></tr>
+<tr class="memitem:a9aacc3ab5a103b7b2287ea1569df491a"><td class="memItemLeft" align="right" valign="top">Stepper&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a9aacc3ab5a103b7b2287ea1569df491a">stepperRight</a> = Stepper(<a class="el" href="Tortuino_8cpp.html#a0dffab4a0297ba1dfc85381688a235bb">stepsPerRevolution</a>, 2, 4, 3, 5)</td></tr>
 <tr class="memdesc:a9aacc3ab5a103b7b2287ea1569df491a"><td class="mdescLeft">&#160;</td><td class="mdescRight">L'objet qui sert à contrôler le moteur pas à pas de droite et qui est relié aux ports 2 à 5.  <a href="#a9aacc3ab5a103b7b2287ea1569df491a">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a9aacc3ab5a103b7b2287ea1569df491a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79efceea669fb85a732c30f47cf7e59c"><td class="memItemLeft" align="right" valign="top">Servo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a79efceea669fb85a732c30f47cf7e59c">servo</a></td></tr>
@@ -221,7 +221,7 @@ Florian Bescher </dd></dl>
 <p>Réalise l'attente nécessaire à la fonctionnalité du démarrage différé. </p>
 <p>L'exécution de cette fonction bloquera tant que le bouton en question n'a pas été appuyé. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00127">127</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00125">125</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -250,7 +250,7 @@ Florian Bescher </dd></dl>
 </dl>
 <dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#adb4b90c2b3dd8a5aba981068df36bba0" title="Fait reculer le robot Tortuino d&#39;une distance donnée. ">reculer(float distance)</a> </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00167">167</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00165">165</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -272,7 +272,7 @@ Florian Bescher </dd></dl>
 <p>Place le feutre en position basse de telle manière qu'il touche la feuille en-dessous du robot, en supposant que le collier le tenant et permettant ce déplacement soit correctement ajusté. </p>
 <dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#af6c422d84f31684d84208dd0a3828449" title="Place le feutre en position haute de telle manière qu&#39;il ne touche pas la feuille en-dessous du robot...">monterFeutre()</a> </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00243">243</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00241">241</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -355,7 +355,7 @@ Florian Bescher </dd></dl>
 </dl>
 <dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#a2af89837a61b0af5c06394e5956c81d0" title="Initialise la configuration du robot pour qu&#39;il puisse correctement communiquer avec ses différents c...">initialiser()</a> </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00089">89</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00087">87</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -384,7 +384,7 @@ Florian Bescher </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00118">118</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00116">116</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -406,7 +406,7 @@ Florian Bescher </dd></dl>
 <p>Place le feutre en position haute de telle manière qu'il ne touche pas la feuille en-dessous du robot, en supposant que le collier le tenant et permettant ce déplacement soit correctement ajusté. </p>
 <dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#a38b27067ab836a2120ab4946d4fccf63" title="Place le feutre en position basse de telle manière qu&#39;il touche la feuille en-dessous du robot...">descendreFeutre()</a> </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00231">231</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00229">229</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -435,7 +435,7 @@ Florian Bescher </dd></dl>
 </dl>
 <dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#a64bb28327d74796c2c81845523b7425f" title="Fait avancer le robot Tortuino d&#39;une distance donnée. ">avancer(float distance)</a> </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00185">185</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00183">183</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -457,7 +457,7 @@ Florian Bescher </dd></dl>
 <p>Permet de mettre à l'arrêt l'exécution en cours que réalise l'Arduino. </p>
 <p>Cette fonction peut se révéler utile si le croquis Arduino utilise la fonction loop() mais souhaite à un moment donné stopper le robot. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00147">147</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00145">145</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -487,7 +487,7 @@ Florian Bescher </dd></dl>
 </dl>
 <dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#a68c284f58ca18c57a5937859031ec16b" title="Fait tourner sur place le robot Tortuino d&#39;un angle fourni vers sa gauche. ">tournerGauche(float angle)</a> </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00220">220</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00218">218</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -517,7 +517,7 @@ Florian Bescher </dd></dl>
 </dl>
 <dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#aa9d442166cb63de9ad4e85e6540a276f" title="Fait tourner sur place le robot Tortuino d&#39;un angle fourni vers sa droite. ">tournerDroite(float angle)</a> </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00198">198</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00196">196</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -545,7 +545,7 @@ Florian Bescher </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00157">157</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00155">155</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -723,7 +723,7 @@ Florian Bescher </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Stepper stepperLeft</td>
+          <td class="memname">Stepper stepperLeft = Stepper(<a class="el" href="Tortuino_8cpp.html#a0dffab4a0297ba1dfc85381688a235bb">stepsPerRevolution</a>, 10, 12, 11, 13)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -741,7 +741,7 @@ Florian Bescher </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Stepper stepperRight</td>
+          <td class="memname">Stepper stepperRight = Stepper(<a class="el" href="Tortuino_8cpp.html#a0dffab4a0297ba1dfc85381688a235bb">stepsPerRevolution</a>, 2, 4, 3, 5)</td>
         </tr>
       </table>
 </div><div class="memdoc">

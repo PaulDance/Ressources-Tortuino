@@ -68,9 +68,9 @@ const int \hyperlink{Tortuino_8cpp_a639b5a8ddf6d8835ceb24ef9ceb53795}{delai\+Bou
 \begin{DoxyCompactList}\small\item\em Le délai en ms entre chaque test du bouton. \end{DoxyCompactList}\item 
 const int \hyperlink{Tortuino_8cpp_a0fbf55c6d4908a32d7594ce830c0da7e}{delai\+Monter\+Descendre} = 200
 \begin{DoxyCompactList}\small\item\em Le délai en ms d\textquotesingle{}attente après l\textquotesingle{}envoi d\textquotesingle{}une commande au feutre. \end{DoxyCompactList}\item 
-Stepper \hyperlink{Tortuino_8cpp_a42114b3d3de9e085781f2eecb975fe30}{stepper\+Left}
+Stepper \hyperlink{Tortuino_8cpp_a42114b3d3de9e085781f2eecb975fe30}{stepper\+Left} = Stepper(\hyperlink{Tortuino_8cpp_a0dffab4a0297ba1dfc85381688a235bb}{steps\+Per\+Revolution}, 10, 12, 11, 13)
 \begin{DoxyCompactList}\small\item\em L\textquotesingle{}objet qui sert à contrôler le moteur pas à pas de gauche et qui est relié aux ports 10 à 13. \end{DoxyCompactList}\item 
-Stepper \hyperlink{Tortuino_8cpp_a9aacc3ab5a103b7b2287ea1569df491a}{stepper\+Right}
+Stepper \hyperlink{Tortuino_8cpp_a9aacc3ab5a103b7b2287ea1569df491a}{stepper\+Right} = Stepper(\hyperlink{Tortuino_8cpp_a0dffab4a0297ba1dfc85381688a235bb}{steps\+Per\+Revolution}, 2, 4, 3, 5)
 \begin{DoxyCompactList}\small\item\em L\textquotesingle{}objet qui sert à contrôler le moteur pas à pas de droite et qui est relié aux ports 2 à 5. \end{DoxyCompactList}\item 
 Servo \hyperlink{Tortuino_8cpp_a79efceea669fb85a732c30f47cf7e59c}{servo}
 \begin{DoxyCompactList}\small\item\em L\textquotesingle{}objet qui sert à contrôler le servomoteur soulevant et abaissant le feutre du robot. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -104,7 +104,7 @@ Réalise l\textquotesingle{}attente nécessaire à la fonctionnalité du démarr
 
 L\textquotesingle{}exécution de cette fonction bloquera tant que le bouton en question n\textquotesingle{}a pas été appuyé. 
 
-Définition à la ligne 127 du fichier Tortuino.\+cpp.
+Définition à la ligne 125 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a64bb28327d74796c2c81845523b7425f}\label{Tortuino_8cpp_a64bb28327d74796c2c81845523b7425f}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!avancer@{avancer}}
@@ -126,7 +126,7 @@ Fait avancer le robot Tortuino d\textquotesingle{}une distance donnée.
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 167 du fichier Tortuino.\+cpp.
+Définition à la ligne 165 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a38b27067ab836a2120ab4946d4fccf63}\label{Tortuino_8cpp_a38b27067ab836a2120ab4946d4fccf63}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!descendre\+Feutre@{descendre\+Feutre}}
@@ -143,7 +143,7 @@ Place le feutre en position basse de telle manière qu\textquotesingle{}il touch
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 243 du fichier Tortuino.\+cpp.
+Définition à la ligne 241 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_aafd65bcf38b0045f1e0ee681061a9e7c}\label{Tortuino_8cpp_aafd65bcf38b0045f1e0ee681061a9e7c}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!distance\+To\+Step@{distance\+To\+Step}}
@@ -206,7 +206,7 @@ Le choix qui a été fait ici est de donner à chaque robot une couleur (par exe
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 89 du fichier Tortuino.\+cpp.
+Définition à la ligne 87 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_ace2f9a05f9c51fcf5151c1e1c5ef107c}\label{Tortuino_8cpp_ace2f9a05f9c51fcf5151c1e1c5ef107c}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!initialiser@{initialiser}}
@@ -227,7 +227,7 @@ Le reste de l\textquotesingle{}initialisation est bien entendu aussi réalisé.
 \end{DoxyParams}
 
 
-Définition à la ligne 118 du fichier Tortuino.\+cpp.
+Définition à la ligne 116 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_af6c422d84f31684d84208dd0a3828449}\label{Tortuino_8cpp_af6c422d84f31684d84208dd0a3828449}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!monter\+Feutre@{monter\+Feutre}}
@@ -244,7 +244,7 @@ Place le feutre en position haute de telle manière qu\textquotesingle{}il ne to
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 231 du fichier Tortuino.\+cpp.
+Définition à la ligne 229 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_adb4b90c2b3dd8a5aba981068df36bba0}\label{Tortuino_8cpp_adb4b90c2b3dd8a5aba981068df36bba0}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!reculer@{reculer}}
@@ -266,7 +266,7 @@ Fait reculer le robot Tortuino d\textquotesingle{}une distance donnée.
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 185 du fichier Tortuino.\+cpp.
+Définition à la ligne 183 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_ad4869b51496adaf96ca447f5c7398197}\label{Tortuino_8cpp_ad4869b51496adaf96ca447f5c7398197}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!stopper@{stopper}}
@@ -280,7 +280,7 @@ Permet de mettre à l\textquotesingle{}arrêt l\textquotesingle{}exécution en c
 
 Cette fonction peut se révéler utile si le croquis Arduino utilise la fonction loop() mais souhaite à un moment donné stopper le robot. 
 
-Définition à la ligne 147 du fichier Tortuino.\+cpp.
+Définition à la ligne 145 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_aa9d442166cb63de9ad4e85e6540a276f}\label{Tortuino_8cpp_aa9d442166cb63de9ad4e85e6540a276f}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!tourner\+Droite@{tourner\+Droite}}
@@ -304,7 +304,7 @@ La rotation s\textquotesingle{}effectue autour de l\textquotesingle{}axe de déc
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 220 du fichier Tortuino.\+cpp.
+Définition à la ligne 218 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a68c284f58ca18c57a5937859031ec16b}\label{Tortuino_8cpp_a68c284f58ca18c57a5937859031ec16b}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!tourner\+Gauche@{tourner\+Gauche}}
@@ -328,7 +328,7 @@ La rotation s\textquotesingle{}effectue autour de l\textquotesingle{}axe de déc
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 198 du fichier Tortuino.\+cpp.
+Définition à la ligne 196 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_ab7928bf519ac707766463d32330ae02c}\label{Tortuino_8cpp_ab7928bf519ac707766463d32330ae02c}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!vitesse@{vitesse}}
@@ -347,7 +347,7 @@ Règle la vitesse de rotation des moteurs pas à pas.
 \end{DoxyParams}
 
 
-Définition à la ligne 157 du fichier Tortuino.\+cpp.
+Définition à la ligne 155 du fichier Tortuino.\+cpp.
 
 
 
@@ -482,7 +482,7 @@ Définition à la ligne 44 du fichier Tortuino.\+cpp.
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!stepper\+Left@{stepper\+Left}}
 \index{stepper\+Left@{stepper\+Left}!Tortuino.\+cpp@{Tortuino.\+cpp}}
 \subsubsection{\texorpdfstring{stepper\+Left}{stepperLeft}}
-{\footnotesize\ttfamily Stepper stepper\+Left}
+{\footnotesize\ttfamily Stepper stepper\+Left = Stepper(\hyperlink{Tortuino_8cpp_a0dffab4a0297ba1dfc85381688a235bb}{steps\+Per\+Revolution}, 10, 12, 11, 13)}
 
 
 
@@ -496,7 +496,7 @@ Définition à la ligne 41 du fichier Tortuino.\+cpp.
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!stepper\+Right@{stepper\+Right}}
 \index{stepper\+Right@{stepper\+Right}!Tortuino.\+cpp@{Tortuino.\+cpp}}
 \subsubsection{\texorpdfstring{stepper\+Right}{stepperRight}}
-{\footnotesize\ttfamily Stepper stepper\+Right}
+{\footnotesize\ttfamily Stepper stepper\+Right = Stepper(\hyperlink{Tortuino_8cpp_a0dffab4a0297ba1dfc85381688a235bb}{steps\+Per\+Revolution}, 2, 4, 3, 5)}
 
 
 
