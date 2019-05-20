@@ -9,10 +9,9 @@
 void setup() {
   int attente = 500;
   
-  initialiser("v");
-  vitesse(10);
-
-  monterFeutre();// Test du feutre tout seul.
+  initialiser();
+  
+  monterFeutre();     // Test du feutre tout seul.
   descendreFeutre();
   delay(attente);
   
@@ -22,7 +21,7 @@ void setup() {
   
   tournerGauche(60);  // Test des roues : gauche-droite.
   tournerDroite(60);
-  delay(attente);//même avec montée et descente du feutre
+  delay(attente);
   
   descendreFeutre();  // Test pointillés.
   avancer(2);
@@ -41,7 +40,7 @@ void setup() {
   avancer(2);
   delay(attente);
   
-  carre(10);        // Test complet : un arbre à 3 niveaux.
+  carre(10);          // Test complet : un carré.
   
 }
 
