@@ -38,8 +38,8 @@ const int	delaiBouton	=	10;						/**< Le délai en ms entre chaque test du bouto
 
 const int 	delaiMonterDescendre	=	200;		/**< Le délai en ms d'attente après l'envoi d'une commande au feutre. Paramétré empiriquement. */
 
-Stepper stepperLeft;								/**< L'objet qui sert à contrôler le moteur pas à pas de gauche et qui est relié aux ports 10 à 13. */
-Stepper stepperRight;								/**< L'objet qui sert à contrôler le moteur pas à pas de droite et qui est relié aux ports 2 à 5. */
+Stepper stepperLeft = Stepper(stepsPerRevolution, 10, 12, 11, 13);	/**< L'objet qui sert à contrôler le moteur pas à pas de gauche et qui est relié aux ports 10 à 13. */
+Stepper stepperRight = Stepper(stepsPerRevolution, 2, 4, 3, 5);		/**< L'objet qui sert à contrôler le moteur pas à pas de droite et qui est relié aux ports 2 à 5. */
 
 Servo servo;										/**< L'objet qui sert à contrôler le servomoteur soulevant et abaissant le feutre du robot. */
 
@@ -65,8 +65,6 @@ int distanceToStep(float distance) {
  * qui bloquera tant que le bouton de démarrage différé n'est pas appuyé.
  */
 void initialiser() {
-	stepperLeft = Stepper(stepsPerRevolution, 10, 12, 11, 13);			// Affectation des ports pour le moteur pas à pas gauche
-	stepperRight = Stepper(stepsPerRevolution, 2, 4, 3, 5);				// et droit.
 	servo.attach(portServo);											// Affectation du port pour le servomoteur.
 	pinMode(portBouton, INPUT_PULLUP);									// Mode de la broche pour le bouton : entrée.
 	vitesse(10);														// Vitesse de rotation des moteurs pas à pas : 10.
