@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.5.19)  5 JUN 2019 19:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.5.19)  5 JUN 2019 20:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1555,7 +1555,7 @@ rier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (38 pages, 210175 bytes).
+Output written on refman.pdf (38 pages, 210181 bytes).
 PDF statistics:
  1044 PDF objects out of 1200 (max. 8388607)
  973 compressed objects within 10 object streams
