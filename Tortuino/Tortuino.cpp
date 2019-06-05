@@ -132,13 +132,12 @@ void attendreBouton() {
 		newState = digitalRead(portBouton);								// et on met à jour l'actuel dans newState.
 
 		if (oldState == LOW && newState == HIGH) {						// Si les deux correspondent à un front descendant,
-			return;														// on met fin à l'attente;
+			delay(delaiApresBouton);									// on attend un peu plus, pour ne pas surprendre
+			return;														// et on met fin à l'attente;
 		}
 
-		delay(delaiEntreBouton);										// sinon, on attend un petit peut et on teste à nouveau;
+		delay(delaiEntreBouton);										// sinon, on attend un petit peu et on teste à nouveau;
 	}
-
-	delay(delaiApresBouton);											// enfin, on attend un peu plus après la détection du bouton, pour ne pas surprendre.
 }
 
 /**
