@@ -35,13 +35,15 @@
 
   \indexspace
 
-  \item {delai\+Bouton}
+  \item {delai\+Apres\+Bouton}
     \subitem {Tortuino.\+cpp}, \hyperpage{9}
+  \item {delai\+Entre\+Bouton}
+    \subitem {Tortuino.\+cpp}, \hyperpage{10}
   \item {delai\+Monter\+Descendre}
     \subitem {Tortuino.\+cpp}, \hyperpage{10}
   \item {descendre\+Feutre}
     \subitem {Tortuino.\+cpp}, \hyperpage{5}
-    \subitem {Tortuino.\+h}, \hyperpage{13}
+    \subitem {Tortuino.\+h}, \hyperpage{14}
   \item {distance\+To\+Step}
     \subitem {Tortuino.\+cpp}, \hyperpage{5}
 
@@ -59,7 +61,7 @@
 
   \item {initialiser}
     \subitem {Tortuino.\+cpp}, \hyperpage{6, 7}
-    \subitem {Tortuino.\+h}, \hyperpage{14}
+    \subitem {Tortuino.\+h}, \hyperpage{14, 15}
 
   \indexspace
 
@@ -70,12 +72,12 @@
   \indexspace
 
   \item {P\+E\+R\+I\+M\+E\+T\+ER}
-    \subitem {Tortuino.\+cpp}, \hyperpage{10}
+    \subitem {Tortuino.\+cpp}, \hyperpage{11}
   \item {polygone\+Regulier}
     \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{21}
     \subitem {Tortuino\+Dessins.\+h}, \hyperpage{27}
   \item {port\+Bouton}
-    \subitem {Tortuino.\+cpp}, \hyperpage{10}
+    \subitem {Tortuino.\+cpp}, \hyperpage{11}
   \item {port\+Servo}
     \subitem {Tortuino.\+cpp}, \hyperpage{11}
 
@@ -95,9 +97,9 @@
   \item {stepper\+Left}
     \subitem {Tortuino.\+cpp}, \hyperpage{11}
   \item {stepper\+Right}
-    \subitem {Tortuino.\+cpp}, \hyperpage{11}
+    \subitem {Tortuino.\+cpp}, \hyperpage{12}
   \item {steps\+Per\+Revolution}
-    \subitem {Tortuino.\+cpp}, \hyperpage{11}
+    \subitem {Tortuino.\+cpp}, \hyperpage{12}
   \item {stopper}
     \subitem {Tortuino.\+cpp}, \hyperpage{8}
     \subitem {Tortuino.\+h}, \hyperpage{16}
@@ -108,7 +110,8 @@
     \subitem {attendre\+Bouton}, \hyperpage{5}
     \subitem {avancer}, \hyperpage{5}
     \subitem {B\+R\+A\+Q\+U\+A\+GE}, \hyperpage{9}
-    \subitem {delai\+Bouton}, \hyperpage{9}
+    \subitem {delai\+Apres\+Bouton}, \hyperpage{9}
+    \subitem {delai\+Entre\+Bouton}, \hyperpage{10}
     \subitem {delai\+Monter\+Descendre}, \hyperpage{10}
     \subitem {descendre\+Feutre}, \hyperpage{5}
     \subitem {distance\+To\+Step}, \hyperpage{5}
@@ -116,14 +119,14 @@
     \subitem {F\+E\+U\+T\+R\+E\+\_\+\+H\+A\+UT}, \hyperpage{10}
     \subitem {initialiser}, \hyperpage{6, 7}
     \subitem {monter\+Feutre}, \hyperpage{7}
-    \subitem {P\+E\+R\+I\+M\+E\+T\+ER}, \hyperpage{10}
-    \subitem {port\+Bouton}, \hyperpage{10}
+    \subitem {P\+E\+R\+I\+M\+E\+T\+ER}, \hyperpage{11}
+    \subitem {port\+Bouton}, \hyperpage{11}
     \subitem {port\+Servo}, \hyperpage{11}
     \subitem {reculer}, \hyperpage{7}
     \subitem {servo}, \hyperpage{11}
     \subitem {stepper\+Left}, \hyperpage{11}
-    \subitem {stepper\+Right}, \hyperpage{11}
-    \subitem {steps\+Per\+Revolution}, \hyperpage{11}
+    \subitem {stepper\+Right}, \hyperpage{12}
+    \subitem {steps\+Per\+Revolution}, \hyperpage{12}
     \subitem {stopper}, \hyperpage{8}
     \subitem {tourner\+Droite}, \hyperpage{8}
     \subitem {tourner\+Gauche}, \hyperpage{8}
@@ -131,8 +134,8 @@
   \item {Tortuino.\+h}
     \subitem {attendre\+Bouton}, \hyperpage{13}
     \subitem {avancer}, \hyperpage{13}
-    \subitem {descendre\+Feutre}, \hyperpage{13}
-    \subitem {initialiser}, \hyperpage{14}
+    \subitem {descendre\+Feutre}, \hyperpage{14}
+    \subitem {initialiser}, \hyperpage{14, 15}
     \subitem {monter\+Feutre}, \hyperpage{15}
     \subitem {reculer}, \hyperpage{15}
     \subitem {stopper}, \hyperpage{16}

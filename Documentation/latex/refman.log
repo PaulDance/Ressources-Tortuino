@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.5.19)  20 MAY 2019 23:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.5.19)  5 JUN 2019 19:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1300,7 +1300,7 @@ Chapitre 2.
 (./Tortuino_8cpp.tex
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 6.29996pt on input line 1.
- <Tortuino_8cpp__incl.pdf, id=433, 469.755pt x 156.585pt>
+ <Tortuino_8cpp__incl.pdf, id=438, 469.755pt x 156.585pt>
 File: Tortuino_8cpp__incl.pdf Graphic file (type pdf)
 
 <use Tortuino_8cpp__incl.pdf>
@@ -1328,74 +1328,74 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 6.29996pt on input line 27.
  [3 <./Tortuino_8cpp__incl.pdf>]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 82.
+(Font)              scaled to size 8.99994pt on input line 84.
 
-Underfull \hbox (badness 10000) detected at line 82
+Underfull \hbox (badness 10000) detected at line 84
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 89
+Underfull \hbox (badness 10000) detected at line 91
 [][][]
  []
 
 [4]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 113.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 115.
 
-Underfull \hbox (badness 10000) detected at line 124
+Underfull \hbox (badness 10000) detected at line 126
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 141
+Underfull \hbox (badness 10000) detected at line 143
 [][][]
  []
 
 [5]
-Underfull \hbox (badness 10000) detected at line 165
+Underfull \hbox (badness 10000) detected at line 167
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 7.19995pt on input line 175.
+(Font)              scaled to size 7.19995pt on input line 177.
 
 LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 175.
+(Font)              using `T1/pcr/m/n' instead on input line 177.
 
 [6]
-Underfull \hbox (badness 10000) detected at line 204
+Underfull \hbox (badness 10000) detected at line 206
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 242
+Underfull \hbox (badness 10000) detected at line 244
 [][][]
  []
 
 [7]
-Underfull \hbox (badness 10000) detected at line 264
+Underfull \hbox (badness 10000) detected at line 266
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 302
+Underfull \hbox (badness 10000) detected at line 304
 [][][]
  []
 
 [8]
-Underfull \hbox (badness 10000) detected at line 326
+Underfull \hbox (badness 10000) detected at line 328
 [][][]
  []
 
-[9] [10]) (./Tortuino_8h.tex
-<Tortuino_8h__dep__incl.pdf, id=557, 353.32pt x 156.585pt>
+[9] [10] [11]) (./Tortuino_8h.tex
+<Tortuino_8h__dep__incl.pdf, id=568, 353.32pt x 156.585pt>
 File: Tortuino_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use Tortuino_8h__dep__incl.pdf>
 Package pdftex.def Info: Tortuino_8h__dep__incl.pdf used on input line 12.
 (pdftex.def)             Requested size: 350.0pt x 155.11519pt.
- [11] [12 <./Tortuino_8h__dep__incl.pdf>]
+ [12 <./Tortuino_8h__dep__incl.pdf>]
 Underfull \hbox (badness 10000) detected at line 47
 [][][]
  []
@@ -1405,12 +1405,12 @@ Underfull \hbox (badness 10000) detected at line 50
 [][][]
  []
 
-
+[13]
 Underfull \hbox (badness 10000) detected at line 85
 [][][]
  []
 
-[13]
+
 Underfull \hbox (badness 10000) detected at line 102
 [][][]
  []
@@ -1425,10 +1425,7 @@ Underfull \hbox (badness 10000) detected at line 179
 [][][]
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15]
+[15]
 Underfull \hbox (badness 10000) detected at line 201
 [][][]
  []
@@ -1444,7 +1441,7 @@ Underfull \hbox (badness 10000) detected at line 263
  []
 
 ) (./TortuinoDessins_8cpp.tex
-<TortuinoDessins_8cpp__incl.pdf, id=632, 321.2pt x 156.585pt>
+<TortuinoDessins_8cpp__incl.pdf, id=639, 321.2pt x 156.585pt>
 File: TortuinoDessins_8cpp__incl.pdf Graphic file (type pdf)
 
 <use TortuinoDessins_8cpp__incl.pdf>
@@ -1482,7 +1479,7 @@ Overfull \vbox (2.02422pt too high) has occurred while \output is active []
 
 
 [22]) (./TortuinoDessins_8h.tex
-<TortuinoDessins_8h__dep__incl.pdf, id=724, 225.84375pt x 156.585pt>
+<TortuinoDessins_8h__dep__incl.pdf, id=731, 225.84375pt x 156.585pt>
 File: TortuinoDessins_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use TortuinoDessins_8h__dep__incl.pdf>
@@ -1534,7 +1531,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 3F918E686998E24EBF13B4327AA466AA;14835.
+(rerunfilecheck)             Checksum: 59C41CE36B606A398ED78AAC8FB876D1;15061.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1542,10 +1539,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
  ) 
 Here is how much of TeX's memory you used:
- 16314 strings out of 494875
- 235521 string characters out of 6178748
- 337122 words of memory out of 5000000
- 19124 multiletter control sequences out of 15000+600000
+ 16318 strings out of 494875
+ 235663 string characters out of 6178748
+ 337216 words of memory out of 5000000
+ 19126 multiletter control sequences out of 15000+600000
  68328 words of font info for 88 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  53i,16n,92p,1270b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1558,10 +1555,10 @@ rier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (38 pages, 209382 bytes).
+Output written on refman.pdf (38 pages, 210175 bytes).
 PDF statistics:
- 1033 PDF objects out of 1200 (max. 8388607)
- 962 compressed objects within 10 object streams
- 219 named destinations out of 1000 (max. 500000)
- 629 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1044 PDF objects out of 1200 (max. 8388607)
+ 973 compressed objects within 10 object streams
+ 221 named destinations out of 1000 (max. 500000)
+ 637 words of extra memory for PDF output out of 10000 (max. 10000000)
 

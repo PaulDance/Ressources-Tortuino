@@ -175,9 +175,12 @@ Variables</h2></td></tr>
 <tr class="memitem:acb30e18355c39519e306b7aff1cf8d7e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#acb30e18355c39519e306b7aff1cf8d7e">portServo</a> = 9</td></tr>
 <tr class="memdesc:acb30e18355c39519e306b7aff1cf8d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le numéro de la broche pour le port du servomoteur : 9.  <a href="#acb30e18355c39519e306b7aff1cf8d7e">Plus de détails...</a><br /></td></tr>
 <tr class="separator:acb30e18355c39519e306b7aff1cf8d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a639b5a8ddf6d8835ceb24ef9ceb53795"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a639b5a8ddf6d8835ceb24ef9ceb53795">delaiBouton</a> = 10</td></tr>
-<tr class="memdesc:a639b5a8ddf6d8835ceb24ef9ceb53795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le délai en ms entre chaque test du bouton.  <a href="#a639b5a8ddf6d8835ceb24ef9ceb53795">Plus de détails...</a><br /></td></tr>
-<tr class="separator:a639b5a8ddf6d8835ceb24ef9ceb53795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eba208714a1284a1874efde9744351e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a9eba208714a1284a1874efde9744351e">delaiEntreBouton</a> = 10</td></tr>
+<tr class="memdesc:a9eba208714a1284a1874efde9744351e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le délai en ms entre chaque test du bouton.  <a href="#a9eba208714a1284a1874efde9744351e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9eba208714a1284a1874efde9744351e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9515eda867dc6227f3eea0cbfbace3fc"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a9515eda867dc6227f3eea0cbfbace3fc">delaiApresBouton</a> = 500</td></tr>
+<tr class="memdesc:a9515eda867dc6227f3eea0cbfbace3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le délai en ms effectué après que le bouton ait été pressé.  <a href="#a9515eda867dc6227f3eea0cbfbace3fc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9515eda867dc6227f3eea0cbfbace3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fbf55c6d4908a32d7594ce830c0da7e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Tortuino_8cpp.html#a0fbf55c6d4908a32d7594ce830c0da7e">delaiMonterDescendre</a> = 200</td></tr>
 <tr class="memdesc:a0fbf55c6d4908a32d7594ce830c0da7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le délai en ms d'attente après l'envoi d'une commande au feutre.  <a href="#a0fbf55c6d4908a32d7594ce830c0da7e">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a0fbf55c6d4908a32d7594ce830c0da7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,7 +224,7 @@ Florian Bescher </dd></dl>
 <p>Réalise l'attente nécessaire à la fonctionnalité du démarrage différé. </p>
 <p>L'exécution de cette fonction bloquera tant que le bouton en question n'a pas été appuyé. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00125">125</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00127">127</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -250,7 +253,7 @@ Florian Bescher </dd></dl>
 </dl>
 <dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#adb4b90c2b3dd8a5aba981068df36bba0" title="Fait reculer le robot Tortuino d&#39;une distance donnée. ">reculer(float distance)</a> </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00165">165</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00169">169</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -272,7 +275,7 @@ Florian Bescher </dd></dl>
 <p>Place le feutre en position basse de telle manière qu'il touche la feuille en-dessous du robot, en supposant que le collier le tenant et permettant ce déplacement soit correctement ajusté. </p>
 <dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#af6c422d84f31684d84208dd0a3828449" title="Place le feutre en position haute de telle manière qu&#39;il ne touche pas la feuille en-dessous du robot...">monterFeutre()</a> </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00241">241</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00245">245</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -302,7 +305,7 @@ Florian Bescher </dd></dl>
 </dl>
 <dl class="section return"><dt>Renvoie</dt><dd>Le nombre de pas permettant de réaliser le déplacement de la distance donnée. </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00055">55</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00057">57</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -324,7 +327,7 @@ Florian Bescher </dd></dl>
 <p>Initialise la configuration du robot pour qu'il puisse correctement communiquer avec ses différents composants qui le constituent : le servomoteur, les moteurs pas à pas et le bouton de démarrage différé. </p>
 <p>Au cours de cette configuration, elle met le robot dans un état standard qui sera ainsi toujours le même au début de l'exécution de chaque essai : la vitesse de rotation des moteurs pas à pas est par défaut de 10 et le feutre est en position basse. Cette fonction à sa fin fait appel à <a class="el" href="Tortuino_8cpp.html#ac3d131be17dee64b89b0806bd4ee37b2" title="Réalise l&#39;attente nécessaire à la fonctionnalité du démarrage différé. ">attendreBouton()</a> qui bloquera tant que le bouton de démarrage différé n'est pas appuyé. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00067">67</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00069">69</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -355,7 +358,7 @@ Florian Bescher </dd></dl>
 </dl>
 <dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#a2af89837a61b0af5c06394e5956c81d0" title="Initialise la configuration du robot pour qu&#39;il puisse correctement communiquer avec ses différents c...">initialiser()</a> </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00087">87</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00089">89</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -384,7 +387,7 @@ Florian Bescher </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00116">116</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00118">118</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -406,7 +409,7 @@ Florian Bescher </dd></dl>
 <p>Place le feutre en position haute de telle manière qu'il ne touche pas la feuille en-dessous du robot, en supposant que le collier le tenant et permettant ce déplacement soit correctement ajusté. </p>
 <dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#a38b27067ab836a2120ab4946d4fccf63" title="Place le feutre en position basse de telle manière qu&#39;il touche la feuille en-dessous du robot...">descendreFeutre()</a> </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00229">229</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00233">233</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -435,7 +438,7 @@ Florian Bescher </dd></dl>
 </dl>
 <dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#a64bb28327d74796c2c81845523b7425f" title="Fait avancer le robot Tortuino d&#39;une distance donnée. ">avancer(float distance)</a> </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00183">183</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00187">187</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -457,7 +460,7 @@ Florian Bescher </dd></dl>
 <p>Permet de mettre à l'arrêt l'exécution en cours que réalise l'Arduino. </p>
 <p>Cette fonction peut se révéler utile si le croquis Arduino utilise la fonction loop() mais souhaite à un moment donné stopper le robot. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00145">145</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00149">149</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -487,7 +490,7 @@ Florian Bescher </dd></dl>
 </dl>
 <dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#a68c284f58ca18c57a5937859031ec16b" title="Fait tourner sur place le robot Tortuino d&#39;un angle fourni vers sa gauche. ">tournerGauche(float angle)</a> </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00218">218</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00222">222</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -517,7 +520,7 @@ Florian Bescher </dd></dl>
 </dl>
 <dl class="section see"><dt>Voir également</dt><dd><a class="el" href="Tortuino_8cpp.html#aa9d442166cb63de9ad4e85e6540a276f" title="Fait tourner sur place le robot Tortuino d&#39;un angle fourni vers sa droite. ">tournerDroite(float angle)</a> </dd></dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00196">196</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00200">200</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -545,7 +548,7 @@ Florian Bescher </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00155">155</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00159">159</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -569,14 +572,33 @@ Florian Bescher </dd></dl>
 
 </div>
 </div>
-<a id="a639b5a8ddf6d8835ceb24ef9ceb53795"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a639b5a8ddf6d8835ceb24ef9ceb53795">&#9670;&nbsp;</a></span>delaiBouton</h2>
+<a id="a9515eda867dc6227f3eea0cbfbace3fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9515eda867dc6227f3eea0cbfbace3fc">&#9670;&nbsp;</a></span>delaiApresBouton</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int delaiBouton = 10</td>
+          <td class="memname">const int delaiApresBouton = 500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le délai en ms effectué après que le bouton ait été pressé. </p>
+<p>Il permet d'éviter que l'utilisateur se coince le doigt dans le câblage du robot au démarrage de l'exécution du programme de celui-ci. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00038">38</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9eba208714a1284a1874efde9744351e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eba208714a1284a1874efde9744351e">&#9670;&nbsp;</a></span>delaiEntreBouton</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int delaiEntreBouton = 10</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -602,7 +624,7 @@ Florian Bescher </dd></dl>
 <p>Le délai en ms d'attente après l'envoi d'une commande au feutre. </p>
 <p>Paramétré empiriquement. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00039">39</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00041">41</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -712,7 +734,7 @@ Florian Bescher </dd></dl>
 
 <p>L'objet qui sert à contrôler le servomoteur soulevant et abaissant le feutre du robot. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00044">44</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00046">46</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -730,7 +752,7 @@ Florian Bescher </dd></dl>
 
 <p>L'objet qui sert à contrôler le moteur pas à pas de gauche et qui est relié aux ports 10 à 13. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00041">41</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00043">43</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>
@@ -748,7 +770,7 @@ Florian Bescher </dd></dl>
 
 <p>L'objet qui sert à contrôler le moteur pas à pas de droite et qui est relié aux ports 2 à 5. </p>
 
-<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00042">42</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
+<p class="definition">Définition à la ligne <a class="el" href="Tortuino_8cpp_source.html#l00044">44</a> du fichier <a class="el" href="Tortuino_8cpp_source.html">Tortuino.cpp</a>.</p>
 
 </div>
 </div>

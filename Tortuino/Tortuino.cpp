@@ -35,7 +35,8 @@ const int	portBouton	=	7,						/**< Le numéro de la broche qui sert de port pou
 			portServo	=	9;						/**< Le numéro de la broche pour le port du servomoteur : 9. */
 
 const int	delaiEntreBouton	=	10;				/**< Le délai en ms entre chaque test du bouton. */
-const int	delaiApresBouton	=	500;
+const int	delaiApresBouton	=	500;			/**< Le délai en ms effectué après que le bouton ait été pressé. Il permet d'éviter que l'utilisateur
+														se coince le doigt dans le câblage du robot au démarrage de l'exécution du programme de celui-ci. */
 
 const int 	delaiMonterDescendre	=	200;		/**< Le délai en ms d'attente après l'envoi d'une commande au feutre. Paramétré empiriquement. */
 
@@ -137,7 +138,7 @@ void attendreBouton() {
 		delay(delaiEntreBouton);										// sinon, on attend un petit peut et on teste à nouveau;
 	}
 
-	delay(delaiApresBouton);
+	delay(delaiApresBouton);											// enfin, on attend un peu plus après la détection du bouton, pour ne pas surprendre.
 }
 
 /**
