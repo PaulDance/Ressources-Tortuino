@@ -34,7 +34,8 @@ const int	FEUTRE_HAUT	=	50,						/**< L'angle de la position haute du servomoteu
 const int	portBouton	=	7,						/**< Le numéro de la broche qui sert de port pour le bouton permettant le démarrage différé : 7. */
 			portServo	=	9;						/**< Le numéro de la broche pour le port du servomoteur : 9. */
 
-const int	delaiBouton	=	10;						/**< Le délai en ms entre chaque test du bouton. */
+const int	delaiEntreBouton	=	10;				/**< Le délai en ms entre chaque test du bouton. */
+const int	delaiApresBouton	=	500;
 
 const int 	delaiMonterDescendre	=	200;		/**< Le délai en ms d'attente après l'envoi d'une commande au feutre. Paramétré empiriquement. */
 
@@ -133,8 +134,10 @@ void attendreBouton() {
 			return;														// on met fin à l'attente;
 		}
 
-		delay(delaiBouton);												// sinon, on attend un petit peut et on teste à nouveau.
+		delay(delaiEntreBouton);										// sinon, on attend un petit peut et on teste à nouveau;
 	}
+
+	delay(delaiApresBouton);
 }
 
 /**
@@ -144,7 +147,7 @@ void attendreBouton() {
  */
 void stopper(){
 	while (true){														// Tout le temps
-		delay(delaiBouton);												// on attend un petit peu.
+		delay(delaiEntreBouton);										// on attend un petit peu.
 	}
 }
 
