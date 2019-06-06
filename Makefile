@@ -6,8 +6,9 @@ DOC=./Documentation
 LIB=./Tortuino
 DGN=./DoxyConfig
 LOG=./make.log
+MTS=./make.timestamp
 
-all: $(LIB)/Tortuino.h $(LIB)/Tortuino.cpp $(LIB)/TortuinoDessins.h $(LIB)/TortuinoDessins.cpp
+$(MTS): $(LIB)/Tortuino.h $(LIB)/Tortuino.cpp $(LIB)/TortuinoDessins.h $(LIB)/TortuinoDessins.cpp
 	echo "[make] Started documentation make log." > $(LOG)
 	echo "[make] Calling Doxygen...\n" >> $(LOG)
 	doxygen $(DGN) >> $(LOG)
@@ -16,6 +17,7 @@ all: $(LIB)/Tortuino.h $(LIB)/Tortuino.cpp $(LIB)/TortuinoDessins.h $(LIB)/Tortu
 	make -C $(DOC)/latex/ >> $(LOG)
 	echo "\n\[make] PDF's make finished." >> $(LOG)
 	echo "[make] Documentation make log terminated." >> $(LOG)
+	touch $(MTS)
 
 cleanall:
 	rm -rf $(DOC)/*
