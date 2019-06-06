@@ -91,7 +91,90 @@ Florian Bescher
 \begin{DoxyVersion}{Version}
 1.\+2
 \end{DoxyVersion}
-Le fichier \hyperlink{Tortuino_8cpp}{Tortuino.\+cpp} rassemble les fonctionnalités essentielles au bon fonctionnement de la communication avec un robot Tortuino. Ces fonctionnalités sont principalement réalisées et mises à disposition au travers de fonctions qui les implémentent. Il y a aussi des paramètres en début de fichiers qui peuvent être modifiés à souhait pour adapter au mieux les programmes au robot qui sera manipulé au final \+: le calibrer. 
+Le fichier \hyperlink{Tortuino_8cpp}{Tortuino.\+cpp} rassemble les fonctionnalités essentielles au bon fonctionnement de la communication avec un robot Tortuino. Ces fonctionnalités sont principalement réalisées et mises à disposition au travers de fonctions qui les implémentent. Il y a aussi des paramètres en début de fichiers qui peuvent être modifiés à souhait pour adapter au mieux les programmes au robot qui sera manipulé au final \+: ils se révèlent particulièrement utiles pour le calibrer. Voir la section {\bfseries Variables} pour plus de détails.~\newline
+
+
+Pour comprendre comment peut s\textquotesingle{}utiliser cette bibliothèque de manière plus pratique, le fichier de test Test\+Tortuino.\+ino résume assez bien l\textquotesingle{}ensemble des choses réalisables grâce à elle. Pour expliquer avec un autre exemple, les instructions suivantes permettent de faire dessiner au robot un carré de côté 10cm \+:
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} setup() \{                      \textcolor{comment}{// setup() n'est exécutée qu'une seule fois.}
+    \hyperlink{Tortuino_8cpp_a2af89837a61b0af5c06394e5956c81d0}{initialiser}();                  \textcolor{comment}{// Règle l'Arduino sur les bons ports de communication.}
+    
+    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 4; i++) \{   \textcolor{comment}{// Pour chacun des côtés,}
+        \hyperlink{Tortuino_8cpp_a64bb28327d74796c2c81845523b7425f}{avancer}(10);                \textcolor{comment}{// on avance de 10cm,}
+        \hyperlink{Tortuino_8cpp_a68c284f58ca18c57a5937859031ec16b}{tournerGauche}(90);          \textcolor{comment}{// et on tourne vers la gauche de 90°.}
+    \}
+\}
+
+\textcolor{keywordtype}{void} loop() \{                       \textcolor{comment}{// loop() est exécutée en boucle, après setup().}
+                                    \textcolor{comment}{// Aucune instruction de plus à ajouter ici.}
+\}
+\end{DoxyCode}
+
+
+Notez bien que dans ce code source, les fonctions ainsi déclarées {\ttfamily setup()} et {\ttfamily loop()} sont spécifiques à l\textquotesingle{}Arduino, le tout se doit d\textquotesingle{}être utilisé avec l\textquotesingle{}éditeur Arduino I\+DE fourni par le constructeur. Consultez la \href{https://www.arduino.cc/reference/en/}{\tt documentation Arduino} pour plus de détails à ce sujet et en particulier la référence précise de l\textquotesingle{}utilisation des fonctions \href{https://www.arduino.cc/reference/en/language/structure/sketch/setup/}{\tt {\ttfamily setup()}} et \href{https://www.arduino.cc/reference/en/language/structure/sketch/loop/}{\tt {\ttfamily loop()}}.~\newline
+
+
+La présente bibliothèque fourni aussi une fonction \hyperlink{Tortuino_8cpp_ad4869b51496adaf96ca447f5c7398197}{stopper()} qui une fois appelée bloquera l\textquotesingle{}exécution de tout programme. Cela permet alors de réaliser le programme précédent de manière équivalente, mais en séparant cette fois-\/ci l\textquotesingle{}initialisation de l\textquotesingle{}exécution \+:
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} setup() \{                      \textcolor{comment}{// setup() n'est exécutée qu'une seule fois.}
+    \hyperlink{Tortuino_8cpp_a2af89837a61b0af5c06394e5956c81d0}{initialiser}();                  \textcolor{comment}{// Règle l'Arduino sur les bons ports de communication.}
+\}
+
+\textcolor{keywordtype}{void} loop() \{                       \textcolor{comment}{// loop() est exécutée en boucle, après setup().}
+    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 4; i++) \{   \textcolor{comment}{// Pour chacun des côtés,}
+        \hyperlink{Tortuino_8cpp_a64bb28327d74796c2c81845523b7425f}{avancer}(10);                \textcolor{comment}{// on avance de 10cm,}
+        \hyperlink{Tortuino_8cpp_a68c284f58ca18c57a5937859031ec16b}{tournerGauche}(90);          \textcolor{comment}{// et on tourne vers la gauche de 90°.}
+    \}
+
+    \hyperlink{Tortuino_8cpp_ad4869b51496adaf96ca447f5c7398197}{stopper}();                      \textcolor{comment}{// Enfin, on empêche l'Arduino de boucler à l'infini.}
+\}
+\end{DoxyCode}
+
+
+Les deux programmes n\textquotesingle{}ont, au fond, aucune différence \+: le robot tracera le même carré. Ceci peut être intéressant pour améliorer la compréhension de la syntaxe Arduino, car {\ttfamily setup()} ne gardera ainsi que ce qui est effectivement lié à l\textquotesingle{}initialisation du robot, tandis que {\ttfamily loop()} se chargera du principal du programme. Cependant, l\textquotesingle{}instruction \hyperlink{Tortuino_8cpp_ad4869b51496adaf96ca447f5c7398197}{stopper()} présente ci-\/dessus à la fin de {\ttfamily loop()} est très importante car sinon, le robot exécutera en boucle les instructions de {\ttfamily loop()} et le dessin qu\textquotesingle{}elles décrivent sera tracé indéfiniment. Un choix pédagogique est donc à faire ici.~\newline
+
+
+De plus, la bibliothèque fourni une fonctionnalité supplémentaire \+: un moyen pour le robot de contrôler son servomoteur pour faire monter ou descendre son feutre. On peut donc par exemple reprendre le programme précédant et le modifier un peu pour tracer un carré en pointillés de la sorte \+:
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} setup() \{                      \textcolor{comment}{// setup() n'est exécutée qu'une seule fois.}
+    \hyperlink{Tortuino_8cpp_a2af89837a61b0af5c06394e5956c81d0}{initialiser}();                  \textcolor{comment}{// Règle l'Arduino sur les bons ports de communication.}
+\}
+
+\textcolor{keywordtype}{void} loop() \{                       \textcolor{comment}{// loop() est exécutée en boucle, après setup().}
+    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 4; i++) \{   \textcolor{comment}{// Pour chacun des côtés,}
+        \hyperlink{Tortuino_8cpp_a38b27067ab836a2120ab4946d4fccf63}{descendreFeutre}();          \textcolor{comment}{// on met le feutre en position basse,}
+        \hyperlink{Tortuino_8cpp_a64bb28327d74796c2c81845523b7425f}{avancer}(3.33);              \textcolor{comment}{// on avance du premier tiers du côté en cours : trait tracé,}
+        \hyperlink{Tortuino_8cpp_af6c422d84f31684d84208dd0a3828449}{monterFeutre}();             \textcolor{comment}{// on monte le feutre,}
+        \hyperlink{Tortuino_8cpp_a64bb28327d74796c2c81845523b7425f}{avancer}(3.33);              \textcolor{comment}{// on avance du deuxième tiers du côté en cours : trait non
+       tracé,}
+        \hyperlink{Tortuino_8cpp_a38b27067ab836a2120ab4946d4fccf63}{descendreFeutre}();          \textcolor{comment}{// on fait descendre le feutre,}
+        \hyperlink{Tortuino_8cpp_a64bb28327d74796c2c81845523b7425f}{avancer}(3.33);              \textcolor{comment}{// on avance du dernier tiers : trait tracé,}
+        \hyperlink{Tortuino_8cpp_a68c284f58ca18c57a5937859031ec16b}{tournerGauche}(90);          \textcolor{comment}{// et on tourne à gauche pour le côté suivant.}
+    \}
+
+    \hyperlink{Tortuino_8cpp_ad4869b51496adaf96ca447f5c7398197}{stopper}();                      \textcolor{comment}{// Enfin, on empêche l'Arduino de boucler à l'infini.}
+\}
+\end{DoxyCode}
+
+
+Remarquez bien qu\textquotesingle{}ici les appels à la fonction \hyperlink{Tortuino_8cpp_a64bb28327d74796c2c81845523b7425f}{avancer()} sont réalisés avec un argument effectivement de type flottant ({\ttfamily float}), alors que précédemment, seulement fournir un entier ({\ttfamily int}) était suffisant. En réalité, il y avait déjà avant une conversion des entiers fournis en nombre décimaux pour que l\textquotesingle{}appel se réalise correctement.
+
+\begin{DoxySeeAlso}{Voir également}
+\hyperlink{Tortuino_8cpp_a2af89837a61b0af5c06394e5956c81d0}{initialiser()} 
+
+\hyperlink{Tortuino_8cpp_a64bb28327d74796c2c81845523b7425f}{avancer(float distance)} 
+
+\hyperlink{Tortuino_8cpp_a68c284f58ca18c57a5937859031ec16b}{tourner\+Gauche(float angle)} 
+
+\hyperlink{Tortuino_8cpp_af6c422d84f31684d84208dd0a3828449}{monter\+Feutre()} 
+\end{DoxySeeAlso}
+
 
 \subsection{Documentation des fonctions}
 \mbox{\Hypertarget{Tortuino_8cpp_ac3d131be17dee64b89b0806bd4ee37b2}\label{Tortuino_8cpp_ac3d131be17dee64b89b0806bd4ee37b2}} 
@@ -106,7 +189,7 @@ Réalise l\textquotesingle{}attente nécessaire à la fonctionnalité du démarr
 
 L\textquotesingle{}exécution de cette fonction bloquera tant que le bouton en question n\textquotesingle{}a pas été appuyé. 
 
-Définition à la ligne 127 du fichier Tortuino.\+cpp.
+Définition à la ligne 216 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a64bb28327d74796c2c81845523b7425f}\label{Tortuino_8cpp_a64bb28327d74796c2c81845523b7425f}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!avancer@{avancer}}
@@ -128,7 +211,7 @@ Fait avancer le robot Tortuino d\textquotesingle{}une distance donnée.
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 168 du fichier Tortuino.\+cpp.
+Définition à la ligne 257 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a38b27067ab836a2120ab4946d4fccf63}\label{Tortuino_8cpp_a38b27067ab836a2120ab4946d4fccf63}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!descendre\+Feutre@{descendre\+Feutre}}
@@ -145,7 +228,7 @@ Place le feutre en position basse de telle manière qu\textquotesingle{}il touch
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 244 du fichier Tortuino.\+cpp.
+Définition à la ligne 333 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_aafd65bcf38b0045f1e0ee681061a9e7c}\label{Tortuino_8cpp_aafd65bcf38b0045f1e0ee681061a9e7c}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!distance\+To\+Step@{distance\+To\+Step}}
@@ -169,7 +252,7 @@ Le nombre de pas permettant de réaliser le déplacement de la distance donnée.
 \end{DoxyReturn}
 
 
-Définition à la ligne 57 du fichier Tortuino.\+cpp.
+Définition à la ligne 145 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a2af89837a61b0af5c06394e5956c81d0}\label{Tortuino_8cpp_a2af89837a61b0af5c06394e5956c81d0}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!initialiser@{initialiser}}
@@ -183,7 +266,7 @@ Initialise la configuration du robot pour qu\textquotesingle{}il puisse correcte
 
 Au cours de cette configuration, elle met le robot dans un état standard qui sera ainsi toujours le même au début de l\textquotesingle{}exécution de chaque essai \+: la vitesse de rotation des moteurs pas à pas est par défaut de 10 et le feutre est en position basse. Cette fonction à sa fin fait appel à \hyperlink{Tortuino_8cpp_ac3d131be17dee64b89b0806bd4ee37b2}{attendre\+Bouton()} qui bloquera tant que le bouton de démarrage différé n\textquotesingle{}est pas appuyé. 
 
-Définition à la ligne 69 du fichier Tortuino.\+cpp.
+Définition à la ligne 157 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a48aa40d2f100ef290066c45fd4348553}\label{Tortuino_8cpp_a48aa40d2f100ef290066c45fd4348553}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!initialiser@{initialiser}}
@@ -205,10 +288,12 @@ Le choix qui a été fait ici est de donner à chaque robot une couleur (par exe
 \end{DoxyParams}
 \begin{DoxySeeAlso}{Voir également}
 \hyperlink{Tortuino_8cpp_a2af89837a61b0af5c06394e5956c81d0}{initialiser()} 
+
+\hyperlink{Tortuino_8cpp_ace2f9a05f9c51fcf5151c1e1c5ef107c}{initialiser(float braquage)} 
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 89 du fichier Tortuino.\+cpp.
+Définition à la ligne 178 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_ace2f9a05f9c51fcf5151c1e1c5ef107c}\label{Tortuino_8cpp_ace2f9a05f9c51fcf5151c1e1c5ef107c}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!initialiser@{initialiser}}
@@ -229,7 +314,7 @@ Le reste de l\textquotesingle{}initialisation est bien entendu aussi réalisé.
 \end{DoxyParams}
 
 
-Définition à la ligne 118 du fichier Tortuino.\+cpp.
+Définition à la ligne 207 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_af6c422d84f31684d84208dd0a3828449}\label{Tortuino_8cpp_af6c422d84f31684d84208dd0a3828449}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!monter\+Feutre@{monter\+Feutre}}
@@ -246,7 +331,7 @@ Place le feutre en position haute de telle manière qu\textquotesingle{}il ne to
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 232 du fichier Tortuino.\+cpp.
+Définition à la ligne 321 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_adb4b90c2b3dd8a5aba981068df36bba0}\label{Tortuino_8cpp_adb4b90c2b3dd8a5aba981068df36bba0}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!reculer@{reculer}}
@@ -268,7 +353,7 @@ Fait reculer le robot Tortuino d\textquotesingle{}une distance donnée.
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 186 du fichier Tortuino.\+cpp.
+Définition à la ligne 275 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_ad4869b51496adaf96ca447f5c7398197}\label{Tortuino_8cpp_ad4869b51496adaf96ca447f5c7398197}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!stopper@{stopper}}
@@ -282,7 +367,7 @@ Permet de mettre à l\textquotesingle{}arrêt l\textquotesingle{}exécution en c
 
 Cette fonction peut se révéler utile si le croquis Arduino utilise la fonction loop() mais souhaite à un moment donné stopper le robot. 
 
-Définition à la ligne 148 du fichier Tortuino.\+cpp.
+Définition à la ligne 237 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_aa9d442166cb63de9ad4e85e6540a276f}\label{Tortuino_8cpp_aa9d442166cb63de9ad4e85e6540a276f}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!tourner\+Droite@{tourner\+Droite}}
@@ -306,7 +391,7 @@ La rotation s\textquotesingle{}effectue autour de l\textquotesingle{}axe de déc
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 221 du fichier Tortuino.\+cpp.
+Définition à la ligne 310 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a68c284f58ca18c57a5937859031ec16b}\label{Tortuino_8cpp_a68c284f58ca18c57a5937859031ec16b}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!tourner\+Gauche@{tourner\+Gauche}}
@@ -330,7 +415,7 @@ La rotation s\textquotesingle{}effectue autour de l\textquotesingle{}axe de déc
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 199 du fichier Tortuino.\+cpp.
+Définition à la ligne 288 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_ab7928bf519ac707766463d32330ae02c}\label{Tortuino_8cpp_ab7928bf519ac707766463d32330ae02c}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!vitesse@{vitesse}}
@@ -349,7 +434,7 @@ Règle la vitesse de rotation des moteurs pas à pas.
 \end{DoxyParams}
 
 
-Définition à la ligne 158 du fichier Tortuino.\+cpp.
+Définition à la ligne 247 du fichier Tortuino.\+cpp.
 
 
 
@@ -366,7 +451,7 @@ Le rayon de braquage du robot.
 
 C\textquotesingle{}est une valeur qui peut être amenée à être calibrée. 
 
-Définition à la ligne 29 du fichier Tortuino.\+cpp.
+Définition à la ligne 117 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a9515eda867dc6227f3eea0cbfbace3fc}\label{Tortuino_8cpp_a9515eda867dc6227f3eea0cbfbace3fc}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!delai\+Apres\+Bouton@{delai\+Apres\+Bouton}}
@@ -380,7 +465,7 @@ Le délai en ms effectué après que le bouton ait été pressé.
 
 Il permet d\textquotesingle{}éviter que l\textquotesingle{}utilisateur se coince le doigt dans le câblage du robot au démarrage de l\textquotesingle{}exécution du programme de celui-\/ci. 
 
-Définition à la ligne 38 du fichier Tortuino.\+cpp.
+Définition à la ligne 126 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a9eba208714a1284a1874efde9744351e}\label{Tortuino_8cpp_a9eba208714a1284a1874efde9744351e}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!delai\+Entre\+Bouton@{delai\+Entre\+Bouton}}
@@ -392,9 +477,9 @@ Définition à la ligne 38 du fichier Tortuino.\+cpp.
 
 Le délai en ms entre chaque test du bouton. 
 
+Sa petite valeur importe peu, mais le délai reste utile. 
 
-
-Définition à la ligne 37 du fichier Tortuino.\+cpp.
+Définition à la ligne 125 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a0fbf55c6d4908a32d7594ce830c0da7e}\label{Tortuino_8cpp_a0fbf55c6d4908a32d7594ce830c0da7e}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!delai\+Monter\+Descendre@{delai\+Monter\+Descendre}}
@@ -408,7 +493,7 @@ Le délai en ms d\textquotesingle{}attente après l\textquotesingle{}envoi d\tex
 
 Paramétré empiriquement. 
 
-Définition à la ligne 41 du fichier Tortuino.\+cpp.
+Définition à la ligne 129 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a2f3d019fd98fa45800ff50e070168428}\label{Tortuino_8cpp_a2f3d019fd98fa45800ff50e070168428}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!F\+E\+U\+T\+R\+E\+\_\+\+B\+AS@{F\+E\+U\+T\+R\+E\+\_\+\+B\+AS}}
@@ -422,7 +507,7 @@ L\textquotesingle{}angle de la position basse du servomoteur.
 
 Il a été ajusté empiriquement. 
 
-Définition à la ligne 32 du fichier Tortuino.\+cpp.
+Définition à la ligne 120 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_acb58d9f9a2f6fc5feee08a6b8608923b}\label{Tortuino_8cpp_acb58d9f9a2f6fc5feee08a6b8608923b}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!F\+E\+U\+T\+R\+E\+\_\+\+H\+A\+UT@{F\+E\+U\+T\+R\+E\+\_\+\+H\+A\+UT}}
@@ -436,7 +521,7 @@ L\textquotesingle{}angle de la position haute du servomoteur.
 
 Il a été ajusté empiriquement. 
 
-Définition à la ligne 31 du fichier Tortuino.\+cpp.
+Définition à la ligne 119 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_ac294c99f76085cbe8d1b91ae882532b6}\label{Tortuino_8cpp_ac294c99f76085cbe8d1b91ae882532b6}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!P\+E\+R\+I\+M\+E\+T\+ER@{P\+E\+R\+I\+M\+E\+T\+ER}}
@@ -450,7 +535,7 @@ Le périmètre des roues du robot tel que mesuré avec le pneu.
 
 
 
-Définition à la ligne 28 du fichier Tortuino.\+cpp.
+Définition à la ligne 116 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a58fc84b520fc48bc331849155ce88f5d}\label{Tortuino_8cpp_a58fc84b520fc48bc331849155ce88f5d}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!port\+Bouton@{port\+Bouton}}
@@ -464,7 +549,7 @@ Le numéro de la broche qui sert de port pour le bouton permettant le démarrage
 
 
 
-Définition à la ligne 34 du fichier Tortuino.\+cpp.
+Définition à la ligne 122 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_acb30e18355c39519e306b7aff1cf8d7e}\label{Tortuino_8cpp_acb30e18355c39519e306b7aff1cf8d7e}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!port\+Servo@{port\+Servo}}
@@ -478,7 +563,7 @@ Le numéro de la broche pour le port du servomoteur \+: 9.
 
 
 
-Définition à la ligne 35 du fichier Tortuino.\+cpp.
+Définition à la ligne 123 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a79efceea669fb85a732c30f47cf7e59c}\label{Tortuino_8cpp_a79efceea669fb85a732c30f47cf7e59c}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!servo@{servo}}
@@ -492,7 +577,7 @@ L\textquotesingle{}objet qui sert à contrôler le servomoteur soulevant et abai
 
 
 
-Définition à la ligne 46 du fichier Tortuino.\+cpp.
+Définition à la ligne 134 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a42114b3d3de9e085781f2eecb975fe30}\label{Tortuino_8cpp_a42114b3d3de9e085781f2eecb975fe30}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!stepper\+Left@{stepper\+Left}}
@@ -506,7 +591,7 @@ L\textquotesingle{}objet qui sert à contrôler le moteur pas à pas de gauche e
 
 
 
-Définition à la ligne 43 du fichier Tortuino.\+cpp.
+Définition à la ligne 131 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a9aacc3ab5a103b7b2287ea1569df491a}\label{Tortuino_8cpp_a9aacc3ab5a103b7b2287ea1569df491a}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!stepper\+Right@{stepper\+Right}}
@@ -520,7 +605,7 @@ L\textquotesingle{}objet qui sert à contrôler le moteur pas à pas de droite e
 
 
 
-Définition à la ligne 44 du fichier Tortuino.\+cpp.
+Définition à la ligne 132 du fichier Tortuino.\+cpp.
 
 \mbox{\Hypertarget{Tortuino_8cpp_a0dffab4a0297ba1dfc85381688a235bb}\label{Tortuino_8cpp_a0dffab4a0297ba1dfc85381688a235bb}} 
 \index{Tortuino.\+cpp@{Tortuino.\+cpp}!steps\+Per\+Revolution@{steps\+Per\+Revolution}}
@@ -534,5 +619,5 @@ Le nombre de pas par tour que réalise un moteur pas à pas ; c\textquotesingle{
 
 
 
-Définition à la ligne 27 du fichier Tortuino.\+cpp.
+Définition à la ligne 115 du fichier Tortuino.\+cpp.
 

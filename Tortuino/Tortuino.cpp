@@ -18,8 +18,96 @@
  * Le fichier Tortuino.cpp rassemble les fonctionnalités essentielles au bon fonctionnement
  * de la communication avec un robot Tortuino. Ces fonctionnalités sont principalement
  * réalisées et mises à disposition au travers de fonctions qui les implémentent. Il y a
- * aussi des paramètres en début de fichiers qui peuvent être modifiés à souhait pour
- * adapter au mieux les programmes au robot qui sera manipulé au final : le calibrer.
+ * aussi des paramètres en début de fichiers qui peuvent être modifiés à souhait pour adapter
+ * au mieux les programmes au robot qui sera manipulé au final : ils se révèlent particulièrement
+ * utiles pour le calibrer. Voir la section **Variables** pour plus de détails.<br/>
+ *
+ * Pour comprendre comment peut s'utiliser cette bibliothèque de manière plus pratique, le fichier
+ * de test <span style="text-decoration: underline;">TestTortuino.ino</span> résume assez bien
+ * l'ensemble des choses réalisables grâce à elle. Pour expliquer avec un autre exemple, les
+ * instructions suivantes permettent de faire dessiner au robot un carré de côté 10cm :
+ * 
+ * {@code
+ * 	void setup() {						// setup() n'est exécutée qu'une seule fois.
+ * 		initialiser();					// Règle l'Arduino sur les bons ports de communication.
+ * 		
+ * 		for (int i = 0; i < 4; i++) {	// Pour chacun des côtés,
+ * 			avancer(10);				// on avance de 10cm,
+ * 			tournerGauche(90);			// et on tourne vers la gauche de 90°.
+ * 		}
+ * 	}
+ * 	
+ * 	void loop() {						// loop() est exécutée en boucle, après setup().
+ * 										// Aucune instruction de plus à ajouter ici.
+ * 	}
+ * }
+ *
+ * Notez bien que dans ce code source, les fonctions ainsi déclarées `setup()` et `loop()` sont spécifiques
+ * à l'Arduino, le tout se doit d'être utilisé avec l'éditeur Arduino IDE fourni par le constructeur.
+ * Consultez la <a href="https://www.arduino.cc/reference/en/">documentation Arduino</a> pour plus de
+ * détails à ce sujet et en particulier la référence précise de l'utilisation des fonctions
+ * <a href="https://www.arduino.cc/reference/en/language/structure/sketch/setup/">`setup()`</a> et
+ * <a href="https://www.arduino.cc/reference/en/language/structure/sketch/loop/">`loop()`</a>.<br/>
+ *
+ * La présente bibliothèque fourni aussi une fonction stopper() qui une fois appelée bloquera l'exécution
+ * de tout programme. Cela permet alors de réaliser le programme précédent de manière équivalente, mais
+ * en séparant cette fois-ci l'initialisation de l'exécution :
+ * 
+ * {@code
+ * 	void setup() {						// setup() n'est exécutée qu'une seule fois.
+ * 		initialiser();					// Règle l'Arduino sur les bons ports de communication.
+ * 	}
+ * 	
+ * 	void loop() {						// loop() est exécutée en boucle, après setup().
+ * 		for (int i = 0; i < 4; i++) {	// Pour chacun des côtés,
+ * 			avancer(10);				// on avance de 10cm,
+ * 			tournerGauche(90);			// et on tourne vers la gauche de 90°.
+ * 		}
+ *
+ * 		stopper();						// Enfin, on empêche l'Arduino de boucler à l'infini.
+ * 	}
+ * }
+ *
+ * Les deux programmes n'ont, au fond, aucune différence : le robot tracera le même carré. Ceci peut
+ * être intéressant pour améliorer la compréhension de la syntaxe Arduino, car `setup()` ne gardera ainsi
+ * que ce qui est effectivement lié à l'initialisation du robot, tandis que `loop()` se chargera du principal du
+ * programme. Cependant, l'instruction stopper() présente ci-dessus à la fin de `loop()` est très importante
+ * car sinon, le robot exécutera en boucle les instructions de `loop()` et le dessin qu'elles décrivent sera
+ * tracé indéfiniment. Un choix pédagogique est donc à faire ici.<br/>
+ *
+ * De plus, la bibliothèque fourni une fonctionnalité supplémentaire : un moyen pour le robot de contrôler
+ * son servomoteur pour faire monter ou descendre son feutre. On peut donc par exemple reprendre le
+ * programme précédant et le modifier un peu pour tracer un carré en pointillés de la sorte :
+ *
+ * {@code
+ * 	void setup() {						// setup() n'est exécutée qu'une seule fois.
+ * 		initialiser();					// Règle l'Arduino sur les bons ports de communication.
+ * 	}
+ * 	
+ * 	void loop() {						// loop() est exécutée en boucle, après setup().
+ * 		for (int i = 0; i < 4; i++) {	// Pour chacun des côtés,
+ * 			descendreFeutre();			// on met le feutre en position basse,
+ * 			avancer(3.33);				// on avance du premier tiers du côté en cours : trait tracé,
+ * 			monterFeutre();				// on monte le feutre,
+ * 			avancer(3.33);				// on avance du deuxième tiers du côté en cours : trait non tracé,
+ * 			descendreFeutre();			// on fait descendre le feutre,
+ * 			avancer(3.33);				// on avance du dernier tiers : trait tracé,
+ * 			tournerGauche(90);			// et on tourne à gauche pour le côté suivant.
+ * 		}
+ *
+ * 		stopper();						// Enfin, on empêche l'Arduino de boucler à l'infini.
+ * 	}
+ * }
+ *
+ * Remarquez bien qu'ici les appels à la fonction avancer() sont réalisés avec un argument effectivement
+ * de type flottant (`float`), alors que précédemment, seulement fournir un entier (`int`) était suffisant.
+ * En réalité, il y avait déjà avant une conversion des entiers fournis en nombre décimaux pour que l'appel
+ * se réalise correctement.
+ *
+ * @see initialiser()
+ * @see avancer(float distance)
+ * @see tournerGauche(float angle)
+ * @see monterFeutre()
  */
 
 
@@ -34,7 +122,7 @@ const int	FEUTRE_HAUT	=	50,						/**< L'angle de la position haute du servomoteu
 const int	portBouton	=	7,						/**< Le numéro de la broche qui sert de port pour le bouton permettant le démarrage différé : 7. */
 			portServo	=	9;						/**< Le numéro de la broche pour le port du servomoteur : 9. */
 
-const int	delaiEntreBouton	=	10;				/**< Le délai en ms entre chaque test du bouton. */
+const int	delaiEntreBouton	=	10;				/**< Le délai en ms entre chaque test du bouton. Sa petite valeur importe peu, mais le délai reste utile. */
 const int	delaiApresBouton	=	500;			/**< Le délai en ms effectué après que le bouton ait été pressé. Il permet d'éviter que l'utilisateur
 														se coince le doigt dans le câblage du robot au démarrage de l'exécution du programme de celui-ci. */
 
@@ -85,6 +173,7 @@ void initialiser() {
  * 
  * @param couleur La première lettre de la couleur identifiant le robot utilisé.
  * @see initialiser()
+ * @see initialiser(float braquage)
  */
 void initialiser(char couleur) {
 	if (couleur == 'w') {												// On teste simplement quelle valeur a la couleur
