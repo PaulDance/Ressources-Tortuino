@@ -2,6 +2,22 @@
 # Ce Makefile sert à faciliter la mise à jour de la documentation,
 # quand celle-ci a effectivement été modifiée. Pour l'utiliser : make.
 
+# Pour donner plus de détails, par défaut quand on lance juste 'make',
+# ce Makefile mettera à jour le site web et le PDF de la documentation
+# seulement si nécessaire, c'est-à-dire seulement si la date de
+# modification du fichier make.timestamp est antérieure à une de celles
+# des fichiers sources de la bibliothèque Tortuino. Cette fonctionnalité
+# est assurée par make, elle est donc sûre.
+# De plus, on peut avoir accès à un moyen de mettre à jour "proprement"
+# le repertoire git grâce à 'make pull' qui va d'abord exécuter 'git pull'
+# pour récupérer les derniers commits, puis 'touch make.timestamp' pour
+# s'assurer que la date de dernière modification de ce fichier soit
+# plus récente que ce qui permet de générer la documentation, et ainsi
+# éviter de recréer par erreur la documentation.
+# Enfin, il est aussi possible de faire 'make cleanall' qui permet de
+# nettoyer ce que produit ce Makefile en supprimant tout le contenu
+# du dossier Documentation, les logs et autres fichiers.
+
 
 
 # Documentation folder
@@ -21,6 +37,10 @@ MTS=./make.timestamp
 
 # LaTeX header file
 LHD=$(DOC)/latex/header.tex
+
+
+# Default target set to the following one
+.DEFAULT_GOAL := $(MTS)
 
 
 $(MTS): $(LIB)/Tortuino.h $(LIB)/Tortuino.cpp $(LIB)/TortuinoDessins.h $(LIB)/TortuinoDessins.cpp
@@ -45,13 +65,22 @@ $(MTS): $(LIB)/Tortuino.h $(LIB)/Tortuino.cpp $(LIB)/TortuinoDessins.h $(LIB)/To
 	@echo "\n[make] PDF make finished." | tee -a $(LOG)
 	
 	@echo "[make] Updating make.timestamp...\n" | tee -a $(LOG)
-	touch $(MTS)
+	date +'%Y/%m/%d %H:%M:%S.%N' > $(MTS)
 	@echo "\n[make] make.timestamp update finished." | tee -a $(LOG)
 	
 	@echo "[make] Documentation make log ended." | tee -a $(LOG)
+
+pull:
+	@echo "[make] Pulling with git...\n"
+	git pull
+	@echo "\n[make] git pull finished."
+	@echo "[make] Making sure $(MTS) is up-to-date...\n"
+	touch $(MTS)
+	@echo "\n[make] Touch finished."
 
 cleanall:
 	@echo "[make] Removing auto-generated files from . and from $(DOC)..."
 	rm -rf $(DOC)/*
 	rm -f $(LOG)
+	rm -f $(MTS)
 	@echo "[make] Removal finished."
