@@ -6,9 +6,13 @@ var TortuinoDessins_8h =
     [ "carre", "TortuinoDessins_8h.html#a8fd6d1d3aad9c0c10525e5c8244a6ce1", null ],
     [ "cercle", "TortuinoDessins_8h.html#a57189e3fe807009b1595778589a16be9", null ],
     [ "courbeVonKoch", "TortuinoDessins_8h.html#af86cf0f8acc522368a052c765047a3a1", null ],
+    [ "flocon", "TortuinoDessins_8h.html#a09dd11b1a32a8ae6b97d32114cf133ad", null ],
     [ "floconVonKoch", "TortuinoDessins_8h.html#a31ef6ba782f866ce8f46e331d1ebc1f0", null ],
+    [ "maison", "TortuinoDessins_8h.html#a2332ad675f923f8b1b3573c3abb73e84", null ],
     [ "polygoneRegulier", "TortuinoDessins_8h.html#ada93849cc1680d0d43bf6f9c1de954b2", null ],
     [ "sapin", "TortuinoDessins_8h.html#a170bac7a60b14659e63b81c8eefac3dd", null ],
+    [ "spiraleCarree", "TortuinoDessins_8h.html#a9393b4ea29287edee62dc5acc01088e2", null ],
+    [ "tangram", "TortuinoDessins_8h.html#aa6cb9afcf77d54c336bab3add7731c8a", null ],
     [ "triangle", "TortuinoDessins_8h.html#afa3484b3831c738502a4c381600397ea", null ],
     [ "triangleSierpinski", "TortuinoDessins_8h.html#a0c851f0f43370a65c2da38436be9a764", null ]
 ];

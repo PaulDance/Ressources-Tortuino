@@ -50,29 +50,37 @@
 \contentsline {section}{\numberline {2.3}R\IeC {\'e}f\IeC {\'e}rence du fichier Tortuino/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Tortuino\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dessins.cpp}{20}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Description d\IeC {\'e}taill\IeC {\'e}e}{21}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Documentation des fonctions}{21}{subsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.2.1}arbre()}{21}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.1}arbre()}{22}{subsubsection.2.3.2.1}
 \contentsline {subsubsection}{\numberline {2.3.2.2}arbre\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Asymetrique()}{22}{subsubsection.2.3.2.2}
-\contentsline {subsubsection}{\numberline {2.3.2.3}arbre\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Symetrique()}{22}{subsubsection.2.3.2.3}
+\contentsline {subsubsection}{\numberline {2.3.2.3}arbre\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Symetrique()}{23}{subsubsection.2.3.2.3}
 \contentsline {subsubsection}{\numberline {2.3.2.4}carre()}{23}{subsubsection.2.3.2.4}
 \contentsline {subsubsection}{\numberline {2.3.2.5}cercle()}{23}{subsubsection.2.3.2.5}
 \contentsline {subsubsection}{\numberline {2.3.2.6}courbe\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Von\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Koch()}{24}{subsubsection.2.3.2.6}
-\contentsline {subsubsection}{\numberline {2.3.2.7}flocon\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Von\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Koch()}{24}{subsubsection.2.3.2.7}
-\contentsline {subsubsection}{\numberline {2.3.2.8}polygone\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Regulier()}{24}{subsubsection.2.3.2.8}
-\contentsline {subsubsection}{\numberline {2.3.2.9}sapin()}{25}{subsubsection.2.3.2.9}
-\contentsline {subsubsection}{\numberline {2.3.2.10}triangle()}{25}{subsubsection.2.3.2.10}
-\contentsline {subsubsection}{\numberline {2.3.2.11}triangle\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sierpinski()}{26}{subsubsection.2.3.2.11}
-\contentsline {section}{\numberline {2.4}R\IeC {\'e}f\IeC {\'e}rence du fichier Tortuino/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Tortuino\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dessins.h}{26}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Description d\IeC {\'e}taill\IeC {\'e}e}{27}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Documentation des fonctions}{27}{subsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.2.1}arbre()}{27}{subsubsection.2.4.2.1}
-\contentsline {subsubsection}{\numberline {2.4.2.2}arbre\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Asymetrique()}{28}{subsubsection.2.4.2.2}
-\contentsline {subsubsection}{\numberline {2.4.2.3}arbre\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Symetrique()}{28}{subsubsection.2.4.2.3}
-\contentsline {subsubsection}{\numberline {2.4.2.4}carre()}{29}{subsubsection.2.4.2.4}
-\contentsline {subsubsection}{\numberline {2.4.2.5}cercle()}{29}{subsubsection.2.4.2.5}
-\contentsline {subsubsection}{\numberline {2.4.2.6}courbe\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Von\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Koch()}{30}{subsubsection.2.4.2.6}
-\contentsline {subsubsection}{\numberline {2.4.2.7}flocon\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Von\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Koch()}{30}{subsubsection.2.4.2.7}
-\contentsline {subsubsection}{\numberline {2.4.2.8}polygone\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Regulier()}{30}{subsubsection.2.4.2.8}
-\contentsline {subsubsection}{\numberline {2.4.2.9}sapin()}{31}{subsubsection.2.4.2.9}
-\contentsline {subsubsection}{\numberline {2.4.2.10}triangle()}{31}{subsubsection.2.4.2.10}
-\contentsline {subsubsection}{\numberline {2.4.2.11}triangle\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sierpinski()}{32}{subsubsection.2.4.2.11}
-\contentsline {chapter}{Index}{33}{section*.11}
+\contentsline {subsubsection}{\numberline {2.3.2.7}flocon()}{24}{subsubsection.2.3.2.7}
+\contentsline {subsubsection}{\numberline {2.3.2.8}flocon\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Von\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Koch()}{25}{subsubsection.2.3.2.8}
+\contentsline {subsubsection}{\numberline {2.3.2.9}maison()}{25}{subsubsection.2.3.2.9}
+\contentsline {subsubsection}{\numberline {2.3.2.10}polygone\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Regulier()}{25}{subsubsection.2.3.2.10}
+\contentsline {subsubsection}{\numberline {2.3.2.11}sapin()}{26}{subsubsection.2.3.2.11}
+\contentsline {subsubsection}{\numberline {2.3.2.12}spirale\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Carree()}{26}{subsubsection.2.3.2.12}
+\contentsline {subsubsection}{\numberline {2.3.2.13}tangram()}{27}{subsubsection.2.3.2.13}
+\contentsline {subsubsection}{\numberline {2.3.2.14}triangle()}{27}{subsubsection.2.3.2.14}
+\contentsline {subsubsection}{\numberline {2.3.2.15}triangle\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sierpinski()}{27}{subsubsection.2.3.2.15}
+\contentsline {section}{\numberline {2.4}R\IeC {\'e}f\IeC {\'e}rence du fichier Tortuino/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Tortuino\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dessins.h}{28}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Description d\IeC {\'e}taill\IeC {\'e}e}{29}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Documentation des fonctions}{29}{subsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.2.1}arbre()}{29}{subsubsection.2.4.2.1}
+\contentsline {subsubsection}{\numberline {2.4.2.2}arbre\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Asymetrique()}{29}{subsubsection.2.4.2.2}
+\contentsline {subsubsection}{\numberline {2.4.2.3}arbre\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Symetrique()}{30}{subsubsection.2.4.2.3}
+\contentsline {subsubsection}{\numberline {2.4.2.4}carre()}{31}{subsubsection.2.4.2.4}
+\contentsline {subsubsection}{\numberline {2.4.2.5}cercle()}{31}{subsubsection.2.4.2.5}
+\contentsline {subsubsection}{\numberline {2.4.2.6}courbe\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Von\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Koch()}{31}{subsubsection.2.4.2.6}
+\contentsline {subsubsection}{\numberline {2.4.2.7}flocon()}{32}{subsubsection.2.4.2.7}
+\contentsline {subsubsection}{\numberline {2.4.2.8}flocon\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Von\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Koch()}{32}{subsubsection.2.4.2.8}
+\contentsline {subsubsection}{\numberline {2.4.2.9}maison()}{32}{subsubsection.2.4.2.9}
+\contentsline {subsubsection}{\numberline {2.4.2.10}polygone\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Regulier()}{33}{subsubsection.2.4.2.10}
+\contentsline {subsubsection}{\numberline {2.4.2.11}sapin()}{33}{subsubsection.2.4.2.11}
+\contentsline {subsubsection}{\numberline {2.4.2.12}spirale\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Carree()}{33}{subsubsection.2.4.2.12}
+\contentsline {subsubsection}{\numberline {2.4.2.13}tangram()}{34}{subsubsection.2.4.2.13}
+\contentsline {subsubsection}{\numberline {2.4.2.14}triangle()}{34}{subsubsection.2.4.2.14}
+\contentsline {subsubsection}{\numberline {2.4.2.15}triangle\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sierpinski()}{35}{subsubsection.2.4.2.15}
+\contentsline {chapter}{Index}{37}{section*.11}

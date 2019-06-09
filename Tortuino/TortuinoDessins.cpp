@@ -8,13 +8,16 @@
  * @file TortuinoDessins.cpp
  * @brief Ce fichier met à disposition quelques dessins qui peuvent être intéressants d'essayer.
  * @author Paul Mabileau <paulmabileau@hotmail.fr>
- * @version 1.2
+ * @version 1.3
  * 
  * Le fichier TortuinoDessins.cpp implémente un ensemble de fonctions réalisant quelques dessins
  * plus ou moins complexes. Les dessins les plus simples sont par exemple des polygones réguliers
  * tels qu'un triangle, un carré, un hexagone, ... les plus compliqués utilise des motifs récursifs,
  * ce qui est moins simple à programmer, mais tout à fait agréable à contempler, comme par exemple
  * un arbre avec différentes variantes, un flocon de Von Koch ou encore le triangle de Sierpiński.
+ * Il présente aussi quelques défis que nous proposons pour l'animation Tortuino et qui ont été
+ * réalisés avec succès par les stagiaires d'essai : une maison, une spirale carrée, un tangram et
+ * un flocon. Ils se trouvent dans la section défis de ce fichier.
  */
 
 
@@ -230,56 +233,86 @@ void triangleSierpinski(int nbNiveaux, float taille) {
 }
 
 
+//			-----		Section Défis		-----
+
+
+/**
+ * Réalise le premier défi que nous proposons pour l'animation Tortuino : une maison avec son
+ * toit et sa porte d'entrée. Elle n'accepte pas de paramètres en entrée, car sa forme est fixée
+ * et que mettre à disposition des moyens de personnaliser chaque partie de la maison est long
+ * et en soi pas particulièrement intéressant. Le dessin est ainsi toujours le même.
+ */
 void maison() {
-	avancer(10);
+	avancer(10);														// Le toit.
 	tournerDroite(120);
 	avancer(10);
 	tournerDroite(120);
 	avancer(10);
 	tournerDroite(30);
 	
-	avancer(10);
+	avancer(10);														// La première partie du corps.
 	tournerDroite(90);
 	avancer(6);
 	tournerDroite(90);
 	
-	avancer(4);
-	tournerDroite(90);
+	avancer(4);															// La première partie du bas
+	tournerDroite(90);													// et la porte.
 	avancer(2);
 	tournerDroite(90);
 	avancer(4);
 	tournerDroite(90);
 	
-	avancer(6);
+	avancer(6);															// Les deuxièmes parties du bas
 	tournerDroite(90);
-	avancer(10);
+	avancer(10);														// et du corps.
 	tournerDroite(90);
 }
 
+/**
+ * Trace une spirale carrée en fonction du nombre de côtés souhaités, de la longueur du côté
+ * de départ et de l'écart en longueur entre deux côtés adjacents. C'est l'implémentation du
+ * deuxième défi Tortuino. Une spirale carrée est une spirale composés d'un certain nombre de
+ * segments reliés l'un à la suite de l'autre et séparés d'un angle de droit.
+ * 
+ * @param nbCotes			Le nombre de côtés de la spirale à tracer. 1 fait un seul segment.
+ * @param longueurDepart	La longueur en centimètres du premier côté de la spirale.
+ * @param ecart				L'écart en centimètres entre deux côtés adjacents de la spirale,
+ * 							c'est-à-dire entre les côtés qui se trouvent dans la même direction
+ * 							à partir du point de départ - au nord, au sud, à l'est ou à l'ouest.
+ * 							Ce n'est pas directement l'écart entre la longueur du côté en cours
+ * 							et son suivant, mais plutôt son quadruple.
+ */
 void spiraleCarree(int nbCotes, float longueurDepart, float ecart) {
-	float longueurCote = longueurDepart;
-	const float diffLongueur = ecart / 4;
+	float longueurCote = longueurDepart;								// On enregistre la longueur du segment en cours
+	const float diffLongueur = ecart / 4;								// et la longueur qu'il lui faut ajouter pour le suivant.
 	
-	for (int i = 0; i < nbCotes; i++) {
-		avancer(longueurCote);
-		tournerGauche(90);
-		longueurCote += diffLongueur;
+	for (int i = 0; i < nbCotes; i++) {									// Pour chacun des côtés,
+		avancer(longueurCote);											// on le trace,
+		tournerGauche(90);												// on se place pour le suivant,
+		longueurCote += diffLongueur;									// et on augmente la taille du côté pour avoir l'écart souhaité.
 	}
 }
 
+/**
+ * Dessine le troisième défi de l'animation : un carré divisé en pièces à tangram, nom raccourci
+ * en juste tangram. Le carré en question est composé de cinq triangles, un plus petit carré et
+ * un parallélogramme. De même que la maison(), la geométrie est fixée et n'accepte donc pas de
+ * paramètres permettant d'ajuster sa forme.
+ */
 void tangram() {
-	for (int i = 1; i &lt; = 4; i++) {
+	for (int i = 0; i < 4; i++) {										// Le contour.
 		avancer(10);
 		tournerGauche(90);
 	}
 	
-	tournerGauche(45);
+	tournerGauche(45);													// Le triangle du haut.
 	avancer(7.07);
 	tournerGauche(90);
 	avancer(7.07);
 	tournerGauche(180);
 	monterFeutre();
-	avancer(3.535);
+	
+	avancer(3.535);														// Les petits bouts et le petit carré.
 	tournerGauche(90);
 	descendreFeutre();
 	avancer(3.535);
@@ -290,7 +323,8 @@ void tangram() {
 	tournerGauche(90);
 	avancer(3.535);
 	tournerGauche(135);
-	avancer(5);
+	
+	avancer(5);															// Le parallélogramme.
 	tournerDroite(135);
 	avancer(3.535);
 	monterFeutre();
@@ -301,30 +335,34 @@ void tangram() {
 	avancer(3.535);
 }
 
+/**
+ * Réalise le quatrième défi proposé : un flocon à huit branches. Chacune des branches comporte
+ * trois "feuilles" de sorte qu'elles aient leurs terminaisons alignées. Il a aussi sa forme fixée.
+ */
 void flocon() {
-	for (int i = 0; i < 8; i++) {
-		avancer(6.59);
+	for (int i = 0; i < 8; i++) {										// Pour chacune des huit branches,
+		avancer(6.59);													// on fait le "tronc" principal,
 		tournerGauche(45);
 		
-		avancer(2);
+		avancer(2);														// la "feuille" de gauche,
 		monterFeutre();
 		reculer(2);
 		tournerDroite(45);
 		descendreFeutre();
 		
-		avancer(1.41);
+		avancer(1.41);													// celle du milieu
 		monterFeutre();
 		reculer(1.41);
 		tournerDroite(45);
 		descendreFeutre();
 		
-		avancer(2);
+		avancer(2);														// et celle de droite ;
 		monterFeutre();
 		reculer(2);
 		tournerGauche(45);
 		
-		reculer(6.59);
-		tournerDroite(45);
-		descendreFeutre();
+		reculer(6.59);													// on se replace ensuite au centre
+		tournerDroite(45);												// en tournant pour se préparer
+		descendreFeutre();												// pour la suivante.
 	}
 }

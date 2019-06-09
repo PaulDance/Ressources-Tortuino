@@ -13,7 +13,7 @@
  * @author Alexandre Comte
  * @author Paul Mabileau <paulmabileau@hotmail.fr>
  * @author Florian Bescher
- * @version 1.2
+ * @version 1.3
  * 
  * Le fichier Tortuino.cpp rassemble les fonctionnalités essentielles au bon fonctionnement
  * de la communication avec un robot Tortuino. Ces fonctionnalités sont principalement

@@ -2,13 +2,13 @@
 
   \item {arbre}
     \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{21}
-    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{27}
+    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{29}
   \item {arbre\+Asymetrique}
     \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{22}
-    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{28}
+    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{29}
   \item {arbre\+Symetrique}
     \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{22}
-    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{28}
+    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{30}
   \item {attendre\+Bouton}
     \subitem {Tortuino.\+cpp}, \hyperpage{6}
     \subitem {Tortuino.\+h}, \hyperpage{15}
@@ -25,13 +25,13 @@
 
   \item {carre}
     \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{23}
-    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{29}
+    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{30}
   \item {cercle}
     \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{23}
-    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{29}
+    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{31}
   \item {courbe\+Von\+Koch}
     \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{24}
-    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{30}
+    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{31}
 
   \indexspace
 
@@ -53,9 +53,12 @@
     \subitem {Tortuino.\+cpp}, \hyperpage{12}
   \item {F\+E\+U\+T\+R\+E\+\_\+\+H\+A\+UT}
     \subitem {Tortuino.\+cpp}, \hyperpage{13}
+  \item {flocon}
+    \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{24}
+    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{32}
   \item {flocon\+Von\+Koch}
     \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{24}
-    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{30}
+    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{32}
 
   \indexspace
 
@@ -65,6 +68,9 @@
 
   \indexspace
 
+  \item {maison}
+    \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{25}
+    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{32}
   \item {monter\+Feutre}
     \subitem {Tortuino.\+cpp}, \hyperpage{9}
     \subitem {Tortuino.\+h}, \hyperpage{18}
@@ -74,8 +80,8 @@
   \item {P\+E\+R\+I\+M\+E\+T\+ER}
     \subitem {Tortuino.\+cpp}, \hyperpage{13}
   \item {polygone\+Regulier}
-    \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{24}
-    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{30}
+    \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{25}
+    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{32}
   \item {port\+Bouton}
     \subitem {Tortuino.\+cpp}, \hyperpage{13}
   \item {port\+Servo}
@@ -90,10 +96,13 @@
   \indexspace
 
   \item {sapin}
-    \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{25}
-    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{31}
+    \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{26}
+    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{33}
   \item {servo}
     \subitem {Tortuino.\+cpp}, \hyperpage{13}
+  \item {spirale\+Carree}
+    \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{26}
+    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{33}
   \item {stepper\+Left}
     \subitem {Tortuino.\+cpp}, \hyperpage{14}
   \item {stepper\+Right}
@@ -106,6 +115,9 @@
 
   \indexspace
 
+  \item {tangram}
+    \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{27}
+    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{34}
   \item {Tortuino.\+cpp}
     \subitem {attendre\+Bouton}, \hyperpage{6}
     \subitem {avancer}, \hyperpage{6}
@@ -145,7 +157,7 @@
   \item {Tortuino/\+Tortuino.\+cpp}, \hyperpage{3}
   \item {Tortuino/\+Tortuino.\+h}, \hyperpage{14}
   \item {Tortuino/\+Tortuino\+Dessins.\+cpp}, \hyperpage{20}
-  \item {Tortuino/\+Tortuino\+Dessins.\+h}, \hyperpage{26}
+  \item {Tortuino/\+Tortuino\+Dessins.\+h}, \hyperpage{28}
   \item {Tortuino\+Dessins.\+cpp}
     \subitem {arbre}, \hyperpage{21}
     \subitem {arbre\+Asymetrique}, \hyperpage{22}
@@ -153,23 +165,31 @@
     \subitem {carre}, \hyperpage{23}
     \subitem {cercle}, \hyperpage{23}
     \subitem {courbe\+Von\+Koch}, \hyperpage{24}
+    \subitem {flocon}, \hyperpage{24}
     \subitem {flocon\+Von\+Koch}, \hyperpage{24}
-    \subitem {polygone\+Regulier}, \hyperpage{24}
-    \subitem {sapin}, \hyperpage{25}
-    \subitem {triangle}, \hyperpage{25}
-    \subitem {triangle\+Sierpinski}, \hyperpage{26}
+    \subitem {maison}, \hyperpage{25}
+    \subitem {polygone\+Regulier}, \hyperpage{25}
+    \subitem {sapin}, \hyperpage{26}
+    \subitem {spirale\+Carree}, \hyperpage{26}
+    \subitem {tangram}, \hyperpage{27}
+    \subitem {triangle}, \hyperpage{27}
+    \subitem {triangle\+Sierpinski}, \hyperpage{27}
   \item {Tortuino\+Dessins.\+h}
-    \subitem {arbre}, \hyperpage{27}
-    \subitem {arbre\+Asymetrique}, \hyperpage{28}
-    \subitem {arbre\+Symetrique}, \hyperpage{28}
-    \subitem {carre}, \hyperpage{29}
-    \subitem {cercle}, \hyperpage{29}
-    \subitem {courbe\+Von\+Koch}, \hyperpage{30}
-    \subitem {flocon\+Von\+Koch}, \hyperpage{30}
-    \subitem {polygone\+Regulier}, \hyperpage{30}
-    \subitem {sapin}, \hyperpage{31}
-    \subitem {triangle}, \hyperpage{31}
-    \subitem {triangle\+Sierpinski}, \hyperpage{32}
+    \subitem {arbre}, \hyperpage{29}
+    \subitem {arbre\+Asymetrique}, \hyperpage{29}
+    \subitem {arbre\+Symetrique}, \hyperpage{30}
+    \subitem {carre}, \hyperpage{30}
+    \subitem {cercle}, \hyperpage{31}
+    \subitem {courbe\+Von\+Koch}, \hyperpage{31}
+    \subitem {flocon}, \hyperpage{32}
+    \subitem {flocon\+Von\+Koch}, \hyperpage{32}
+    \subitem {maison}, \hyperpage{32}
+    \subitem {polygone\+Regulier}, \hyperpage{32}
+    \subitem {sapin}, \hyperpage{33}
+    \subitem {spirale\+Carree}, \hyperpage{33}
+    \subitem {tangram}, \hyperpage{34}
+    \subitem {triangle}, \hyperpage{34}
+    \subitem {triangle\+Sierpinski}, \hyperpage{34}
   \item {tourner\+Droite}
     \subitem {Tortuino.\+cpp}, \hyperpage{10}
     \subitem {Tortuino.\+h}, \hyperpage{19}
@@ -177,11 +197,11 @@
     \subitem {Tortuino.\+cpp}, \hyperpage{10}
     \subitem {Tortuino.\+h}, \hyperpage{19}
   \item {triangle}
-    \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{25}
-    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{31}
+    \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{27}
+    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{34}
   \item {triangle\+Sierpinski}
-    \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{26}
-    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{32}
+    \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{27}
+    \subitem {Tortuino\+Dessins.\+h}, \hyperpage{34}
 
   \indexspace
 
