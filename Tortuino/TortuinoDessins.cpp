@@ -190,7 +190,7 @@ void courbeVonKoch(int nbNiveaux, float taille) {
  * 					niveaux ou de côtés n'augmente pas la taille globale du floncon ; autrement dit, le
  * 					segment de départ sert d'étalon pour en déduire à l'avance la taille des côtés engendrés.
  */
-void flocon(int nbNiveaux, float taille) {
+void floconVonKoch(int nbNiveaux, float taille) {
 	for (int i = 0; i < 3; i++) {										// Un flocon de Von Koch est la répétition de trois
 		courbeVonKoch(nbNiveaux, taille);								// de ses courbes
 		tournerGauche(60);												// séparées par un angle externe de 60°, soit un angle interne de 120°.

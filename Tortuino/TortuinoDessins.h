@@ -24,7 +24,7 @@
 	void sapin(int nbNiveaux, float tailleTronc);
 	
 	void courbeVonKoch(int nbNiveaux, float taille);
-	void flocon(int nbNiveaux, float taille);
+	void floconVonKoch(int nbNiveaux, float taille);
 	
 	void triangleSierpinski(int nbNiveaux, float taille);
 	
