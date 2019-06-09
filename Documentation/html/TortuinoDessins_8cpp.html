@@ -136,9 +136,9 @@ Fonctions</h2></td></tr>
 <tr class="memitem:af86cf0f8acc522368a052c765047a3a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TortuinoDessins_8cpp.html#af86cf0f8acc522368a052c765047a3a1">courbeVonKoch</a> (int nbNiveaux, float taille)</td></tr>
 <tr class="memdesc:af86cf0f8acc522368a052c765047a3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trace une <a href="https://fr.wikipedia.org/wiki/Flocon_de_Koch#Courbe_de_Koch">courbe de Von Koch</a> paramétrée par son niveau et la taille du segment de départ.  <a href="#af86cf0f8acc522368a052c765047a3a1">Plus de détails...</a><br /></td></tr>
 <tr class="separator:af86cf0f8acc522368a052c765047a3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa05db28401a10aa6c4625a2de482484"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TortuinoDessins_8cpp.html#afa05db28401a10aa6c4625a2de482484">flocon</a> (int nbNiveaux, float taille)</td></tr>
-<tr class="memdesc:afa05db28401a10aa6c4625a2de482484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trace un <a href="https://fr.wikipedia.org/wiki/Flocon_de_Koch#Flocon_de_Koch">flocon de Von Koch</a> paramétré par son niveau et la taille du segment de départ.  <a href="#afa05db28401a10aa6c4625a2de482484">Plus de détails...</a><br /></td></tr>
-<tr class="separator:afa05db28401a10aa6c4625a2de482484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ef6ba782f866ce8f46e331d1ebc1f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TortuinoDessins_8cpp.html#a31ef6ba782f866ce8f46e331d1ebc1f0">floconVonKoch</a> (int nbNiveaux, float taille)</td></tr>
+<tr class="memdesc:a31ef6ba782f866ce8f46e331d1ebc1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trace un <a href="https://fr.wikipedia.org/wiki/Flocon_de_Koch#Flocon_de_Koch">flocon de Von Koch</a> paramétré par son niveau et la taille du segment de départ.  <a href="#a31ef6ba782f866ce8f46e331d1ebc1f0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a31ef6ba782f866ce8f46e331d1ebc1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c851f0f43370a65c2da38436be9a764"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TortuinoDessins_8cpp.html#a0c851f0f43370a65c2da38436be9a764">triangleSierpinski</a> (int nbNiveaux, float taille)</td></tr>
 <tr class="memdesc:a0c851f0f43370a65c2da38436be9a764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trace un <a href="https://fr.wikipedia.org/wiki/Triangle_de_Sierpi%C5%84ski">triangle de Sierpiński</a> paramétré par son niveau et la taille globale du triangle.  <a href="#a0c851f0f43370a65c2da38436be9a764">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a0c851f0f43370a65c2da38436be9a764"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,7 +147,7 @@ Fonctions</h2></td></tr>
 <div class="textblock"><p>Ce fichier met à disposition quelques dessins qui peuvent être intéressants d'essayer. </p>
 <dl class="section author"><dt>Auteur</dt><dd>Paul Mabileau <a href="#" onclick="location.href='mai'+'lto:'+'pau'+'lm'+'abi'+'le'+'au@'+'ho'+'tma'+'il'+'.fr'; return false;">paulm<span style="display: none;">.nosp@m.</span>abil<span style="display: none;">.nosp@m.</span>eau@h<span style="display: none;">.nosp@m.</span>otma<span style="display: none;">.nosp@m.</span>il.fr</a> </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.2</dd></dl>
-<p>Le fichier <a class="el" href="TortuinoDessins_8cpp.html" title="Ce fichier met à disposition quelques dessins qui peuvent être intéressants d&#39;essayer. ">TortuinoDessins.cpp</a> implémente un ensemble de fonctions réalisant quelques dessins plus ou moins complexes. Les dessins les plus simples sont par exemple des polygones réguliers tels qu'un triangle, un carré, un hexagone, ... les plus compliqués utilise des motifs récursifs, ce qui est moins simple à programmer, mais tout à fait agréable à contempler, comme par exemple un arbre avec différentes variantes, un flocon ou encore le triangle de Sierpiński. </p>
+<p>Le fichier <a class="el" href="TortuinoDessins_8cpp.html" title="Ce fichier met à disposition quelques dessins qui peuvent être intéressants d&#39;essayer. ">TortuinoDessins.cpp</a> implémente un ensemble de fonctions réalisant quelques dessins plus ou moins complexes. Les dessins les plus simples sont par exemple des polygones réguliers tels qu'un triangle, un carré, un hexagone, ... les plus compliqués utilise des motifs récursifs, ce qui est moins simple à programmer, mais tout à fait agréable à contempler, comme par exemple un arbre avec différentes variantes, un flocon de Von Koch ou encore le triangle de Sierpiński. </p>
 
 <p class="definition">Définition dans le fichier <a class="el" href="TortuinoDessins_8cpp_source.html">TortuinoDessins.cpp</a>.</p>
 </div><h2 class="groupheader">Documentation des fonctions</h2>
@@ -393,14 +393,14 @@ Fonctions</h2></td></tr>
 
 </div>
 </div>
-<a id="afa05db28401a10aa6c4625a2de482484"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa05db28401a10aa6c4625a2de482484">&#9670;&nbsp;</a></span>flocon()</h2>
+<a id="a31ef6ba782f866ce8f46e331d1ebc1f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31ef6ba782f866ce8f46e331d1ebc1f0">&#9670;&nbsp;</a></span>floconVonKoch()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void flocon </td>
+          <td class="memname">void floconVonKoch </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>nbNiveaux</em>, </td>
@@ -424,7 +424,7 @@ Fonctions</h2></td></tr>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">nbNiveaux</td><td>Le nombre de niveaux du flocon de Von Koch, par convention 1 donne un triangle seulement. </td></tr>
-    <tr><td class="paramname">taille</td><td>La taille du segment à partir de laquelle l'opération récursive est itérée, c'est-à-dire que contrairement à un arbre ou un polygone tels qu'implémentés ici, ajouter plus de niveaux ou de côtés n'augmente pas la taille globale du floncon ; autrement dit, le segment de départ sert d'étalon pour en déduire à l'avance la taille des côtés engendrés. </td></tr>
+    <tr><td class="paramname">taille</td><td>La taille du segment à partir de laquelle l'opération récursive est itérée, c'est-à-dire que contrairement à un arbre ou un polygone tels qu'implémentés ici, ajouter plus de niveaux ou de côtés n'augmente pas la taille globale du flocon ; autrement dit, le segment de départ sert d'étalon pour en déduire à l'avance la taille des côtés engendrés. </td></tr>
   </table>
   </dd>
 </dl>
@@ -572,7 +572,7 @@ Fonctions</h2></td></tr>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">nbNiveaux</td><td>Le nombre de niveaux du triangle de Sierpiński. </td></tr>
-    <tr><td class="paramname">taille</td><td>La taille du segment de départ qui sera conservée au fur et à mesure des itérations de l'algorithme de Sierpiński ; idem à ce que fait <a class="el" href="TortuinoDessins_8cpp.html#afa05db28401a10aa6c4625a2de482484" title="Trace un flocon de Von Koch paramétré par son niveau et la taille du segment de départ. ">flocon(int nbNiveaux, float taille)</a> </td></tr>
+    <tr><td class="paramname">taille</td><td>La taille du segment de départ qui sera conservée au fur et à mesure des itérations de l'algorithme de Sierpiński ; idem à ce que fait <a class="el" href="TortuinoDessins_8cpp.html#a31ef6ba782f866ce8f46e331d1ebc1f0" title="Trace un flocon de Von Koch paramétré par son niveau et la taille du segment de départ. ">floconVonKoch(int nbNiveaux, float taille)</a> </td></tr>
   </table>
   </dd>
 </dl>

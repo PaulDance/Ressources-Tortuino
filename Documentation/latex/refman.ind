@@ -53,7 +53,7 @@
     \subitem {Tortuino.\+cpp}, \hyperpage{12}
   \item {F\+E\+U\+T\+R\+E\+\_\+\+H\+A\+UT}
     \subitem {Tortuino.\+cpp}, \hyperpage{13}
-  \item {flocon}
+  \item {flocon\+Von\+Koch}
     \subitem {Tortuino\+Dessins.\+cpp}, \hyperpage{24}
     \subitem {Tortuino\+Dessins.\+h}, \hyperpage{30}
 
@@ -153,7 +153,7 @@
     \subitem {carre}, \hyperpage{23}
     \subitem {cercle}, \hyperpage{23}
     \subitem {courbe\+Von\+Koch}, \hyperpage{24}
-    \subitem {flocon}, \hyperpage{24}
+    \subitem {flocon\+Von\+Koch}, \hyperpage{24}
     \subitem {polygone\+Regulier}, \hyperpage{24}
     \subitem {sapin}, \hyperpage{25}
     \subitem {triangle}, \hyperpage{25}
@@ -165,7 +165,7 @@
     \subitem {carre}, \hyperpage{29}
     \subitem {cercle}, \hyperpage{29}
     \subitem {courbe\+Von\+Koch}, \hyperpage{30}
-    \subitem {flocon}, \hyperpage{30}
+    \subitem {flocon\+Von\+Koch}, \hyperpage{30}
     \subitem {polygone\+Regulier}, \hyperpage{30}
     \subitem {sapin}, \hyperpage{31}
     \subitem {triangle}, \hyperpage{31}

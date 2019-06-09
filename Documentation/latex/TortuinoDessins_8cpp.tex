@@ -36,7 +36,7 @@ void \hyperlink{TortuinoDessins_8cpp_a170bac7a60b14659e63b81c8eefac3dd}{sapin} (
 \begin{DoxyCompactList}\small\item\em Utilise deux arbres asymétriques pour tracer un sapin, c\textquotesingle{}est-\/à-\/dire un arbre où chaque branche se sépare en trois autres \+: une continuant vers le haut (le tronc donc) et deux horizontales sur le côté (les branches donc). \end{DoxyCompactList}\item 
 void \hyperlink{TortuinoDessins_8cpp_af86cf0f8acc522368a052c765047a3a1}{courbe\+Von\+Koch} (int nb\+Niveaux, float taille)
 \begin{DoxyCompactList}\small\item\em Trace une \href{https://fr.wikipedia.org/wiki/Flocon_de_Koch#Courbe_de_Koch}{\tt courbe de Von Koch} paramétrée par son niveau et la taille du segment de départ. \end{DoxyCompactList}\item 
-void \hyperlink{TortuinoDessins_8cpp_afa05db28401a10aa6c4625a2de482484}{flocon} (int nb\+Niveaux, float taille)
+void \hyperlink{TortuinoDessins_8cpp_a31ef6ba782f866ce8f46e331d1ebc1f0}{flocon\+Von\+Koch} (int nb\+Niveaux, float taille)
 \begin{DoxyCompactList}\small\item\em Trace un \href{https://fr.wikipedia.org/wiki/Flocon_de_Koch#Flocon_de_Koch}{\tt flocon de Von Koch} paramétré par son niveau et la taille du segment de départ. \end{DoxyCompactList}\item 
 void \hyperlink{TortuinoDessins_8cpp_a0c851f0f43370a65c2da38436be9a764}{triangle\+Sierpinski} (int nb\+Niveaux, float taille)
 \begin{DoxyCompactList}\small\item\em Trace un \href{https://fr.wikipedia.org/wiki/Triangle_de_Sierpi%C5%84ski}{\tt triangle de Sierpiński} paramétré par son niveau et la taille globale du triangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -51,7 +51,7 @@ Paul Mabileau \href{mailto:paulmabileau@hotmail.fr}{\tt paulmabileau@hotmail.\+f
 \begin{DoxyVersion}{Version}
 1.\+2
 \end{DoxyVersion}
-Le fichier \hyperlink{TortuinoDessins_8cpp}{Tortuino\+Dessins.\+cpp} implémente un ensemble de fonctions réalisant quelques dessins plus ou moins complexes. Les dessins les plus simples sont par exemple des polygones réguliers tels qu\textquotesingle{}un triangle, un carré, un hexagone, ... les plus compliqués utilise des motifs récursifs, ce qui est moins simple à programmer, mais tout à fait agréable à contempler, comme par exemple un arbre avec différentes variantes, un flocon ou encore le triangle de Sierpiński. 
+Le fichier \hyperlink{TortuinoDessins_8cpp}{Tortuino\+Dessins.\+cpp} implémente un ensemble de fonctions réalisant quelques dessins plus ou moins complexes. Les dessins les plus simples sont par exemple des polygones réguliers tels qu\textquotesingle{}un triangle, un carré, un hexagone, ... les plus compliqués utilise des motifs récursifs, ce qui est moins simple à programmer, mais tout à fait agréable à contempler, comme par exemple un arbre avec différentes variantes, un flocon de Von Koch ou encore le triangle de Sierpiński. 
 
 \subsection{Documentation des fonctions}
 \mbox{\Hypertarget{TortuinoDessins_8cpp_a39c1c8ca3b979edec7d841f1a71e50f1}\label{TortuinoDessins_8cpp_a39c1c8ca3b979edec7d841f1a71e50f1}} 
@@ -200,11 +200,11 @@ Trace une \href{https://fr.wikipedia.org/wiki/Flocon_de_Koch#Courbe_de_Koch}{\tt
 
 Définition à la ligne 167 du fichier Tortuino\+Dessins.\+cpp.
 
-\mbox{\Hypertarget{TortuinoDessins_8cpp_afa05db28401a10aa6c4625a2de482484}\label{TortuinoDessins_8cpp_afa05db28401a10aa6c4625a2de482484}} 
-\index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!flocon@{flocon}}
-\index{flocon@{flocon}!Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}}
-\subsubsection{\texorpdfstring{flocon()}{flocon()}}
-{\footnotesize\ttfamily void flocon (\begin{DoxyParamCaption}\item[{int}]{nb\+Niveaux,  }\item[{float}]{taille }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{TortuinoDessins_8cpp_a31ef6ba782f866ce8f46e331d1ebc1f0}\label{TortuinoDessins_8cpp_a31ef6ba782f866ce8f46e331d1ebc1f0}} 
+\index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!flocon\+Von\+Koch@{flocon\+Von\+Koch}}
+\index{flocon\+Von\+Koch@{flocon\+Von\+Koch}!Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}}
+\subsubsection{\texorpdfstring{flocon\+Von\+Koch()}{floconVonKoch()}}
+{\footnotesize\ttfamily void flocon\+Von\+Koch (\begin{DoxyParamCaption}\item[{int}]{nb\+Niveaux,  }\item[{float}]{taille }\end{DoxyParamCaption})}
 
 
 
@@ -216,7 +216,7 @@ C\textquotesingle{}est en fait une répétition de la \hyperlink{TortuinoDessins
 \begin{DoxyParams}{Paramètres}
 {\em nb\+Niveaux} & Le nombre de niveaux du flocon de Von Koch, par convention 1 donne un triangle seulement. \\
 \hline
-{\em taille} & La taille du segment à partir de laquelle l\textquotesingle{}opération récursive est itérée, c\textquotesingle{}est-\/à-\/dire que contrairement à un arbre ou un polygone tels qu\textquotesingle{}implémentés ici, ajouter plus de niveaux ou de côtés n\textquotesingle{}augmente pas la taille globale du floncon ; autrement dit, le segment de départ sert d\textquotesingle{}étalon pour en déduire à l\textquotesingle{}avance la taille des côtés engendrés. \\
+{\em taille} & La taille du segment à partir de laquelle l\textquotesingle{}opération récursive est itérée, c\textquotesingle{}est-\/à-\/dire que contrairement à un arbre ou un polygone tels qu\textquotesingle{}implémentés ici, ajouter plus de niveaux ou de côtés n\textquotesingle{}augmente pas la taille globale du flocon ; autrement dit, le segment de départ sert d\textquotesingle{}étalon pour en déduire à l\textquotesingle{}avance la taille des côtés engendrés. \\
 \hline
 \end{DoxyParams}
 
@@ -305,7 +305,7 @@ Trace un \href{https://fr.wikipedia.org/wiki/Triangle_de_Sierpi%C5%84ski}{\tt tr
 \begin{DoxyParams}{Paramètres}
 {\em nb\+Niveaux} & Le nombre de niveaux du triangle de Sierpiński. \\
 \hline
-{\em taille} & La taille du segment de départ qui sera conservée au fur et à mesure des itérations de l\textquotesingle{}algorithme de Sierpiński ; idem à ce que fait \hyperlink{TortuinoDessins_8cpp_afa05db28401a10aa6c4625a2de482484}{flocon(int nb\+Niveaux, float taille)} \\
+{\em taille} & La taille du segment de départ qui sera conservée au fur et à mesure des itérations de l\textquotesingle{}algorithme de Sierpiński ; idem à ce que fait \hyperlink{TortuinoDessins_8cpp_a31ef6ba782f866ce8f46e331d1ebc1f0}{flocon\+Von\+Koch(int nb\+Niveaux, float taille)} \\
 \hline
 \end{DoxyParams}
 

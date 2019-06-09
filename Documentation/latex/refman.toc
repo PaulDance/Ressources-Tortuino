@@ -56,7 +56,7 @@
 \contentsline {subsubsection}{\numberline {2.3.2.4}carre()}{23}{subsubsection.2.3.2.4}
 \contentsline {subsubsection}{\numberline {2.3.2.5}cercle()}{23}{subsubsection.2.3.2.5}
 \contentsline {subsubsection}{\numberline {2.3.2.6}courbe\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Von\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Koch()}{24}{subsubsection.2.3.2.6}
-\contentsline {subsubsection}{\numberline {2.3.2.7}flocon()}{24}{subsubsection.2.3.2.7}
+\contentsline {subsubsection}{\numberline {2.3.2.7}flocon\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Von\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Koch()}{24}{subsubsection.2.3.2.7}
 \contentsline {subsubsection}{\numberline {2.3.2.8}polygone\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Regulier()}{24}{subsubsection.2.3.2.8}
 \contentsline {subsubsection}{\numberline {2.3.2.9}sapin()}{25}{subsubsection.2.3.2.9}
 \contentsline {subsubsection}{\numberline {2.3.2.10}triangle()}{25}{subsubsection.2.3.2.10}
@@ -70,7 +70,7 @@
 \contentsline {subsubsection}{\numberline {2.4.2.4}carre()}{29}{subsubsection.2.4.2.4}
 \contentsline {subsubsection}{\numberline {2.4.2.5}cercle()}{29}{subsubsection.2.4.2.5}
 \contentsline {subsubsection}{\numberline {2.4.2.6}courbe\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Von\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Koch()}{30}{subsubsection.2.4.2.6}
-\contentsline {subsubsection}{\numberline {2.4.2.7}flocon()}{30}{subsubsection.2.4.2.7}
+\contentsline {subsubsection}{\numberline {2.4.2.7}flocon\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Von\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Koch()}{30}{subsubsection.2.4.2.7}
 \contentsline {subsubsection}{\numberline {2.4.2.8}polygone\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Regulier()}{30}{subsubsection.2.4.2.8}
 \contentsline {subsubsection}{\numberline {2.4.2.9}sapin()}{31}{subsubsection.2.4.2.9}
 \contentsline {subsubsection}{\numberline {2.4.2.10}triangle()}{31}{subsubsection.2.4.2.10}

@@ -6,7 +6,7 @@ var TortuinoDessins_8h =
     [ "carre", "TortuinoDessins_8h.html#a8fd6d1d3aad9c0c10525e5c8244a6ce1", null ],
     [ "cercle", "TortuinoDessins_8h.html#a57189e3fe807009b1595778589a16be9", null ],
     [ "courbeVonKoch", "TortuinoDessins_8h.html#af86cf0f8acc522368a052c765047a3a1", null ],
-    [ "flocon", "TortuinoDessins_8h.html#afa05db28401a10aa6c4625a2de482484", null ],
+    [ "floconVonKoch", "TortuinoDessins_8h.html#a31ef6ba782f866ce8f46e331d1ebc1f0", null ],
     [ "polygoneRegulier", "TortuinoDessins_8h.html#ada93849cc1680d0d43bf6f9c1de954b2", null ],
     [ "sapin", "TortuinoDessins_8h.html#a170bac7a60b14659e63b81c8eefac3dd", null ],
     [ "triangle", "TortuinoDessins_8h.html#afa3484b3831c738502a4c381600397ea", null ],

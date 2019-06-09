@@ -14,7 +14,7 @@
  * plus ou moins complexes. Les dessins les plus simples sont par exemple des polygones réguliers
  * tels qu'un triangle, un carré, un hexagone, ... les plus compliqués utilise des motifs récursifs,
  * ce qui est moins simple à programmer, mais tout à fait agréable à contempler, comme par exemple
- * un arbre avec différentes variantes, un flocon ou encore le triangle de Sierpiński.
+ * un arbre avec différentes variantes, un flocon de Von Koch ou encore le triangle de Sierpiński.
  */
 
 
@@ -187,7 +187,7 @@ void courbeVonKoch(int nbNiveaux, float taille) {
  * @param nbNiveaux Le nombre de niveaux du flocon de Von Koch, par convention 1 donne un triangle seulement.
  * @param taille    La taille du segment à partir de laquelle l'opération récursive est itérée, c'est-à-dire
  * 					que contrairement à un arbre ou un polygone tels qu'implémentés ici, ajouter plus de
- * 					niveaux ou de côtés n'augmente pas la taille globale du floncon ; autrement dit, le
+ * 					niveaux ou de côtés n'augmente pas la taille globale du flocon ; autrement dit, le
  * 					segment de départ sert d'étalon pour en déduire à l'avance la taille des côtés engendrés.
  */
 void floconVonKoch(int nbNiveaux, float taille) {
@@ -203,7 +203,7 @@ void floconVonKoch(int nbNiveaux, float taille) {
  * 
  * @param nbNiveaux Le nombre de niveaux du triangle de Sierpiński.
  * @param taille    La taille du segment de départ qui sera conservée au fur et à mesure des itérations
- * 					de l'algorithme de Sierpiński ; idem à ce que fait flocon(int nbNiveaux, float taille)
+ * 					de l'algorithme de Sierpiński ; idem à ce que fait floconVonKoch(int nbNiveaux, float taille)
  */
 void triangleSierpinski(int nbNiveaux, float taille) {
 	if (nbNiveaux == 1) {												// Si le nombre de niveaux est de 1,
