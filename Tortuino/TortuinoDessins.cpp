@@ -228,3 +228,103 @@ void triangleSierpinski(int nbNiveaux, float taille) {
 		descendreFeutre();
 	}
 }
+
+
+void maison() {
+	avancer(10);
+	tournerDroite(120);
+	avancer(10);
+	tournerDroite(120);
+	avancer(10);
+	tournerDroite(30);
+	
+	avancer(10);
+	tournerDroite(90);
+	avancer(6);
+	tournerDroite(90);
+	
+	avancer(4);
+	tournerDroite(90);
+	avancer(2);
+	tournerDroite(90);
+	avancer(4);
+	tournerDroite(90);
+	
+	avancer(6);
+	tournerDroite(90);
+	avancer(10);
+	tournerDroite(90);
+}
+
+void spiraleCarree(int nbCotes, float longueurDepart, float ecart) {
+	float longueurCote = longueurDepart;
+	const float diffLongueur = ecart / 4;
+	
+	for (int i = 0; i < nbCotes; i++) {
+		avancer(longueurCote);
+		tournerGauche(90);
+		longueurCote += diffLongueur;
+	}
+}
+
+void tangram() {
+	for (int i = 1; i &lt; = 4; i++) {
+		avancer(10);
+		tournerGauche(90);
+	}
+	
+	tournerGauche(45);
+	avancer(7.07);
+	tournerGauche(90);
+	avancer(7.07);
+	tournerGauche(180);
+	monterFeutre();
+	avancer(3.535);
+	tournerGauche(90);
+	descendreFeutre();
+	avancer(3.535);
+	tournerDroite(90);
+	avancer(3.535);
+	tournerDroite(90);
+	avancer(3.535);
+	tournerGauche(90);
+	avancer(3.535);
+	tournerGauche(135);
+	avancer(5);
+	tournerDroite(135);
+	avancer(3.535);
+	monterFeutre();
+	tournerDroite(45);
+	avancer(5);
+	tournerDroite(135);
+	descendreFeutre();
+	avancer(3.535);
+}
+
+void flocon() {
+	for (int i = 0; i < 8; i++) {
+		avancer(6.59);
+		tournerGauche(45);
+		
+		avancer(2);
+		monterFeutre();
+		reculer(2);
+		tournerDroite(45);
+		descendreFeutre();
+		
+		avancer(1.41);
+		monterFeutre();
+		reculer(1.41);
+		tournerDroite(45);
+		descendreFeutre();
+		
+		avancer(2);
+		monterFeutre();
+		reculer(2);
+		tournerGauche(45);
+		
+		reculer(6.59);
+		tournerDroite(45);
+		descendreFeutre();
+	}
+}

@@ -28,4 +28,9 @@
 	
 	void triangleSierpinski(int nbNiveaux, float taille);
 	
+	void maison();
+	void spiraleCarree(int nbCotes, float longueurDepart, float ecart);
+	void tangram();
+	void flocon();
+	
 # endif
