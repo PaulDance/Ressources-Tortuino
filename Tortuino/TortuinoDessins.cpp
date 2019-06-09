@@ -23,6 +23,7 @@
  * Fait tracer au robot un polygone régulier en fonction du nombre de côtés souhaités et de la
  * taille de chacun de ces côtés. Voir l'<a href="https://fr.wikipedia.org/wiki/Polygone_r%C3%A9gulier">
  * article Wikipédia</a> suivant pour plus de détails sur cette figure géométrique.
+ * Un nombre de côtés de 3 donne un triangle, 4 un carré, 5 un pentagone régulier, ...
  * 
  * @param nbCotes    Le nombre de côtés du polygone à tracer.
  * @param tailleCote La taille de chacun des côtés.
@@ -36,8 +37,8 @@ void polygoneRegulier(int nbCotes, float tailleCote) {
 
 /**
  * Trace un triangle equilatéral d'une certaine taille.
- * En réalité, ce n'est qu'une adaptation de polygoneRegulier(int nbCotes, float tailleCote)
- * au cas particulier du triangle equilatéral.
+ * En réalité, ce n'est qu'une adaptation de polygoneRegulier(int nbCotes, float tailleCote) au
+ * cas particulier du triangle equilatéral.
  * 
  * @param tailleCote La taille des côtés du triangle.
  */
@@ -47,8 +48,8 @@ void triangle(float tailleCote) {
 
 /**
  * Trace un carré d'une certaine taille.
- * En réalité, ce n'est qu'une adaptation de polygoneRegulier(int nbCotes, float tailleCote)
- * au cas particulier du carré.
+ * En réalité, ce n'est qu'une adaptation de polygoneRegulier(int nbCotes, float tailleCote) au
+ * cas particulier du carré.
  * 
  * @param tailleCote La taille des côtés du carré.
  */
@@ -59,9 +60,10 @@ void carre(float tailleCote) {
 /**
  * Cette fonction est une tentative de réalisation d'un cercle automatiquement avec juste
  * le rayon souhaité en entrée.
- * Seulement, cela ne fonctionne pas trop car il est difficile de décoréler les paramètres
+ * Seulement, cela ne fonctionne pas trop car il est difficile de décorréler les paramètres
  * du robot pour pouvoir calculer les valeurs nécessaires à une approximation relativement
- * correcte d'un cercle par un polygone régulier au grand nombre de côtés.
+ * correcte d'un cercle par un polygone régulier au grand nombre de côtés. Cette fonction
+ * est en cours développement, une meilleure version peut venir à être rendue disponble.
  * 
  * @param rayon Le rayon du cercle.
  */

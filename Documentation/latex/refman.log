@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.5.19)  7 JUN 2019 00:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.5.19)  9 JUN 2019 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1375,10 +1375,7 @@ Underfull \hbox (badness 10000) detected at line 168
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 198.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
+[6]
 Underfull \hbox (badness 10000) detected at line 209
 [][][]
  []
@@ -1400,84 +1397,97 @@ LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
 (Font)              using `T1/pcr/m/n' instead on input line 260.
 
 [7]
-Underfull \hbox (badness 10000) detected at line 289
+Underfull \hbox (badness 10000) detected at line 290
 [][][]
  []
 
 [8]
-Underfull \hbox (badness 10000) detected at line 329
+Underfull \hbox (badness 10000) detected at line 317
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 351
+Underfull \hbox (badness 10000) detected at line 338
 [][][]
  []
 
 [9]
-Underfull \hbox (badness 10000) detected at line 389
+Underfull \hbox (badness 10000) detected at line 360
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 413
+Underfull \hbox (badness 10000) detected at line 398
 [][][]
  []
 
-[10] [11] [12]) (./Tortuino_8h.tex
-<Tortuino_8h__dep__incl.pdf, id=605, 353.32pt x 156.585pt>
+[10]
+Underfull \hbox (badness 10000) detected at line 422
+[][][]
+ []
+
+[11] [12] [13]) (./Tortuino_8h.tex
+<Tortuino_8h__dep__incl.pdf, id=623, 353.32pt x 156.585pt>
 File: Tortuino_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use Tortuino_8h__dep__incl.pdf>
 Package pdftex.def Info: Tortuino_8h__dep__incl.pdf used on input line 12.
 (pdftex.def)             Requested size: 350.0pt x 155.11519pt.
- [13]
+ [14 <./Tortuino_8h__dep__incl.pdf>]
 Underfull \hbox (badness 10000) detected at line 47
 [][][]
  []
 
-[14 <./Tortuino_8h__dep__incl.pdf>]
+
 Underfull \hbox (badness 10000) detected at line 50
 [][][]
  []
 
-
+[15]
 Underfull \hbox (badness 10000) detected at line 85
 [][][]
  []
 
-[15]
+
 Underfull \hbox (badness 10000) detected at line 102
 [][][]
  []
 
-[16] [17]
-Underfull \hbox (badness 10000) detected at line 162
+[16]
+Underfull \hbox (badness 10000) detected at line 142
+[][][]
+ []
+
+[17]
+Underfull \hbox (badness 10000) detected at line 169
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 181
+Underfull \hbox (badness 10000) detected at line 190
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 203
+Underfull \hbox (badness 10000) detected at line 212
 [][][]
  []
 
 [18]
-Underfull \hbox (badness 10000) detected at line 241
+Underfull \hbox (badness 10000) detected at line 250
 [][][]
  []
 
-[19]
-Underfull \hbox (badness 10000) detected at line 265
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+Underfull \hbox (badness 10000) detected at line 274
 [][][]
  []
 
 ) (./TortuinoDessins_8cpp.tex
-<TortuinoDessins_8cpp__incl.pdf, id=687, 321.2pt x 156.585pt>
+<TortuinoDessins_8cpp__incl.pdf, id=713, 321.2pt x 156.585pt>
 File: TortuinoDessins_8cpp__incl.pdf Graphic file (type pdf)
 
 <use TortuinoDessins_8cpp__incl.pdf>
@@ -1505,17 +1515,17 @@ Underfull \hbox (badness 10000) detected at line 133
 [][][]
  []
 
-[23] [24]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+[24]
 Underfull \hbox (badness 10000) detected at line 266
 [][][]
  []
 
-
-Overfull \vbox (2.02422pt too high) has occurred while \output is active []
-
-
 [25]) (./TortuinoDessins_8h.tex
-<TortuinoDessins_8h__dep__incl.pdf, id=778, 225.84375pt x 156.585pt>
+<TortuinoDessins_8h__dep__incl.pdf, id=803, 225.84375pt x 156.585pt>
 File: TortuinoDessins_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use TortuinoDessins_8h__dep__incl.pdf>
@@ -1532,10 +1542,6 @@ Underfull \hbox (badness 10000) detected at line 48
 [][][]
  []
 
-
-Overfull \vbox (10.75206pt too high) has occurred while \output is active []
-
-
 [27]
 Underfull \hbox (badness 10000) detected at line 100
 [][][]
@@ -1546,14 +1552,14 @@ Underfull \hbox (badness 10000) detected at line 130
 [][][]
  []
 
-[29] [30]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+[30]
 Underfull \hbox (badness 10000) detected at line 263
 [][][]
  []
-
-
-Overfull \vbox (2.02422pt too high) has occurred while \output is active []
-
 
 [31]) [32] (./refman.ind [33
 
@@ -1576,11 +1582,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
 Here is how much of TeX's memory you used:
  16348 strings out of 494875
  236168 string characters out of 6178748
- 337220 words of memory out of 5000000
+ 336222 words of memory out of 5000000
  19147 multiletter control sequences out of 15000+600000
  68920 words of font info for 90 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 53i,16n,92p,1270b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,16n,92p,1444b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
@@ -1592,10 +1598,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (40 pages, 273476 bytes).
+Output written on refman.pdf (40 pages, 281780 bytes).
 PDF statistics:
- 1091 PDF objects out of 1200 (max. 8388607)
- 1013 compressed objects within 11 object streams
+ 1119 PDF objects out of 1200 (max. 8388607)
+ 1041 compressed objects within 11 object streams
  223 named destinations out of 1000 (max. 500000)
  642 words of extra memory for PDF output out of 10000 (max. 10000000)
 

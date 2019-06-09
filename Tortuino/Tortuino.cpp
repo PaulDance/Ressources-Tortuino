@@ -152,7 +152,14 @@ int distanceToStep(float distance) {
  * Au cours de cette configuration, elle met le robot dans un état standard qui sera ainsi toujours le
  * même au début de l'exécution de chaque essai : la vitesse de rotation des moteurs pas à pas est par
  * défaut de 10 et le feutre est en position basse. Cette fonction à sa fin fait appel à attendreBouton()
- * qui bloquera tant que le bouton de démarrage différé n'est pas appuyé.
+ * qui bloquera tant que le bouton de démarrage différé n'est pas appuyé.<br/>
+ * L'initialisation est une étape absolument nécessaire au bon fonctionnement du robot ; sans cela, la
+ * carte Arduino que contrôle ces fonctions n'est pas en mesure de connaître les différents composants
+ * du robot, ni sur quels ports ils se trouvent et ni comment les utiliser. Les fonctions initialiser(char couleur)
+ * et initialiser(float braquage) ajoute à la présente fonction quelques détails en plus, mais finissent
+ * toujours par l'appeler. Il n'y a donc pas besoin d'appeler par exemple initialiser(float braquage) si
+ * cela se révèle utile pour vous et juste ensuite initialiser(), car cela sera redondant et même plutôt
+ * contre-productif. Un seul appel est suffisant.
  */
 void initialiser() {
 	servo.attach(portServo);											// Affectation du port pour le servomoteur.
@@ -168,7 +175,8 @@ void initialiser() {
  * Le choix qui a été fait ici est de donner à chaque robot une couleur (par exemple de la plaquette
  * d'expérimentation électrique) représentée par la première lettre de son écriture et qui l'identifie
  * de manière unique. Ensuite, grâce à une correspondance établie au préalable, la valeur du rayon
- * de braquage est affectée par cette fonction, retrouvant ainsi le calibrage effectué. <br/>
+ * de braquage est affectée par cette fonction, retrouvant ainsi le calibrage effectué. Voir le code
+ * source pour bien comprendre comment ces associations sont réalisées.<br/>
  * Le reste de l'initialisation est bien entendu aussi réalisé.
  * 
  * @param couleur La première lettre de la couleur identifiant le robot utilisé.
@@ -199,10 +207,24 @@ void initialiser(char couleur) {
 
 /**
  * Cette version de l'opération d'initialisation est utile à la calibration d'un robot car
- * affecte directement au rayon de braquage la moitié de la valeur fournie en entrée.
- * Le reste de l'initialisation est bien entendu aussi réalisé.
+ * affecte directement au rayon de braquage la moitié de la valeur fournie en entrée. Le
+ * reste de l'initialisation est bien entendu aussi réalisé.<br/>
+ * Notez bien qu'un paramètre de type `float` est attendu en entrée. Or, d'autres fonctions
+ * existent mais ont des signatures différentes. En particulier, initialiser(char couleur)
+ * attend un caractère, ce qui revient à un nombre entier. Ainsi, si vous fournissez un
+ * nombre entier à la présente fonction, par exemple avec `initialiser(10);`, le compilateur
+ * C++ terminera sur une erreur car il y a précisément une ambiguïté entre initialiser(char
+ * couleur) et initialiser(float braquage). En effet, ce n'est pas au compilateur d'effectuer
+ * le choix implicite entre ces deux fonctions. Pour tout de même parvenir à ce que l'on
+ * souhaite dans cet exemple, il est possible de forcer le nombre entier `10` à être converti
+ * en `float` grâce à un `f` à la fin. Cela donne donc : `avancer(10f);`, et dans ce cas là,
+ * cela fonctionnera comme souhaité car cela appelera effectivement initialiser(float braquage).
+ * Si maintenant vous souhaitez appeler `initialiser(11.3);`, pour la même raison, il faut en
+ * fait faire `initialiser(11.3f);`.
  * 
  * @param braquage La valeur du diamètre de braquage à utiliser.
+ * @see initialiser()
+ * @see initialiser(char couleur)
  */
 void initialiser(float braquage) {
 	BRAQUAGE = braquage / 2;											// On transforme le diamètre fourni en le rayon à utiliser.
@@ -211,7 +233,12 @@ void initialiser(float braquage) {
 
 /**
  * Réalise l'attente nécessaire à la fonctionnalité du démarrage différé. L'exécution de cette
- * fonction bloquera tant que le bouton en question n'a pas été appuyé.
+ * fonction bloquera tant que le bouton en question n'a pas été appuyé. Cette fonction est
+ * toujours appelée par initialiser(), car cela permet d'éviter que l'utilisateur du robot
+ * ne soit surpris par son démarrage alors que le câble de programmation est encore branché
+ * et que le robot n'est pas en place. Une petite attente après l'appui du bouton est aussi
+ * effectué pour ne pas que l'utilisateur ne trouve son doigt coincé dans les câblages après
+ * le départ du robot.
  */
 void attendreBouton() {
 	int oldState, newState = digitalRead(portBouton);					// On initialise newState à l'état actuel de la broche du bouton.
@@ -232,7 +259,12 @@ void attendreBouton() {
 /**
  * Permet de mettre à l'arrêt l'exécution en cours que réalise l'Arduino. Cette fonction peut se
  * révéler utile si le croquis Arduino utilise la fonction loop() mais souhaite à un moment donné
- * stopper le robot.
+ * stopper le robot. Cette instruction ne rend pas la main à toute exécution qui la suit, elle est
+ * donc plutôt à utiliser en dernière, à la toute fin de loop() si c'est bien ce qui est souhaité.
+ * Si par contre une simple pause est voulue, plusieurs options sont possibles, comme par exemple
+ * utiliser <a href="https://www.arduino.cc/reference/en/language/functions/time/delay/">delay()</a>
+ * pour attendre d'une durée donnée, puis continuer le flot d'exécution ; ou aussi attendreBouton()
+ * qui attend indéfiniment l'appui du bouton du robot et après rend la main.
  */
 void stopper(){
 	while (true){														// Tout le temps
@@ -241,7 +273,12 @@ void stopper(){
 }
 
 /**
- * Règle la vitesse de rotation des moteurs pas à pas.
+ * Règle la vitesse de rotation des moteurs pas à pas. Une valeur de 10 est largement suffisante.
+ * Cette fonction n'est actuellement pas considérée comme intéressante à utilser en dehors du
+ * fonctionnement interne de cette bibliothèque. Elle est pour l'instant seulement appelée par
+ * initialiser() qui s'occupe de régler le robot pour avoir une vitesse par défaut qui fonctionne
+ * tout à fait correctement pour le robot ainsi paramétré.
+ * 
  * @param v La valeur entière de la vitesse à affecter aux moteurs pas à pas.
  */
 void vitesse(int v) {
@@ -278,9 +315,12 @@ void reculer(float distance) {
 
 /**
  * Fait tourner sur place le robot Tortuino d'un angle fourni vers sa gauche. La rotation
- * s'effectue autour de l'axe de décrit le feutre positionné dans l'emplacement prévu à cet
- * effet, de sorte que s'il reste baisser lors de l'opération, cela ne laisse pas de cercle
- * de tracé derrière le robot.
+ * s'effectue autour de l'axe que décrit le feutre positionné dans l'emplacement prévu à cet
+ * effet, de sorte que s'il reste baissé lors de l'opération, cela ne laisse pas de cercle
+ * de tracé derrière le robot. Il peut cependant avoir un petit décalage qui soit tout de
+ * même présent après rotation car en réalité le feutre n'est pas parfaitement stable : un
+ * petit jeu existe entre le feutre et son guide. L'effet de ce jeu n'est pas pour autant
+ * terrible et cela ne se verra pas trop.
  * 
  * @param angle L'angle en degrés de rotation vers la gauche à effectuer.
  * @see tournerDroite(float angle)
@@ -302,7 +342,10 @@ void tournerGauche(float angle) {
  * Fait tourner sur place le robot Tortuino d'un angle fourni vers sa droite. La rotation
  * s'effectue autour de l'axe de décrit le feutre positionné dans l'emplacement prévu à cet
  * effet, de sorte que s'il reste baisser lors de l'opération, cela ne laisse pas de cercle
- * de tracé derrière le robot.
+ * de tracé derrière le robot. Il peut cependant avoir un petit décalage qui soit tout de
+ * même présent après rotation car en réalité le feutre n'est pas parfaitement stable : un
+ * petit jeu existe entre le feutre et son guide. L'effet de ce jeu n'est pas pour autant
+ * terrible et cela ne se verra pas trop.
  * 
  * @param angle L'angle en degrés de rotation vers la gauche à effectuer.
  * @see tournerGauche(float angle)
@@ -314,7 +357,9 @@ void tournerDroite(float angle) {
 /**
  * Place le feutre en position haute de telle manière qu'il ne touche pas la feuille en-dessous
  * du robot, en supposant que le collier le tenant et permettant ce déplacement soit correctement
- * ajusté.
+ * ajusté. Cela permet de choisir quand est-ce que l'on souhaite dessiner ou non, car à certains
+ * moments, par exemple si l'on veut se replacer pour continuer une autre partie d'un dessin, cela
+ * se révèle assez utile.
  *
  * @see descendreFeutre()
  */
