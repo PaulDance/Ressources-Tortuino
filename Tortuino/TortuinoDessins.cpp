@@ -28,6 +28,19 @@
  * article Wikipédia</a> suivant pour plus de détails sur cette figure géométrique.
  * Un nombre de côtés de 3 donne un triangle, 4 un carré, 5 un pentagone régulier, ...
  * 
+ *	<center><table>
+ * 		<tr>
+ * 			<td> 	@image html		polygone-regulier-3.png "Un triangle"	height=200px	</td>
+ * 			<td>	@image html		polygone-regulier-4.png "Un carré"		height=200px	</td>
+ * 			<td>	@image html		polygone-regulier-5.png "Un pentagone"	height=200px	</td>
+ * 			<td>	@image html		polygone-regulier-6.png "Un hexagone"	height=200px	</td>
+ * 			<td>	@image html		polygone-regulier-7.png "Un heptagone"	height=200px	</td>
+ * 		</tr>
+ *	</table></center>
+ * 
+ * @image latex	polygone-regulier-3.png "Un triangle"	height=150pt
+ * @image latex	polygone-regulier-6.png "Un hexagone"	height=150pt
+ * 
  * @param nbCotes    Le nombre de côtés du polygone à tracer.
  * @param tailleCote La taille de chacun des côtés.
  */
@@ -43,6 +56,9 @@ void polygoneRegulier(int nbCotes, float tailleCote) {
  * En réalité, ce n'est qu'une adaptation de polygoneRegulier(int nbCotes, float tailleCote) au
  * cas particulier du triangle equilatéral.
  * 
+ * @image html	polygone-regulier-3.png "Un triangle"	height=200px
+ * @image latex	polygone-regulier-3.png "Un triangle"	height=150pt
+ * 
  * @param tailleCote La taille des côtés du triangle.
  */
 void triangle(float tailleCote) {
@@ -53,6 +69,9 @@ void triangle(float tailleCote) {
  * Trace un carré d'une certaine taille.
  * En réalité, ce n'est qu'une adaptation de polygoneRegulier(int nbCotes, float tailleCote) au
  * cas particulier du carré.
+ *
+ * @image html	polygone-regulier-4.png "Un carré"	height=200px
+ * @image latex	polygone-regulier-4.png "Un carré"	height=150pt
  * 
  * @param tailleCote La taille des côtés du carré.
  */
@@ -80,6 +99,16 @@ void cercle(float rayon) {												// W.I.P.
  * symétrique par rapport à l'axe formé par son tronc. C'est donc un cas particulier de
  * arbreSymetrique(int nbNiveaux, float tailleTronc, float angleSeparation).
  * 
+ * <center><table>
+ * 		<tr>
+ * 			<td> 	@image html		arbre-5.png		"Un arbre à cinq niveaux"	height=300px	</td>
+ * 			<td>	@image html		arbre-10.png	"Un arbre à dix niveaux"	height=300px	</td>
+ * 		</tr>
+ *	</table></center>
+ * 
+ * @image latex		arbre-5.png		"Un arbre à cinq niveaux"	height=200pt
+ * @image latex		arbre-10.png	"Un arbre à dix niveaux"	height=200pt
+ * 
  * @param nbNiveaux		Le nombre de niveaux que l'arbre comprendra, c'est-à-dire le nombre
  * 						de fois moins un que l'arbre va se séparer ou autrement dit la distance
  * 						en nombre de branches entre la racine et chaque feuille.
@@ -94,6 +123,16 @@ void arbre(int nbNiveaux, float tailleTronc) {
  * Trace un arbre récursivement dont l'angle entre les branches peut être précisé et qui
  * est symétrique par rapport à l'axe formé par son tronc. C'est donc un cas particulier
  * de arbreAsymetrique(int nbNiveaux, float tailleTronc, float angleSeparation, float angleInclinaison).
+ * 
+ * <center><table>
+ * 		<tr>
+ * 			<td> 	@image html		arbre-symetrique-10-45.png		"Un arbre symétrique à dix niveaux séparés de 45°"		height=300px	</td>
+ * 			<td>	@image html		arbre-symetrique-15-125.png		"Un arbre symétrique à quinze niveaux séparés de 125°"	height=300px	</td>
+ * 		</tr>
+ *	</table></center>
+ * 
+ * @image latex		arbre-symetrique-10-45.png		"Un arbre symétrique à dix niveaux séparés de 45°"		height=200pt
+ * @image latex		arbre-symetrique-15-125.png		"Un arbre symétrique à quinze niveaux séparés de 125°"	height=200pt
  * 
  * @param nbNiveaux			Le nombre de niveaux que l'arbre comprendra, c'est-à-dire le nombre
  * 							de fois moins un que l'arbre va se séparer ou autrement dit la distance
@@ -111,6 +150,16 @@ void arbreSymetrique(int nbNiveaux, float tailleTronc, float angleSeparation) {
  * Trace un arbre récursivement dont l'angle entre les branches et l'angle entre la branche de gauche
  * et la branche mère moins 45 degrés peuvent être précisés : il est asymétrique par rapport à l'axe
  * formé par son tronc. Il généralise donc un arbre.
+ * 
+ * <center><table>
+ * 		<tr>
+ * 			<td> 	@image html		arbre-asymetrique-10-45-10.png	"Un arbre asymétrique à dix niveaux séparés de 45° et inclinés de 10°"		height=300px	</td>
+ * 			<td>	@image html		arbre-asymetrique-15-125-20.png	"Un arbre asymétrique à quinze niveaux séparés de 125° et inclinés de 20°"	height=300px	</td>
+ * 		</tr>
+ *	</table></center>
+ * 
+ * @image latex		arbre-asymetrique-10-45-10.png	"Un arbre asymétrique à dix niveaux séparés de 45° et inclinés de 10°"		height=200pt
+ * @image latex		arbre-asymetrique-15-125-20.png	"Un arbre asymétrique à quinze niveaux séparés de 125° et inclinés de 20°"	height=200pt
  * 
  * @param nbNiveaux			Le nombre de niveaux que l'arbre comprendra, c'est-à-dire le nombre
  * 							de fois moins un que l'arbre va se séparer ou autrement dit la distance
@@ -144,6 +193,16 @@ void arbreAsymetrique(int nbNiveaux, float tailleTronc, float angleSeparation, f
  * Utilise deux arbres asymétriques pour tracer un sapin, c'est-à-dire un arbre où chaque branche se
  * sépare en trois autres : une continuant vers le haut (le tronc donc) et deux horizontales sur le
  * côté (les branches donc).
+ *
+ * <center><table>
+ * 		<tr>
+ * 			<td> 	@image html		sapin-10.png	"Un sapin à dix niveaux"	height=300px	</td>
+ * 			<td>	@image html		sapin-15.png	"Un sapin à quinze niveaux"	height=300px	</td>
+ * 		</tr>
+ *	</table></center>
+ * 
+ * @image latex		sapin-10.png	"Un sapin à dix niveaux"	height=200pt
+ * @image latex		sapin-15.png	"Un sapin à quinze niveaux"	height=200pt
  * 
  * @param nbNiveaux		Le nombre de niveaux que l'arbre comprendra, c'est-à-dire le nombre
  * 						de fois moins un que l'arbre va se séparer ou autrement dit la distance
@@ -160,6 +219,16 @@ void sapin(int nbNiveaux, float tailleTronc) {
 /**
  * Trace une <a href="https://fr.wikipedia.org/wiki/Flocon_de_Koch#Courbe_de_Koch">courbe de Von Koch</a>
  * paramétrée par son niveau et la taille du segment de départ.
+ * 
+ * <center><table>
+ * 		<tr>
+ * 			<td> 	@image html		courbe-von-koch-3.png	"Une courbe de Von Koch à trois niveaux"	height=200px	</td>
+ * 			<td>	@image html		courbe-von-koch-6.png	"Une courbe de Von Koch à six niveaux"		height=200px	</td>
+ * 		</tr>
+ *	</table></center>
+ * 
+ * @image latex		courbe-von-koch-3.png	"Une courbe de Von Koch à trois niveaux"	height=100pt
+ * @image latex		courbe-von-koch-6.png	"Une courbe de Von Koch à six niveaux"		height=100pt
  * 
  * @param nbNiveaux Le nombre de niveaux de la courbe de Von Koch, par convention 1 donne un trait seulement.
  * @param taille    La taille du segment à partir de laquelle l'opération récursive est itérée, c'est-à-dire
@@ -185,7 +254,17 @@ void courbeVonKoch(int nbNiveaux, float taille) {
 /**
  * Trace un <a href="https://fr.wikipedia.org/wiki/Flocon_de_Koch#Flocon_de_Koch">flocon de Von Koch</a>
  * paramétré par son niveau et la taille du segment de départ. C'est en fait une répétition de la
- * courbeVonKoch(int nbNiveaux, float taille) : trois fois séparées par un angle intérieur de 120 degrés.
+ * courbeVonKoch(int nbNiveaux, float taille) : six fois séparées par un angle intérieur de 120 degrés.
+ *
+ * <center><table>
+ * 		<tr>
+ * 			<td> 	@image html		flocon-von-koch-3.png	"Un flocon de Von Koch à trois niveaux"	height=300px	</td>
+ * 			<td>	@image html		flocon-von-koch-6.png	"Un flocon de Von Koch à six niveaux"	height=300px	</td>
+ * 		</tr>
+ *	</table></center>
+ * 
+ * @image latex		flocon-von-koch-3.png	"Un flocon de Von Koch à trois niveaux"	height=200pt
+ * @image latex		flocon-von-koch-6.png	"Un flocon de Von Koch à six niveaux"	height=200pt
  * 
  * @param nbNiveaux Le nombre de niveaux du flocon de Von Koch, par convention 1 donne un triangle seulement.
  * @param taille    La taille du segment à partir de laquelle l'opération récursive est itérée, c'est-à-dire
@@ -194,7 +273,7 @@ void courbeVonKoch(int nbNiveaux, float taille) {
  * 					segment de départ sert d'étalon pour en déduire à l'avance la taille des côtés engendrés.
  */
 void floconVonKoch(int nbNiveaux, float taille) {
-	for (int i = 0; i < 3; i++) {										// Un flocon de Von Koch est la répétition de trois
+	for (int i = 0; i < 6; i++) {										// Un flocon de Von Koch est la répétition de trois
 		courbeVonKoch(nbNiveaux, taille);								// de ses courbes
 		tournerGauche(60);												// séparées par un angle externe de 60°, soit un angle interne de 120°.
 	}
@@ -203,6 +282,16 @@ void floconVonKoch(int nbNiveaux, float taille) {
 /**
  * Trace un <a href="https://fr.wikipedia.org/wiki/Triangle_de_Sierpi%C5%84ski">triangle de Sierpiński</a>
  * paramétré par son niveau et la taille globale du triangle.
+ * 
+ * <center><table>
+ * 		<tr>
+ * 			<td> 	@image html		triangle-sierpinski-3.png	"Un triangle de Sierpinski à trois niveaux"	height=300px	</td>
+ * 			<td>	@image html		triangle-sierpinski-6.png	"Un triangle de Sierpinski à six niveaux"	height=300px	</td>
+ * 		</tr>
+ *	</table></center>
+ * 
+ * @image latex		triangle-sierpinski-3.png	"Un triangle de Sierpinski à trois niveaux"	height=200pt
+ * @image latex		triangle-sierpinski-6.png	"Un triangle de Sierpinski à six niveaux"	height=200pt
  * 
  * @param nbNiveaux Le nombre de niveaux du triangle de Sierpiński.
  * @param taille    La taille du segment de départ qui sera conservée au fur et à mesure des itérations
@@ -241,6 +330,9 @@ void triangleSierpinski(int nbNiveaux, float taille) {
  * toit et sa porte d'entrée. Elle n'accepte pas de paramètres en entrée, car sa forme est fixée
  * et que mettre à disposition des moyens de personnaliser chaque partie de la maison est long
  * et en soi pas particulièrement intéressant. Le dessin est ainsi toujours le même.
+ * 
+ * @image html	maison.png	"Le défi maison"	height=300px
+ * @image latex	maison.png	"Le défi maison"	height=200pt
  */
 void maison() {
 	avancer(10);														// Le toit.
@@ -273,6 +365,9 @@ void maison() {
  * de départ et de l'écart en longueur entre deux côtés adjacents. C'est l'implémentation du
  * deuxième défi Tortuino. Une spirale carrée est une spirale composés d'un certain nombre de
  * segments reliés l'un à la suite de l'autre et séparés d'un angle de droit.
+ *
+ * @image html		spirale-carree-20-2-3.png	"Une spirale carrée à vingt côtés avec une longueur de départ de 2 et un écart de 3"	height=300px
+ * @image latex		spirale-carree-20-2-3.png	"Une spirale carrée à vingt côtés avec une longueur de départ de 2 et un écart de 3"	height=200pt
  * 
  * @param nbCotes			Le nombre de côtés de la spirale à tracer. 1 fait un seul segment.
  * @param longueurDepart	La longueur en centimètres du premier côté de la spirale.
@@ -298,6 +393,9 @@ void spiraleCarree(int nbCotes, float longueurDepart, float ecart) {
  * en juste tangram. Le carré en question est composé de cinq triangles, un plus petit carré et
  * un parallélogramme. De même que la maison(), la geométrie est fixée et n'accepte donc pas de
  * paramètres permettant d'ajuster sa forme.
+ * 
+ * @image html	tangram.png	"Le défi tangram"	height=300px
+ * @image latex	tangram.png	"Le défi tangram"	height=200pt
  */
 void tangram() {
 	for (int i = 0; i < 4; i++) {										// Le contour.
@@ -338,6 +436,9 @@ void tangram() {
 /**
  * Réalise le quatrième défi proposé : un flocon à huit branches. Chacune des branches comporte
  * trois "feuilles" de sorte qu'elles aient leurs terminaisons alignées. Il a aussi sa forme fixée.
+ * 
+ * @image html	flocon.png	"Le défi flocon"	height=300px
+ * @image latex	flocon.png	"Le défi flocon"	height=200pt
  */
 void flocon() {
 	for (int i = 0; i < 8; i++) {										// Pour chacune des huit branches,
