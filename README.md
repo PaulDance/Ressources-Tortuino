@@ -5,7 +5,7 @@ Tortuino et au bon déroulement de l'animation qui l'utilise
 
 ## Le projet
 
-Le projet Tortuino s'est réalisé dans le cadre du [GATE](https://gate.wp.telecom-sudparis.eu/, "GATE TSP")
+Le projet Tortuino s'est réalisé dans le cadre du [GATE](https://gate.wp.telecom-sudparis.eu/ "GATE TSP")
 et a donc été réalisé par des élèves de première année de Télécom SudParis, une
 école d'ingénieurs en informatique. Les projets GATE sont réalisé dans une perspective
 client / équipe projet ; dans notre cas, notre client était Planète Science, une
@@ -14,7 +14,7 @@ nombreux sujets scientifiques, comme la robotique, l'astronomie, la physique, ..
 
 Planète Science nous avait ainsi formulé un livrable pour notre projet : créer
 une animation de deux jours pour initier un public jeune à la programmation grâce
-à la [carte de contrôle Arduino](https://www.arduino.cc/, "Arduino"). Nous avons
+à la [carte de contrôle Arduino](https://www.arduino.cc/ "Arduino"). Nous avons
 alors méné à bien ce projet pour en effet avoir au final cette animation. Elle
 se base sur un robot qui a la capacité d'avancer, de tourner et de monter ou
 descendre un feutre pour laisser derrière soi un dessin programmé à l'avance.
@@ -43,7 +43,7 @@ instantanée le résultat de quelques instructions Tortuino. Cela se révèle tr
 utile pour des dessins complexes.
 
 Vous trouverez enfin quelques fichiers qui s'occupent de gérer la création
-automatique de la documentation grâce à l'outil dédié [Doxygen](http://doxygen.nl/, "Doxygen") :
+automatique de la documentation grâce à l'outil dédié [Doxygen](http://doxygen.nl/ "Doxygen") :
 * _DoxyConfig_ : le fichier de configuration Doxygen décrivant tous les paramètres
 nécessaires à la construction automatique de la documentation.
 * _Makefile_ : un fichier utilisable avec `make` qui simplifie l'appel de `doxygen`
@@ -60,7 +60,7 @@ créant la documentation.
 Plusieurs choses sont à faire pour qu'un poste soit prêt à être utilisé pour
 un stage :
 
-* Avoir une installation de l'[éditeur Arduino](https://www.arduino.cc/en/Main/Software, "Arduino IDE").
+* Avoir une installation de l'[éditeur Arduino](https://www.arduino.cc/en/Main/Software "Arduino IDE").
 * Copier le dossier **Tortuino** dans le répertoire _libraries_ des documents Arduino.
 Vous trouverez ce dernier dans :
 	* _Mes Documents_ > _Arduino_ > _libraries_ si vous êtes sous Windows.
@@ -79,7 +79,7 @@ de l'animation.
 ## Modification de la documentation
 
 Si vous souhaitez modifier de votre côté les fichiers de la bibliothèque Tortuino
-et les documenter, référez-vous d'abord à la [documentation Doxygen](http://doxygen.nl/manual/index.html, "Doxygen manual").
+et les documenter, référez-vous d'abord à la [documentation Doxygen](http://doxygen.nl/manual/index.html "Doxygen manual").
 Le _Makefile_ vous aidera à faciliter la création de la documentation. Une fois
 un fichier modifié, il vous suffit d'exécuter la commande `make` en étant dans le
 dossier principal. Ceci va automatiser Doxygen pour tout faire d'un coup. Une fois 
