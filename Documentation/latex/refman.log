@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.5.19)  20 MAY 2019 23:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.5.19)  11 JUN 2019 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1046,8 +1046,8 @@ File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
 \c@bookmark@seq@number=\count142
 \Hy@SectionHShift=\skip112
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 108.
-Package hyperref Info: Option `unicode' set `true' on input line 108.
+Package hyperref Info: Option `colorlinks' set `true' on input line 109.
+Package hyperref Info: Option `unicode' set `true' on input line 109.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2016/06/24 v6.83q Hyperref: PDF Unicode definition (HO)
@@ -1078,36 +1078,36 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )) (./refman.aux)
 \openout1 = `refman.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 120.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 120.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 121.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 120.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 121.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 120.
+(Font)              scaled to size 8.99994pt on input line 121.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1139,14 +1139,14 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \degres on input line 120.
-LaTeX Info: Redefining \dots on input line 120.
+LaTeX Info: Redefining \degres on input line 121.
+LaTeX Info: Redefining \dots on input line 121.
 
 
 Package frenchb.ldf Warning: Please load the "natbib" package
-(frenchb.ldf)                BEFORE babel/frenchb; reported on input line 120.
+(frenchb.ldf)                BEFORE babel/frenchb; reported on input line 121.
 
-LaTeX Info: Redefining \up on input line 120.
+LaTeX Info: Redefining \up on input line 121.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1182,8 +1182,8 @@ LaTeX Info: Redefining \up on input line 120.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box66
-Package backref Info: ** backref set up for natbib ** on input line 120.
-Package hyperref Info: Link coloring ON on input line 120.
+Package backref Info: ** backref set up for natbib ** on input line 121.
+Package hyperref Info: Link coloring ON on input line 121.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1192,9 +1192,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count150
 )
-LaTeX Info: Redefining \ref on input line 120.
-LaTeX Info: Redefining \pageref on input line 120.
-LaTeX Info: Redefining \nameref on input line 120.
+LaTeX Info: Redefining \ref on input line 121.
+LaTeX Info: Redefining \pageref on input line 121.
+LaTeX Info: Redefining \nameref on input line 121.
 
 (./refman.out) (./refman.out)
 \@outlinefile=\write4
@@ -1202,28 +1202,37 @@ LaTeX Info: Redefining \nameref on input line 120.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Option `pageanchor' set `false' on input line 126.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 126.
+Package hyperref Info: Option `pageanchor' set `false' on input line 127.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 127.
 
-Package hyperref Info: Option `unicode' set `true' on input line 126.
+Package hyperref Info: Option `unicode' set `true' on input line 127.
+
+<../../Images/logo-tortuino.png, id=345, 835.62187pt x 542.025pt>
+File: ../../Images/logo-tortuino.png Graphic file (type png)
+
+<use ../../Images/logo-tortuino.png>
+Package pdftex.def Info: ../../Images/logo-tortuino.png used on input line 132.
+
+(pdftex.def)             Requested size: 417.8099pt x 271.01183pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 131.
+(Font)              scaled to size 12.9599pt on input line 134.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 133.
+(Font)              scaled to size 10.79993pt on input line 136.
  [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../Images/logo-tortuino
+.png>] [2
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 22.39185pt on input line 138.
+(Font)              scaled to size 22.39185pt on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 138.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 138.
+(Font)              scaled to size 22.39185pt on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 22.39185pt on input line 138.
+(Font)              scaled to size 22.39185pt on input line 141.
  (./refman.toc
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 2.
@@ -1266,17 +1275,17 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
  [3] [4
 
 ]
-Package hyperref Info: Option `pageanchor' set `true' on input line 141.
+Package hyperref Info: Option `pageanchor' set `true' on input line 144.
 
 Chapitre 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 144.
+(Font)              scaled to size 18.66588pt on input line 147.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 144.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 147.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 144.
+(Font)              scaled to size 18.66588pt on input line 147.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 18.66588pt on input line 144.
+(Font)              scaled to size 18.66588pt on input line 147.
 (./files.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
@@ -1300,7 +1309,7 @@ Chapitre 2.
 (./Tortuino_8cpp.tex
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 6.29996pt on input line 1.
- <Tortuino_8cpp__incl.pdf, id=433, 469.755pt x 156.585pt>
+ <Tortuino_8cpp__incl.pdf, id=481, 469.755pt x 156.585pt>
 File: Tortuino_8cpp__incl.pdf Graphic file (type pdf)
 
 <use Tortuino_8cpp__incl.pdf>
@@ -1328,74 +1337,103 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 6.29996pt on input line 27.
  [3 <./Tortuino_8cpp__incl.pdf>]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 82.
+(Font)              scaled to size 8.99994pt on input line 84.
 
-Underfull \hbox (badness 10000) detected at line 82
+Underfull \hbox (badness 10000) detected at line 84
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 89
+Underfull \hbox (badness 10000) detected at line 91
 [][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
  []
 
 [4]
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 113.
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 106.
 
-Underfull \hbox (badness 10000) detected at line 124
-[][][]
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
  []
 
 
-Underfull \hbox (badness 10000) detected at line 141
-[][][]
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
  []
 
 [5]
-Underfull \hbox (badness 10000) detected at line 165
+Underfull \hbox (badness 10000) detected at line 168
+[][][]
+ []
+
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 198.
+[6]
+Underfull \hbox (badness 10000) detected at line 209
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 226
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 250
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 7.19995pt on input line 175.
+(Font)              scaled to size 7.19995pt on input line 260.
 
 LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 175.
-
-[6]
-Underfull \hbox (badness 10000) detected at line 204
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 242
-[][][]
- []
+(Font)              using `T1/pcr/m/n' instead on input line 260.
 
 [7]
-Underfull \hbox (badness 10000) detected at line 264
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 302
+Underfull \hbox (badness 10000) detected at line 290
 [][][]
  []
 
 [8]
-Underfull \hbox (badness 10000) detected at line 326
+Underfull \hbox (badness 10000) detected at line 317
 [][][]
  []
 
-[9] [10]) (./Tortuino_8h.tex
-<Tortuino_8h__dep__incl.pdf, id=557, 353.32pt x 156.585pt>
+
+Underfull \hbox (badness 10000) detected at line 338
+[][][]
+ []
+
+[9]
+Underfull \hbox (badness 10000) detected at line 360
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 398
+[][][]
+ []
+
+[10]
+Underfull \hbox (badness 10000) detected at line 422
+[][][]
+ []
+
+[11] [12] [13]) (./Tortuino_8h.tex
+<Tortuino_8h__dep__incl.pdf, id=663, 353.32pt x 156.585pt>
 File: Tortuino_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use Tortuino_8h__dep__incl.pdf>
 Package pdftex.def Info: Tortuino_8h__dep__incl.pdf used on input line 12.
 (pdftex.def)             Requested size: 350.0pt x 155.11519pt.
- [11] [12 <./Tortuino_8h__dep__incl.pdf>]
+ [14 <./Tortuino_8h__dep__incl.pdf>]
 Underfull \hbox (badness 10000) detected at line 47
 [][][]
  []
@@ -1405,163 +1443,518 @@ Underfull \hbox (badness 10000) detected at line 50
 [][][]
  []
 
-
+[15]
 Underfull \hbox (badness 10000) detected at line 85
 [][][]
  []
 
-[13]
+
 Underfull \hbox (badness 10000) detected at line 102
 [][][]
  []
 
-[14]
-Underfull \hbox (badness 10000) detected at line 162
+[16]
+Underfull \hbox (badness 10000) detected at line 142
+[][][]
+ []
+
+[17]
+Underfull \hbox (badness 10000) detected at line 169
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 179
+Underfull \hbox (badness 10000) detected at line 190
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 212
+[][][]
+ []
+
+[18]
+Underfull \hbox (badness 10000) detected at line 250
 [][][]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
-Underfull \hbox (badness 10000) detected at line 201
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 239
-[][][]
- []
-
-[16]
-Underfull \hbox (badness 10000) detected at line 263
+ [19]
+Underfull \hbox (badness 10000) detected at line 274
 [][][]
  []
 
 ) (./TortuinoDessins_8cpp.tex
-<TortuinoDessins_8cpp__incl.pdf, id=632, 321.2pt x 156.585pt>
+<TortuinoDessins_8cpp__incl.pdf, id=753, 321.2pt x 156.585pt>
 File: TortuinoDessins_8cpp__incl.pdf Graphic file (type pdf)
 
 <use TortuinoDessins_8cpp__incl.pdf>
 Package pdftex.def Info: TortuinoDessins_8cpp__incl.pdf used on input line 15.
 (pdftex.def)             Requested size: 320.0pt x 156.004pt.
- [17 <./TortuinoDessins_8cpp__incl.pdf>]
-Underfull \hbox (badness 10000) detected at line 48
+ [20 <./TortuinoDessins_8cpp__incl.pdf>]
+Underfull \hbox (badness 10000) detected at line 56
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 51
+Underfull \hbox (badness 10000) detected at line 59
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 61.
-[18]
-Underfull \hbox (badness 10000) detected at line 103
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 69.
+[21]
+Underfull \vbox (badness 10000) detected at line 81
+ []
+
+<arbre-5.png, id=808, 413.29407pt x 365.86688pt>
+File: arbre-5.png Graphic file (type png)
+ <use arbre-5.png>
+Package pdftex.def Info: arbre-5.png used on input line 86.
+(pdftex.def)             Requested size: 225.92503pt x 200.0pt.
+LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
+(Font)              scaled to size 8.99994pt on input line 87.
+LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <10> not available
+(Font)              Font shape `T1/phv/b/sc' tried instead on input line 87.
+LaTeX Font Info:    Font shape `T1/phv/b/sc' will be
+(Font)              scaled to size 8.99994pt on input line 87.
+
+<arbre-10.png, id=809, 498.36188pt x 408.77719pt>
+File: arbre-10.png Graphic file (type png)
+ <use arbre-10.png>
+Package pdftex.def Info: arbre-10.png used on input line 91.
+(pdftex.def)             Requested size: 243.83444pt x 200.0pt.
+ [22 <./arbre-5.png (PNG copy)> <./arbre-10.png (PNG copy)>]
+Underfull \vbox (badness 10000) detected at line 123
+ []
+
+<arbre-asymetrique-10-45-10.png, id=819, 398.23781pt x 449.42906pt>
+File: arbre-asymetrique-10-45-10.png Graphic file (type png)
+
+<use arbre-asymetrique-10-45-10.png>
+Package pdftex.def Info: arbre-asymetrique-10-45-10.png used on input line 128.
+
+(pdftex.def)             Requested size: 177.21829pt x 200.0pt.
+LaTeX Font Info:    Font shape `TS1/phv/bx/n' in size <10> not available
+(Font)              Font shape `TS1/phv/b/n' tried instead on input line 129.
+LaTeX Font Info:    Font shape `TS1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 129.
+
+<arbre-asymetrique-15-125-20.png, id=820, 506.6428pt x 404.26031pt>
+File: arbre-asymetrique-15-125-20.png Graphic file (type png)
+
+<use arbre-asymetrique-15-125-20.png>
+Package pdftex.def Info: arbre-asymetrique-15-125-20.png used on input line 133
+.
+(pdftex.def)             Requested size: 250.65367pt x 200.0pt.
+
+Underfull \vbox (badness 3803) has occurred while \output is active []
+
+ [23 <./arbre-asymetrique-10-45-10.png (PNG copy)>]
+Underfull \hbox (badness 10000) detected at line 149
 [][][]
  []
 
-[19]
-Underfull \hbox (badness 10000) detected at line 133
+
+Underfull \vbox (badness 10000) detected at line 174
+ []
+
+[24 <./arbre-asymetrique-15-125-20.png (PNG copy)>]
+<arbre-symetrique-10-45.png, id=840, 427.5975pt x 447.17062pt>
+File: arbre-symetrique-10-45.png Graphic file (type png)
+
+<use arbre-symetrique-10-45.png>
+Package pdftex.def Info: arbre-symetrique-10-45.png used on input line 179.
+(pdftex.def)             Requested size: 191.24919pt x 200.0pt.
+
+<arbre-symetrique-15-125.png, id=841, 522.45187pt x 366.61969pt>
+File: arbre-symetrique-15-125.png Graphic file (type png)
+
+<use arbre-symetrique-15-125.png>
+Package pdftex.def Info: arbre-symetrique-15-125.png used on input line 184.
+(pdftex.def)             Requested size: 285.01363pt x 200.0pt.
+ [25 <./arbre-symetrique-10-45.png (PNG copy)> <./arbre-symetrique-15-125.png (
+PNG copy)>]
+Underfull \hbox (badness 10000) detected at line 198
 [][][]
  []
 
-[20] [21]
-Underfull \hbox (badness 10000) detected at line 266
-[][][]
+<polygone-regulier-4.png, id=855, 215.30438pt x 216.81pt>
+File: polygone-regulier-4.png Graphic file (type png)
+
+<use polygone-regulier-4.png>
+Package pdftex.def Info: polygone-regulier-4.png used on input line 219.
+(pdftex.def)             Requested size: 148.96426pt x 150.0pt.
+ [26 <./polygone-regulier-4.png (PNG copy)>]
+Underfull \vbox (badness 10000) detected at line 268
+ []
+
+<courbe-von-koch-3.png, id=864, 467.49657pt x 146.04562pt>
+File: courbe-von-koch-3.png Graphic file (type png)
+
+<use courbe-von-koch-3.png>
+Package pdftex.def Info: courbe-von-koch-3.png used on input line 273.
+(pdftex.def)             Requested size: 320.11195pt x 100.0pt.
+
+<courbe-von-koch-6.png, id=865, 463.7325pt x 144.54pt>
+File: courbe-von-koch-6.png Graphic file (type png)
+
+<use courbe-von-koch-6.png>
+Package pdftex.def Info: courbe-von-koch-6.png used on input line 278.
+(pdftex.def)             Requested size: 320.83195pt x 100.0pt.
+
+Overfull \vbox (4.84828pt too high) has occurred while \output is active []
+
+
+[27 <./courbe-von-koch-3.png (PNG copy)> <./courbe-von-koch-6.png (PNG copy)>]
+<flocon.png, id=877, 252.19218pt x 252.945pt>
+File: flocon.png Graphic file (type png)
+ <use flocon.png>
+Package pdftex.def Info: flocon.png used on input line 308.
+(pdftex.def)             Requested size: 199.40665pt x 200.0pt.
+
+Underfull \vbox (badness 10000) detected at line 331
+ []
+
+<flocon-von-koch-3.png, id=880, 317.68687pt x 274.77657pt>
+File: flocon-von-koch-3.png Graphic file (type png)
+
+<use flocon-von-koch-3.png>
+Package pdftex.def Info: flocon-von-koch-3.png used on input line 336.
+(pdftex.def)             Requested size: 231.24052pt x 200.0pt.
+ [28 <./flocon.png (PNG copy)>]
+<flocon-von-koch-6.png, id=888, 318.43968pt x 275.52937pt>
+File: flocon-von-koch-6.png Graphic file (type png)
+
+<use flocon-von-koch-6.png>
+Package pdftex.def Info: flocon-von-koch-6.png used on input line 341.
+(pdftex.def)             Requested size: 231.15681pt x 200.0pt.
+ [29 <./flocon-von-koch-3.png (PNG copy)> <./flocon-von-koch-6.png (PNG copy)>]
+ <maison.png, id=898, 162.6075pt x 292.84406pt>
+File: maison.png Graphic file (type png)
+
+<use maison.png>
+Package pdftex.def Info: maison.png used on input line 371.
+(pdftex.def)             Requested size: 111.05794pt x 200.0pt.
+
+Underfull \vbox (badness 10000) detected at line 394
+ []
+
+<polygone-regulier-3.png, id=900, 253.69781pt x 218.31563pt>
+File: polygone-regulier-3.png Graphic file (type png)
+
+<use polygone-regulier-3.png>
+Package pdftex.def Info: polygone-regulier-3.png used on input line 399.
+(pdftex.def)             Requested size: 174.31229pt x 150.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30 <./maison.png (PNG copy)>] <polygone-regulier-6.png, id=909, 242.40562pt x
+ 216.81pt>
+File: polygone-regulier-6.png Graphic file (type png)
+
+<use polygone-regulier-6.png>
+Package pdftex.def Info: polygone-regulier-6.png used on input line 404.
+(pdftex.def)             Requested size: 167.715pt x 150.0pt.
+
+Underfull \vbox (badness 10000) detected at line 434
  []
 
 
-Overfull \vbox (2.02422pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [31 <./polygone-regulier-3.png (PNG copy)> <./polygone-regulier-6.png (PNG cop
+y)>]
+<sapin-10.png, id=921, 599.23875pt x 500.62032pt>
+File: sapin-10.png Graphic file (type png)
+ <use sapin-10.png>
+Package pdftex.def Info: sapin-10.png used on input line 439.
+(pdftex.def)             Requested size: 239.39865pt x 200.0pt.
 
-[22]) (./TortuinoDessins_8h.tex
-<TortuinoDessins_8h__dep__incl.pdf, id=724, 225.84375pt x 156.585pt>
+<sapin-15.png, id=922, 612.78937pt x 511.9125pt>
+File: sapin-15.png Graphic file (type png)
+ <use sapin-15.png>
+Package pdftex.def Info: sapin-15.png used on input line 444.
+(pdftex.def)             Requested size: 239.40765pt x 200.0pt.
+
+Underfull \hbox (badness 10000) detected at line 456
+[][][]
+ []
+
+[32 <./sapin-10.png (PNG copy)> <./sapin-15.png (PNG copy)>]
+<spirale-carree-20-2-3.png, id=933, 249.93375pt x 255.95625pt>
+File: spirale-carree-20-2-3.png Graphic file (type png)
+
+<use spirale-carree-20-2-3.png>
+Package pdftex.def Info: spirale-carree-20-2-3.png used on input line 477.
+(pdftex.def)             Requested size: 195.29457pt x 200.0pt.
+ <tangram.png, id=935, 163.3603pt x 163.3603pt>
+File: tangram.png Graphic file (type png)
+
+<use tangram.png>
+Package pdftex.def Info: tangram.png used on input line 509.
+(pdftex.def)             Requested size: 199.99971pt x 200.0pt.
+ [33 <./spirale-carree-20-2-3.png (PNG copy)>]
+File: polygone-regulier-3.png Graphic file (type png)
+
+<use polygone-regulier-3.png>
+Package pdftex.def Info: polygone-regulier-3.png used on input line 530.
+(pdftex.def)             Requested size: 174.31229pt x 150.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34 <./tangram.png (PNG copy)>]
+Underfull \vbox (badness 10000) detected at line 558
+ []
+
+<triangle-sierpinski-3.png, id=954, 313.17pt x 274.77657pt>
+File: triangle-sierpinski-3.png Graphic file (type png)
+
+<use triangle-sierpinski-3.png>
+Package pdftex.def Info: triangle-sierpinski-3.png used on input line 563.
+(pdftex.def)             Requested size: 227.95274pt x 200.0pt.
+
+<triangle-sierpinski-6.png, id=955, 312.41719pt x 274.77657pt>
+File: triangle-sierpinski-6.png Graphic file (type png)
+
+<use triangle-sierpinski-6.png>
+Package pdftex.def Info: triangle-sierpinski-6.png used on input line 568.
+(pdftex.def)             Requested size: 227.40479pt x 200.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35 <./triangle-sierpinski-3.png (PNG copy)>]) (./TortuinoDessins_8h.tex
+<TortuinoDessins_8h__dep__incl.pdf, id=967, 225.84375pt x 156.585pt>
 File: TortuinoDessins_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use TortuinoDessins_8h__dep__incl.pdf>
 Package pdftex.def Info: TortuinoDessins_8h__dep__incl.pdf used on input line 1
 2.
 (pdftex.def)             Requested size: 225.0pt x 156.00879pt.
- [23 <./TortuinoDessins_8h__dep__incl.pdf>]
-Underfull \hbox (badness 10000) detected at line 45
+ [36 <./triangle-sierpinski-6.png (PNG copy)> <./TortuinoDessins_8h__dep__incl.
+pdf>]
+Underfull \hbox (badness 10000) detected at line 53
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 48
+Underfull \hbox (badness 10000) detected at line 56
+[][][]
+ []
+
+[37]
+Underfull \vbox (badness 10000) detected at line 78
+ []
+
+File: arbre-5.png Graphic file (type png)
+<use arbre-5.png>
+Package pdftex.def Info: arbre-5.png used on input line 83.
+(pdftex.def)             Requested size: 225.92503pt x 200.0pt.
+File: arbre-10.png Graphic file (type png)
+ <use arbre-10.png>
+Package pdftex.def Info: arbre-10.png used on input line 88.
+(pdftex.def)             Requested size: 243.83444pt x 200.0pt.
+ [38]
+Underfull \vbox (badness 10000) detected at line 120
+ []
+
+File: arbre-asymetrique-10-45-10.png Graphic file (type png)
+<use arbre-asymetrique-10-45-10.png>
+Package pdftex.def Info: arbre-asymetrique-10-45-10.png used on input line 125.
+
+(pdftex.def)             Requested size: 177.21829pt x 200.0pt.
+File: arbre-asymetrique-15-125-20.png Graphic file (type png)
+ <use arbre-asymetrique-15-125-20.png>
+Package pdftex.def Info: arbre-asymetrique-15-125-20.png used on input line 130
+.
+(pdftex.def)             Requested size: 250.65367pt x 200.0pt.
+
+Underfull \vbox (badness 3803) has occurred while \output is active []
+
+ [39]
+Underfull \hbox (badness 10000) detected at line 146
 [][][]
  []
 
 
-Overfull \vbox (10.75206pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) detected at line 171
+ []
 
+[40]
+File: arbre-symetrique-10-45.png Graphic file (type png)
+ <use arbre-symetrique-10-45.png>
+Package pdftex.def Info: arbre-symetrique-10-45.png used on input line 176.
+(pdftex.def)             Requested size: 191.24919pt x 200.0pt.
+File: arbre-symetrique-15-125.png Graphic file (type png)
+ <use arbre-symetrique-15-125.png>
+Package pdftex.def Info: arbre-symetrique-15-125.png used on input line 181.
+(pdftex.def)             Requested size: 285.01363pt x 200.0pt.
 
-[24]
-Underfull \hbox (badness 10000) detected at line 100
+[41]
+Underfull \hbox (badness 10000) detected at line 195
 [][][]
  []
 
-[25]
-Underfull \hbox (badness 10000) detected at line 130
+File: polygone-regulier-4.png Graphic file (type png)
+<use polygone-regulier-4.png>
+Package pdftex.def Info: polygone-regulier-4.png used on input line 216.
+(pdftex.def)             Requested size: 148.96426pt x 150.0pt.
+ [42]
+Underfull \vbox (badness 10000) detected at line 265
+ []
+
+File: courbe-von-koch-3.png Graphic file (type png)
+<use courbe-von-koch-3.png>
+Package pdftex.def Info: courbe-von-koch-3.png used on input line 270.
+(pdftex.def)             Requested size: 320.11195pt x 100.0pt.
+File: courbe-von-koch-6.png Graphic file (type png)
+ <use courbe-von-koch-6.png>
+Package pdftex.def Info: courbe-von-koch-6.png used on input line 275.
+(pdftex.def)             Requested size: 320.83195pt x 100.0pt.
+
+Overfull \vbox (4.84828pt too high) has occurred while \output is active []
+
+
+[43]
+File: flocon.png Graphic file (type png)
+ <use flocon.png>
+Package pdftex.def Info: flocon.png used on input line 305.
+(pdftex.def)             Requested size: 199.40665pt x 200.0pt.
+
+Underfull \vbox (badness 10000) detected at line 328
+ []
+
+File: flocon-von-koch-3.png Graphic file (type png)
+<use flocon-von-koch-3.png>
+Package pdftex.def Info: flocon-von-koch-3.png used on input line 333.
+(pdftex.def)             Requested size: 231.24052pt x 200.0pt.
+ [44]
+File: flocon-von-koch-6.png Graphic file (type png)
+ <use flocon-von-koch-6.png>
+Package pdftex.def Info: flocon-von-koch-6.png used on input line 338.
+(pdftex.def)             Requested size: 231.15681pt x 200.0pt.
+ [45]
+File: maison.png Graphic file (type png)
+
+<use maison.png>
+Package pdftex.def Info: maison.png used on input line 368.
+(pdftex.def)             Requested size: 111.05794pt x 200.0pt.
+
+Underfull \vbox (badness 10000) detected at line 391
+ []
+
+File: polygone-regulier-3.png Graphic file (type png)
+<use polygone-regulier-3.png>
+Package pdftex.def Info: polygone-regulier-3.png used on input line 396.
+(pdftex.def)             Requested size: 174.31229pt x 150.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+File: polygone-regulier-6.png Graphic file (type png)
+
+<use polygone-regulier-6.png>
+Package pdftex.def Info: polygone-regulier-6.png used on input line 401.
+(pdftex.def)             Requested size: 167.715pt x 150.0pt.
+
+Underfull \vbox (badness 10000) detected at line 431
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
+File: sapin-10.png Graphic file (type png)
+
+<use sapin-10.png>
+Package pdftex.def Info: sapin-10.png used on input line 436.
+(pdftex.def)             Requested size: 239.39865pt x 200.0pt.
+File: sapin-15.png Graphic file (type png)
+ <use sapin-15.png>
+Package pdftex.def Info: sapin-15.png used on input line 441.
+(pdftex.def)             Requested size: 239.40765pt x 200.0pt.
+
+Underfull \hbox (badness 10000) detected at line 453
 [][][]
  []
 
-[26] [27]
-Underfull \hbox (badness 10000) detected at line 263
-[][][]
+[48]
+File: spirale-carree-20-2-3.png Graphic file (type png)
+ <use spirale-carree-20-2-3.png>
+Package pdftex.def Info: spirale-carree-20-2-3.png used on input line 474.
+(pdftex.def)             Requested size: 195.29457pt x 200.0pt.
+File: tangram.png Graphic file (type png)
+ <use tangram.png>
+Package pdftex.def Info: tangram.png used on input line 506.
+(pdftex.def)             Requested size: 199.99971pt x 200.0pt.
+ [49]
+File: polygone-regulier-3.png Graphic file (type png)
+
+<use polygone-regulier-3.png>
+Package pdftex.def Info: polygone-regulier-3.png used on input line 527.
+(pdftex.def)             Requested size: 174.31229pt x 150.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50]
+Underfull \vbox (badness 10000) detected at line 555
  []
 
+File: triangle-sierpinski-3.png Graphic file (type png)
+<use triangle-sierpinski-3.png>
+Package pdftex.def Info: triangle-sierpinski-3.png used on input line 560.
+(pdftex.def)             Requested size: 227.95274pt x 200.0pt.
+File: triangle-sierpinski-6.png Graphic file (type png)
+ <use triangle-sierpinski-6.png>
+Package pdftex.def Info: triangle-sierpinski-6.png used on input line 565.
+(pdftex.def)             Requested size: 227.40479pt x 200.0pt.
 
-Overfull \vbox (2.02422pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51])
+[52] (./refman.ind [53
 
 
-[28]) [29] [30
 
-] (./refman.ind [31
-
-
-] [32])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
+] [54])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
  (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 3F918E686998E24EBF13B4327AA466AA;14835.
+(rerunfilecheck)             Checksum: DE0FD273C4756E33AFBA8DAFE732ABFC;16547.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
  ) 
 Here is how much of TeX's memory you used:
- 16314 strings out of 494875
- 235521 string characters out of 6178748
- 337122 words of memory out of 5000000
- 19124 multiletter control sequences out of 15000+600000
- 68328 words of font info for 88 fonts, out of 8000000 for 9000
+ 16642 strings out of 494875
+ 241706 string characters out of 6178748
+ 338376 words of memory out of 5000000
+ 19274 multiletter control sequences out of 15000+600000
+ 78320 words of font info for 94 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 53i,16n,92p,1270b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,16n,92p,1444b,713s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/cou
-rier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (38 pages, 209382 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/cour
+ier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (60 pages, 1315911 bytes).
 PDF statistics:
- 1033 PDF objects out of 1200 (max. 8388607)
- 962 compressed objects within 10 object streams
- 219 named destinations out of 1000 (max. 500000)
- 629 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1433 PDF objects out of 1440 (max. 8388607)
+ 1311 compressed objects within 14 object streams
+ 365 named destinations out of 1000 (max. 500000)
+ 811 words of extra memory for PDF output out of 10000 (max. 10000000)
 

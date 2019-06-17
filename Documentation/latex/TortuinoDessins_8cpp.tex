@@ -36,10 +36,18 @@ void \hyperlink{TortuinoDessins_8cpp_a170bac7a60b14659e63b81c8eefac3dd}{sapin} (
 \begin{DoxyCompactList}\small\item\em Utilise deux arbres asymétriques pour tracer un sapin, c\textquotesingle{}est-\/à-\/dire un arbre où chaque branche se sépare en trois autres \+: une continuant vers le haut (le tronc donc) et deux horizontales sur le côté (les branches donc). \end{DoxyCompactList}\item 
 void \hyperlink{TortuinoDessins_8cpp_af86cf0f8acc522368a052c765047a3a1}{courbe\+Von\+Koch} (int nb\+Niveaux, float taille)
 \begin{DoxyCompactList}\small\item\em Trace une \href{https://fr.wikipedia.org/wiki/Flocon_de_Koch#Courbe_de_Koch}{\tt courbe de Von Koch} paramétrée par son niveau et la taille du segment de départ. \end{DoxyCompactList}\item 
-void \hyperlink{TortuinoDessins_8cpp_afa05db28401a10aa6c4625a2de482484}{flocon} (int nb\+Niveaux, float taille)
+void \hyperlink{TortuinoDessins_8cpp_a31ef6ba782f866ce8f46e331d1ebc1f0}{flocon\+Von\+Koch} (int nb\+Niveaux, float taille)
 \begin{DoxyCompactList}\small\item\em Trace un \href{https://fr.wikipedia.org/wiki/Flocon_de_Koch#Flocon_de_Koch}{\tt flocon de Von Koch} paramétré par son niveau et la taille du segment de départ. \end{DoxyCompactList}\item 
 void \hyperlink{TortuinoDessins_8cpp_a0c851f0f43370a65c2da38436be9a764}{triangle\+Sierpinski} (int nb\+Niveaux, float taille)
-\begin{DoxyCompactList}\small\item\em Trace un \href{https://fr.wikipedia.org/wiki/Triangle_de_Sierpi%C5%84ski}{\tt triangle de Sierpiński} paramétré par son niveau et la taille globale du triangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Trace un \href{https://fr.wikipedia.org/wiki/Triangle_de_Sierpi%C5%84ski}{\tt triangle de Sierpiński} paramétré par son niveau et la taille globale du triangle. \end{DoxyCompactList}\item 
+void \hyperlink{TortuinoDessins_8cpp_a2332ad675f923f8b1b3573c3abb73e84}{maison} ()
+\begin{DoxyCompactList}\small\item\em Réalise le premier défi que nous proposons pour l\textquotesingle{}animation Tortuino \+: une maison avec son toit et sa porte d\textquotesingle{}entrée. \end{DoxyCompactList}\item 
+void \hyperlink{TortuinoDessins_8cpp_a9393b4ea29287edee62dc5acc01088e2}{spirale\+Carree} (int nb\+Cotes, float longueur\+Depart, float ecart)
+\begin{DoxyCompactList}\small\item\em Trace une spirale carrée en fonction du nombre de côtés souhaités, de la longueur du côté de départ et de l\textquotesingle{}écart en longueur entre deux côtés adjacents. \end{DoxyCompactList}\item 
+void \hyperlink{TortuinoDessins_8cpp_aa6cb9afcf77d54c336bab3add7731c8a}{tangram} ()
+\begin{DoxyCompactList}\small\item\em Dessine le troisième défi de l\textquotesingle{}animation \+: un carré divisé en pièces à tangram, nom raccourci en juste tangram. \end{DoxyCompactList}\item 
+void \hyperlink{TortuinoDessins_8cpp_a09dd11b1a32a8ae6b97d32114cf133ad}{flocon} ()
+\begin{DoxyCompactList}\small\item\em Réalise le quatrième défi proposé \+: un flocon à huit branches. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Description détaillée}
@@ -49,9 +57,9 @@ Ce fichier met à disposition quelques dessins qui peuvent être intéressants d
 Paul Mabileau \href{mailto:paulmabileau@hotmail.fr}{\tt paulmabileau@hotmail.\+fr} 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
-1.\+2
+1.\+3
 \end{DoxyVersion}
-Le fichier \hyperlink{TortuinoDessins_8cpp}{Tortuino\+Dessins.\+cpp} implémente un ensemble de fonctions réalisant quelques dessins plus ou moins complexes. Les dessins les plus simples sont par exemple des polygones réguliers tels qu\textquotesingle{}un triangle, un carré, un hexagone, ... les plus compliqués utilise des motifs récursifs, ce qui est moins simple à programmer, mais tout à fait agréable à contempler, comme par exemple un arbre avec différentes variantes, un flocon ou encore le triangle de Sierpiński. 
+Le fichier \hyperlink{TortuinoDessins_8cpp}{Tortuino\+Dessins.\+cpp} implémente un ensemble de fonctions réalisant quelques dessins plus ou moins complexes. Les dessins les plus simples sont par exemple des polygones réguliers tels qu\textquotesingle{}un triangle, un carré, un hexagone, ... les plus compliqués utilise des motifs récursifs, ce qui est moins simple à programmer, mais tout à fait agréable à contempler, comme par exemple un arbre avec différentes variantes, un flocon de Von Koch ou encore le triangle de Sierpiński. Il présente aussi quelques défis que nous proposons pour l\textquotesingle{}animation Tortuino et qui ont été réalisés avec succès par les stagiaires d\textquotesingle{}essai \+: une maison, une spirale carrée, un tangram et un flocon. Ils se trouvent dans la section défis de ce fichier. 
 
 \subsection{Documentation des fonctions}
 \mbox{\Hypertarget{TortuinoDessins_8cpp_a39c1c8ca3b979edec7d841f1a71e50f1}\label{TortuinoDessins_8cpp_a39c1c8ca3b979edec7d841f1a71e50f1}} 
@@ -66,6 +74,25 @@ Trace un arbre récursivement dont l\textquotesingle{}angle entre les branches e
 
 C\textquotesingle{}est donc un cas particulier de \hyperlink{TortuinoDessins_8cpp_ac8968b78a962de5017b660c5e8e37513}{arbre\+Symetrique(int nb\+Niveaux, float taille\+Tronc, float angle\+Separation)}.
 
+\begin{center}\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+ &  \\\cline{1-2}
+\end{longtabu}
+\end{center} 
+
+
+\begin{DoxyImage}
+\includegraphics[height=200pt]{arbre-5.png}
+\doxyfigcaption{Un arbre à cinq niveaux}
+\end{DoxyImage}
+ 
+\begin{DoxyImage}
+\includegraphics[height=200pt]{arbre-10.png}
+\doxyfigcaption{Un arbre à dix niveaux}
+\end{DoxyImage}
+
+
 
 \begin{DoxyParams}{Paramètres}
 {\em nb\+Niveaux} & Le nombre de niveaux que l\textquotesingle{}arbre comprendra, c\textquotesingle{}est-\/à-\/dire le nombre de fois moins un que l\textquotesingle{}arbre va se séparer ou autrement dit la distance en nombre de branches entre la racine et chaque feuille. \\
@@ -75,7 +102,7 @@ C\textquotesingle{}est donc un cas particulier de \hyperlink{TortuinoDessins_8cp
 \end{DoxyParams}
 
 
-Définition à la ligne 84 du fichier Tortuino\+Dessins.\+cpp.
+Définition à la ligne 118 du fichier Tortuino\+Dessins.\+cpp.
 
 \mbox{\Hypertarget{TortuinoDessins_8cpp_a29fa4a540a63b4e05fe0aee6d5b522c0}\label{TortuinoDessins_8cpp_a29fa4a540a63b4e05fe0aee6d5b522c0}} 
 \index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!arbre\+Asymetrique@{arbre\+Asymetrique}}
@@ -88,6 +115,25 @@ Définition à la ligne 84 du fichier Tortuino\+Dessins.\+cpp.
 Trace un arbre récursivement dont l\textquotesingle{}angle entre les branches et l\textquotesingle{}angle entre la branche de gauche et la branche mère moins 45 degrés peuvent être précisés \+: il est asymétrique par rapport à l\textquotesingle{}axe formé par son tronc. 
 
 Il généralise donc un arbre.
+
+\begin{center}\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+ &  \\\cline{1-2}
+\end{longtabu}
+\end{center} 
+
+
+\begin{DoxyImage}
+\includegraphics[height=200pt]{arbre-asymetrique-10-45-10.png}
+\doxyfigcaption{Un arbre asymétrique à dix niveaux séparés de 45° et inclinés de 10°}
+\end{DoxyImage}
+ 
+\begin{DoxyImage}
+\includegraphics[height=200pt]{arbre-asymetrique-15-125-20.png}
+\doxyfigcaption{Un arbre asymétrique à quinze niveaux séparés de 125° et inclinés de 20°}
+\end{DoxyImage}
+
 
 
 \begin{DoxyParams}{Paramètres}
@@ -107,7 +153,7 @@ Il généralise donc un arbre.
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 120 du fichier Tortuino\+Dessins.\+cpp.
+Définition à la ligne 174 du fichier Tortuino\+Dessins.\+cpp.
 
 \mbox{\Hypertarget{TortuinoDessins_8cpp_ac8968b78a962de5017b660c5e8e37513}\label{TortuinoDessins_8cpp_ac8968b78a962de5017b660c5e8e37513}} 
 \index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!arbre\+Symetrique@{arbre\+Symetrique}}
@@ -120,6 +166,25 @@ Définition à la ligne 120 du fichier Tortuino\+Dessins.\+cpp.
 Trace un arbre récursivement dont l\textquotesingle{}angle entre les branches peut être précisé et qui est symétrique par rapport à l\textquotesingle{}axe formé par son tronc. 
 
 C\textquotesingle{}est donc un cas particulier de \hyperlink{TortuinoDessins_8cpp_a29fa4a540a63b4e05fe0aee6d5b522c0}{arbre\+Asymetrique(int nb\+Niveaux, float taille\+Tronc, float angle\+Separation, float angle\+Inclinaison)}.
+
+\begin{center}\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+ &  \\\cline{1-2}
+\end{longtabu}
+\end{center} 
+
+
+\begin{DoxyImage}
+\includegraphics[height=200pt]{arbre-symetrique-10-45.png}
+\doxyfigcaption{Un arbre symétrique à dix niveaux séparés de 45°}
+\end{DoxyImage}
+ 
+\begin{DoxyImage}
+\includegraphics[height=200pt]{arbre-symetrique-15-125.png}
+\doxyfigcaption{Un arbre symétrique à quinze niveaux séparés de 125°}
+\end{DoxyImage}
+
 
 
 \begin{DoxyParams}{Paramètres}
@@ -135,7 +200,7 @@ C\textquotesingle{}est donc un cas particulier de \hyperlink{TortuinoDessins_8cp
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 101 du fichier Tortuino\+Dessins.\+cpp.
+Définition à la ligne 145 du fichier Tortuino\+Dessins.\+cpp.
 
 \mbox{\Hypertarget{TortuinoDessins_8cpp_a8fd6d1d3aad9c0c10525e5c8244a6ce1}\label{TortuinoDessins_8cpp_a8fd6d1d3aad9c0c10525e5c8244a6ce1}} 
 \index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!carre@{carre}}
@@ -149,6 +214,13 @@ Trace un carré d\textquotesingle{}une certaine taille.
 
 En réalité, ce n\textquotesingle{}est qu\textquotesingle{}une adaptation de \hyperlink{TortuinoDessins_8cpp_ada93849cc1680d0d43bf6f9c1de954b2}{polygone\+Regulier(int nb\+Cotes, float taille\+Cote)} au cas particulier du carré.
 
+ 
+\begin{DoxyImage}
+\includegraphics[height=150pt]{polygone-regulier-4.png}
+\doxyfigcaption{Un carré}
+\end{DoxyImage}
+
+
 
 \begin{DoxyParams}{Paramètres}
 {\em taille\+Cote} & La taille des côtés du carré. \\
@@ -156,7 +228,7 @@ En réalité, ce n\textquotesingle{}est qu\textquotesingle{}une adaptation de \h
 \end{DoxyParams}
 
 
-Définition à la ligne 55 du fichier Tortuino\+Dessins.\+cpp.
+Définition à la ligne 78 du fichier Tortuino\+Dessins.\+cpp.
 
 \mbox{\Hypertarget{TortuinoDessins_8cpp_a57189e3fe807009b1595778589a16be9}\label{TortuinoDessins_8cpp_a57189e3fe807009b1595778589a16be9}} 
 \index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!cercle@{cercle}}
@@ -168,7 +240,7 @@ Définition à la ligne 55 du fichier Tortuino\+Dessins.\+cpp.
 
 Cette fonction est une tentative de réalisation d\textquotesingle{}un cercle automatiquement avec juste le rayon souhaité en entrée. 
 
-Seulement, cela ne fonctionne pas trop car il est difficile de décoréler les paramètres du robot pour pouvoir calculer les valeurs nécessaires à une approximation relativement correcte d\textquotesingle{}un cercle par un polygone régulier au grand nombre de côtés.
+Seulement, cela ne fonctionne pas trop car il est difficile de décorréler les paramètres du robot pour pouvoir calculer les valeurs nécessaires à une approximation relativement correcte d\textquotesingle{}un cercle par un polygone régulier au grand nombre de côtés. Cette fonction est en cours développement, une meilleure version peut venir à être rendue disponble.
 
 
 \begin{DoxyParams}{Paramètres}
@@ -177,7 +249,7 @@ Seulement, cela ne fonctionne pas trop car il est difficile de décoréler les p
 \end{DoxyParams}
 
 
-Définition à la ligne 68 du fichier Tortuino\+Dessins.\+cpp.
+Définition à la ligne 92 du fichier Tortuino\+Dessins.\+cpp.
 
 \mbox{\Hypertarget{TortuinoDessins_8cpp_af86cf0f8acc522368a052c765047a3a1}\label{TortuinoDessins_8cpp_af86cf0f8acc522368a052c765047a3a1}} 
 \index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!courbe\+Von\+Koch@{courbe\+Von\+Koch}}
@@ -189,6 +261,25 @@ Définition à la ligne 68 du fichier Tortuino\+Dessins.\+cpp.
 
 Trace une \href{https://fr.wikipedia.org/wiki/Flocon_de_Koch#Courbe_de_Koch}{\tt courbe de Von Koch} paramétrée par son niveau et la taille du segment de départ. 
 
+\begin{center}\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+ &  \\\cline{1-2}
+\end{longtabu}
+\end{center} 
+
+
+\begin{DoxyImage}
+\includegraphics[height=100pt]{courbe-von-koch-3.png}
+\doxyfigcaption{Une courbe de Von Koch à trois niveaux}
+\end{DoxyImage}
+ 
+\begin{DoxyImage}
+\includegraphics[height=100pt]{courbe-von-koch-6.png}
+\doxyfigcaption{Une courbe de Von Koch à six niveaux}
+\end{DoxyImage}
+
+
 
 \begin{DoxyParams}{Paramètres}
 {\em nb\+Niveaux} & Le nombre de niveaux de la courbe de Von Koch, par convention 1 donne un trait seulement. \\
@@ -198,30 +289,91 @@ Trace une \href{https://fr.wikipedia.org/wiki/Flocon_de_Koch#Courbe_de_Koch}{\tt
 \end{DoxyParams}
 
 
-Définition à la ligne 165 du fichier Tortuino\+Dessins.\+cpp.
+Définition à la ligne 239 du fichier Tortuino\+Dessins.\+cpp.
 
-\mbox{\Hypertarget{TortuinoDessins_8cpp_afa05db28401a10aa6c4625a2de482484}\label{TortuinoDessins_8cpp_afa05db28401a10aa6c4625a2de482484}} 
+\mbox{\Hypertarget{TortuinoDessins_8cpp_a09dd11b1a32a8ae6b97d32114cf133ad}\label{TortuinoDessins_8cpp_a09dd11b1a32a8ae6b97d32114cf133ad}} 
 \index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!flocon@{flocon}}
 \index{flocon@{flocon}!Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}}
 \subsubsection{\texorpdfstring{flocon()}{flocon()}}
-{\footnotesize\ttfamily void flocon (\begin{DoxyParamCaption}\item[{int}]{nb\+Niveaux,  }\item[{float}]{taille }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void flocon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Réalise le quatrième défi proposé \+: un flocon à huit branches. 
+
+Chacune des branches comporte trois \char`\"{}feuilles\char`\"{} de sorte qu\textquotesingle{}elles aient leurs terminaisons alignées. Il a aussi sa forme fixée.
+
+ 
+\begin{DoxyImage}
+\includegraphics[height=200pt]{flocon.png}
+\doxyfigcaption{Le défi flocon}
+\end{DoxyImage}
+ 
+
+Définition à la ligne 443 du fichier Tortuino\+Dessins.\+cpp.
+
+\mbox{\Hypertarget{TortuinoDessins_8cpp_a31ef6ba782f866ce8f46e331d1ebc1f0}\label{TortuinoDessins_8cpp_a31ef6ba782f866ce8f46e331d1ebc1f0}} 
+\index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!flocon\+Von\+Koch@{flocon\+Von\+Koch}}
+\index{flocon\+Von\+Koch@{flocon\+Von\+Koch}!Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}}
+\subsubsection{\texorpdfstring{flocon\+Von\+Koch()}{floconVonKoch()}}
+{\footnotesize\ttfamily void flocon\+Von\+Koch (\begin{DoxyParamCaption}\item[{int}]{nb\+Niveaux,  }\item[{float}]{taille }\end{DoxyParamCaption})}
 
 
 
 Trace un \href{https://fr.wikipedia.org/wiki/Flocon_de_Koch#Flocon_de_Koch}{\tt flocon de Von Koch} paramétré par son niveau et la taille du segment de départ. 
 
-C\textquotesingle{}est en fait une répétition de la \hyperlink{TortuinoDessins_8cpp_af86cf0f8acc522368a052c765047a3a1}{courbe\+Von\+Koch(int nb\+Niveaux, float taille)} \+: trois fois séparées par un angle intérieur de 120 degrés.
+C\textquotesingle{}est en fait une répétition de la \hyperlink{TortuinoDessins_8cpp_af86cf0f8acc522368a052c765047a3a1}{courbe\+Von\+Koch(int nb\+Niveaux, float taille)} \+: six fois séparées par un angle intérieur de 120 degrés.
+
+\begin{center}\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+ &  \\\cline{1-2}
+\end{longtabu}
+\end{center} 
+
+
+\begin{DoxyImage}
+\includegraphics[height=200pt]{flocon-von-koch-3.png}
+\doxyfigcaption{Un flocon de Von Koch à trois niveaux}
+\end{DoxyImage}
+ 
+\begin{DoxyImage}
+\includegraphics[height=200pt]{flocon-von-koch-6.png}
+\doxyfigcaption{Un flocon de Von Koch à six niveaux}
+\end{DoxyImage}
+
 
 
 \begin{DoxyParams}{Paramètres}
 {\em nb\+Niveaux} & Le nombre de niveaux du flocon de Von Koch, par convention 1 donne un triangle seulement. \\
 \hline
-{\em taille} & La taille du segment à partir de laquelle l\textquotesingle{}opération récursive est itérée, c\textquotesingle{}est-\/à-\/dire que contrairement à un arbre ou un polygone tels qu\textquotesingle{}implémentés ici, ajouter plus de niveaux ou de côtés n\textquotesingle{}augmente pas la taille globale du floncon ; autrement dit, le segment de départ sert d\textquotesingle{}étalon pour en déduire à l\textquotesingle{}avance la taille des côtés engendrés. \\
+{\em taille} & La taille du segment à partir de laquelle l\textquotesingle{}opération récursive est itérée, c\textquotesingle{}est-\/à-\/dire que contrairement à un arbre ou un polygone tels qu\textquotesingle{}implémentés ici, ajouter plus de niveaux ou de côtés n\textquotesingle{}augmente pas la taille globale du flocon ; autrement dit, le segment de départ sert d\textquotesingle{}étalon pour en déduire à l\textquotesingle{}avance la taille des côtés engendrés. \\
 \hline
 \end{DoxyParams}
 
 
-Définition à la ligne 191 du fichier Tortuino\+Dessins.\+cpp.
+Définition à la ligne 275 du fichier Tortuino\+Dessins.\+cpp.
+
+\mbox{\Hypertarget{TortuinoDessins_8cpp_a2332ad675f923f8b1b3573c3abb73e84}\label{TortuinoDessins_8cpp_a2332ad675f923f8b1b3573c3abb73e84}} 
+\index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!maison@{maison}}
+\index{maison@{maison}!Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}}
+\subsubsection{\texorpdfstring{maison()}{maison()}}
+{\footnotesize\ttfamily void maison (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Réalise le premier défi que nous proposons pour l\textquotesingle{}animation Tortuino \+: une maison avec son toit et sa porte d\textquotesingle{}entrée. 
+
+Elle n\textquotesingle{}accepte pas de paramètres en entrée, car sa forme est fixée et que mettre à disposition des moyens de personnaliser chaque partie de la maison est long et en soi pas particulièrement intéressant. Le dessin est ainsi toujours le même.
+
+ 
+\begin{DoxyImage}
+\includegraphics[height=200pt]{maison.png}
+\doxyfigcaption{Le défi maison}
+\end{DoxyImage}
+ 
+
+Définition à la ligne 337 du fichier Tortuino\+Dessins.\+cpp.
 
 \mbox{\Hypertarget{TortuinoDessins_8cpp_ada93849cc1680d0d43bf6f9c1de954b2}\label{TortuinoDessins_8cpp_ada93849cc1680d0d43bf6f9c1de954b2}} 
 \index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!polygone\+Regulier@{polygone\+Regulier}}
@@ -233,7 +385,26 @@ Définition à la ligne 191 du fichier Tortuino\+Dessins.\+cpp.
 
 Fait tracer au robot un polygone régulier en fonction du nombre de côtés souhaités et de la taille de chacun de ces côtés. 
 
-Voir l\textquotesingle{}\href{https://fr.wikipedia.org/wiki/Polygone_r%C3%A9gulier}{\tt article Wikipédia} suivant pour plus de détails sur cette figure géométrique.
+Voir l\textquotesingle{}\href{https://fr.wikipedia.org/wiki/Polygone_r%C3%A9gulier}{\tt article Wikipédia} suivant pour plus de détails sur cette figure géométrique. Un nombre de côtés de 3 donne un triangle, 4 un carré, 5 un pentagone régulier, ...
+
+\begin{center}\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+ & & & &  \\\cline{1-5}
+\end{longtabu}
+\end{center} 
+
+
+\begin{DoxyImage}
+\includegraphics[height=150pt]{polygone-regulier-3.png}
+\doxyfigcaption{Un triangle}
+\end{DoxyImage}
+ 
+\begin{DoxyImage}
+\includegraphics[height=150pt]{polygone-regulier-6.png}
+\doxyfigcaption{Un hexagone}
+\end{DoxyImage}
+
 
 
 \begin{DoxyParams}{Paramètres}
@@ -244,7 +415,7 @@ Voir l\textquotesingle{}\href{https://fr.wikipedia.org/wiki/Polygone_r%C3%A9guli
 \end{DoxyParams}
 
 
-Définition à la ligne 30 du fichier Tortuino\+Dessins.\+cpp.
+Définition à la ligne 47 du fichier Tortuino\+Dessins.\+cpp.
 
 \mbox{\Hypertarget{TortuinoDessins_8cpp_a170bac7a60b14659e63b81c8eefac3dd}\label{TortuinoDessins_8cpp_a170bac7a60b14659e63b81c8eefac3dd}} 
 \index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!sapin@{sapin}}
@@ -255,6 +426,25 @@ Définition à la ligne 30 du fichier Tortuino\+Dessins.\+cpp.
 
 
 Utilise deux arbres asymétriques pour tracer un sapin, c\textquotesingle{}est-\/à-\/dire un arbre où chaque branche se sépare en trois autres \+: une continuant vers le haut (le tronc donc) et deux horizontales sur le côté (les branches donc). 
+
+\begin{center}\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+ &  \\\cline{1-2}
+\end{longtabu}
+\end{center} 
+
+
+\begin{DoxyImage}
+\includegraphics[height=200pt]{sapin-10.png}
+\doxyfigcaption{Un sapin à dix niveaux}
+\end{DoxyImage}
+ 
+\begin{DoxyImage}
+\includegraphics[height=200pt]{sapin-15.png}
+\doxyfigcaption{Un sapin à quinze niveaux}
+\end{DoxyImage}
+
 
 
 \begin{DoxyParams}{Paramètres}
@@ -268,7 +458,60 @@ Utilise deux arbres asymétriques pour tracer un sapin, c\textquotesingle{}est-\
 \end{DoxySeeAlso}
 
 
-Définition à la ligne 150 du fichier Tortuino\+Dessins.\+cpp.
+Définition à la ligne 214 du fichier Tortuino\+Dessins.\+cpp.
+
+\mbox{\Hypertarget{TortuinoDessins_8cpp_a9393b4ea29287edee62dc5acc01088e2}\label{TortuinoDessins_8cpp_a9393b4ea29287edee62dc5acc01088e2}} 
+\index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!spirale\+Carree@{spirale\+Carree}}
+\index{spirale\+Carree@{spirale\+Carree}!Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}}
+\subsubsection{\texorpdfstring{spirale\+Carree()}{spiraleCarree()}}
+{\footnotesize\ttfamily void spirale\+Carree (\begin{DoxyParamCaption}\item[{int}]{nb\+Cotes,  }\item[{float}]{longueur\+Depart,  }\item[{float}]{ecart }\end{DoxyParamCaption})}
+
+
+
+Trace une spirale carrée en fonction du nombre de côtés souhaités, de la longueur du côté de départ et de l\textquotesingle{}écart en longueur entre deux côtés adjacents. 
+
+C\textquotesingle{}est l\textquotesingle{}implémentation du deuxième défi Tortuino. Une spirale carrée est une spirale composés d\textquotesingle{}un certain nombre de segments reliés l\textquotesingle{}un à la suite de l\textquotesingle{}autre et séparés d\textquotesingle{}un angle de droit.
+
+ 
+\begin{DoxyImage}
+\includegraphics[height=200pt]{spirale-carree-20-2-3.png}
+\doxyfigcaption{Une spirale carrée à vingt côtés avec une longueur de départ de 2 et un écart de 3}
+\end{DoxyImage}
+
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nb\+Cotes} & Le nombre de côtés de la spirale à tracer. 1 fait un seul segment. \\
+\hline
+{\em longueur\+Depart} & La longueur en centimètres du premier côté de la spirale. \\
+\hline
+{\em ecart} & L\textquotesingle{}écart en centimètres entre deux côtés adjacents de la spirale, c\textquotesingle{}est-\/à-\/dire entre les côtés qui se trouvent dans la même direction à partir du point de départ -\/ au nord, au sud, à l\textquotesingle{}est ou à l\textquotesingle{}ouest. Ce n\textquotesingle{}est pas directement l\textquotesingle{}écart entre la longueur du côté en cours et son suivant, mais plutôt son quadruple. \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 380 du fichier Tortuino\+Dessins.\+cpp.
+
+\mbox{\Hypertarget{TortuinoDessins_8cpp_aa6cb9afcf77d54c336bab3add7731c8a}\label{TortuinoDessins_8cpp_aa6cb9afcf77d54c336bab3add7731c8a}} 
+\index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!tangram@{tangram}}
+\index{tangram@{tangram}!Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}}
+\subsubsection{\texorpdfstring{tangram()}{tangram()}}
+{\footnotesize\ttfamily void tangram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dessine le troisième défi de l\textquotesingle{}animation \+: un carré divisé en pièces à tangram, nom raccourci en juste tangram. 
+
+Le carré en question est composé de cinq triangles, un plus petit carré et un parallélogramme. De même que la \hyperlink{TortuinoDessins_8cpp_a2332ad675f923f8b1b3573c3abb73e84}{maison()}, la geométrie est fixée et n\textquotesingle{}accepte donc pas de paramètres permettant d\textquotesingle{}ajuster sa forme.
+
+ 
+\begin{DoxyImage}
+\includegraphics[height=200pt]{tangram.png}
+\doxyfigcaption{Le défi tangram}
+\end{DoxyImage}
+ 
+
+Définition à la ligne 400 du fichier Tortuino\+Dessins.\+cpp.
 
 \mbox{\Hypertarget{TortuinoDessins_8cpp_afa3484b3831c738502a4c381600397ea}\label{TortuinoDessins_8cpp_afa3484b3831c738502a4c381600397ea}} 
 \index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!triangle@{triangle}}
@@ -282,6 +525,13 @@ Trace un triangle equilatéral d\textquotesingle{}une certaine taille.
 
 En réalité, ce n\textquotesingle{}est qu\textquotesingle{}une adaptation de \hyperlink{TortuinoDessins_8cpp_ada93849cc1680d0d43bf6f9c1de954b2}{polygone\+Regulier(int nb\+Cotes, float taille\+Cote)} au cas particulier du triangle equilatéral.
 
+ 
+\begin{DoxyImage}
+\includegraphics[height=150pt]{polygone-regulier-3.png}
+\doxyfigcaption{Un triangle}
+\end{DoxyImage}
+
+
 
 \begin{DoxyParams}{Paramètres}
 {\em taille\+Cote} & La taille des côtés du triangle. \\
@@ -289,7 +539,7 @@ En réalité, ce n\textquotesingle{}est qu\textquotesingle{}une adaptation de \h
 \end{DoxyParams}
 
 
-Définition à la ligne 44 du fichier Tortuino\+Dessins.\+cpp.
+Définition à la ligne 64 du fichier Tortuino\+Dessins.\+cpp.
 
 \mbox{\Hypertarget{TortuinoDessins_8cpp_a0c851f0f43370a65c2da38436be9a764}\label{TortuinoDessins_8cpp_a0c851f0f43370a65c2da38436be9a764}} 
 \index{Tortuino\+Dessins.\+cpp@{Tortuino\+Dessins.\+cpp}!triangle\+Sierpinski@{triangle\+Sierpinski}}
@@ -301,14 +551,33 @@ Définition à la ligne 44 du fichier Tortuino\+Dessins.\+cpp.
 
 Trace un \href{https://fr.wikipedia.org/wiki/Triangle_de_Sierpi%C5%84ski}{\tt triangle de Sierpiński} paramétré par son niveau et la taille globale du triangle. 
 
+\begin{center}\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+ &  \\\cline{1-2}
+\end{longtabu}
+\end{center} 
+
+
+\begin{DoxyImage}
+\includegraphics[height=200pt]{triangle-sierpinski-3.png}
+\doxyfigcaption{Un triangle de Sierpinski à trois niveaux}
+\end{DoxyImage}
+ 
+\begin{DoxyImage}
+\includegraphics[height=200pt]{triangle-sierpinski-6.png}
+\doxyfigcaption{Un triangle de Sierpinski à six niveaux}
+\end{DoxyImage}
+
+
 
 \begin{DoxyParams}{Paramètres}
 {\em nb\+Niveaux} & Le nombre de niveaux du triangle de Sierpiński. \\
 \hline
-{\em taille} & La taille du segment de départ qui sera conservée au fur et à mesure des itérations de l\textquotesingle{}algorithme de Sierpiński ; idem à ce que fait \hyperlink{TortuinoDessins_8cpp_afa05db28401a10aa6c4625a2de482484}{flocon(int nb\+Niveaux, float taille)} \\
+{\em taille} & La taille du segment de départ qui sera conservée au fur et à mesure des itérations de l\textquotesingle{}algorithme de Sierpiński ; idem à ce que fait \hyperlink{TortuinoDessins_8cpp_a31ef6ba782f866ce8f46e331d1ebc1f0}{flocon\+Von\+Koch(int nb\+Niveaux, float taille)} \\
 \hline
 \end{DoxyParams}
 
 
-Définition à la ligne 206 du fichier Tortuino\+Dessins.\+cpp.
+Définition à la ligne 300 du fichier Tortuino\+Dessins.\+cpp.
 

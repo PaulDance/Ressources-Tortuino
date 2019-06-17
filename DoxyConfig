@@ -58,7 +58,7 @@ PROJECT_LOGO           = ./Images/logo-tortuino-small.png
 # entered, it will be relative to the location where doxygen was started. If
 # left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = ./Documentation
+OUTPUT_DIRECTORY       = $(outDir)
 
 # If the CREATE_SUBDIRS tag is set to YES then doxygen will create 4096 sub-
 # directories (in 2 levels) under the output directory of each output format and
@@ -1737,7 +1737,7 @@ EXTRA_PACKAGES         =
 # to HTML_HEADER.
 # This tag requires that the tag GENERATE_LATEX is set to YES.
 
-LATEX_HEADER           =
+LATEX_HEADER           = "$(outDir)/latex/header.tex"
 
 # The LATEX_FOOTER tag can be used to specify a personal LaTeX footer for the
 # generated LaTeX document. The footer should contain everything after the last

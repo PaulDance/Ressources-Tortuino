@@ -32,10 +32,13 @@ arbreSymetrique		KEYWORD2
 arbreAsymetrique	KEYWORD2
 sapin				KEYWORD2
 courbeVonKoch		KEYWORD2
-flocon				KEYWORD2
+floconVonKoch		KEYWORD2
 triangleSierpinski	KEYWORD2
+maison				KEYWORD2
+spiraleCarree		KEYWORD2
+tangram				KEYWORD2
+flocon				KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
 #######################################
-

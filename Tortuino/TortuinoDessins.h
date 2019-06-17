@@ -24,8 +24,13 @@
 	void sapin(int nbNiveaux, float tailleTronc);
 	
 	void courbeVonKoch(int nbNiveaux, float taille);
-	void flocon(int nbNiveaux, float taille);
+	void floconVonKoch(int nbNiveaux, float taille);
 	
 	void triangleSierpinski(int nbNiveaux, float taille);
+	
+	void maison();
+	void spiraleCarree(int nbCotes, float longueurDepart, float ecart);
+	void tangram();
+	void flocon();
 	
 # endif
