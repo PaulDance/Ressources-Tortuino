@@ -95,7 +95,7 @@ function changeStr(){
 	var regexF = /(?:[a-zA-Z]+)( \w+\()(.*)(\) *)/gm;
 	str = str.replace(regexF, argF);
 
-	var regexT = /(\w+) (\w+ *(?:;|=[\w \(\)\.]+;))/gm;
+	var regexT = /(\w+) (\w+ *(?:;|=[^;]+;))/gm;
 	str = str.replace(regexT, types);
 
 	ctx.clearRect(0,0,canvas.width, canvas.height);
